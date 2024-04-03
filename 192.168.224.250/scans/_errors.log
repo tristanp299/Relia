@@ -1,0 +1,10 @@
+[*] Service scan SMBClient (tcp/139/netbios-ssn/smbclient) ran a command which returned a non-zero exit code (1).
+[-] Command: smbclient -L //192.168.224.250 -N -I 192.168.224.250 2>&1
+[-] Error Output:
+
+
+[*] Service scan Enum4Linux (tcp/139/netbios-ssn/enum4linux) ran a command which returned a non-zero exit code (1).
+[-] Command: enum4linux -a -M -l -d 192.168.224.250 2>&1
+[-] Error Output:
+
+
