@@ -1,0 +1,9 @@
+200      GET       26l       70w      974c https://192.168.224.247/js/scripts.js
+200      GET     1824l    10804w   767485c https://192.168.224.247/pdfs/New-Hire-Form.pdf
+200      GET        0l        0w  1084316c https://192.168.224.247/pdfs/Mission.pdf
+200      GET        0l        0w   207174c https://192.168.224.247/css/styles.css
+200      GET        0l        0w   133641c https://192.168.224.247/pdfs/WelcomeLetter.pdf
+200      GET       61l      347w     4269c https://192.168.224.247/
+503      GET       11l       44w      406c https://192.168.224.247/examples
+403      GET       11l       47w      425c https://192.168.224.247/server-info
+403      GET       11l       47w      425c https://192.168.224.247/server-status
