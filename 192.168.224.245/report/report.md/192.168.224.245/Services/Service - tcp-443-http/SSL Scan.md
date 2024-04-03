@@ -1,0 +1,176 @@
+```bash
+sslscan --show-certificate --no-colour 192.168.224.245:443 2>&1
+```
+
+[/home/kali/Documents/Relia/results/192.168.224.245/scans/tcp443/tcp_443_sslscan.html](file:///home/kali/Documents/Relia/results/192.168.224.245/scans/tcp443/tcp_443_sslscan.html):
+
+```
+Version: 2.1.3-static
+OpenSSL 3.0.12 24 Oct 2023
+
+Connected to 192.168.224.245
+
+Testing SSL server 192.168.224.245 on port 443 using SNI name 192.168.224.245
+
+  SSL/TLS Protocols:
+SSLv2     disabled
+SSLv3     disabled
+TLSv1.0   disabled
+TLSv1.1   disabled
+TLSv1.2   enabled
+TLSv1.3   enabled
+
+  TLS Fallback SCSV:
+Server supports TLS Fallback SCSV
+
+  TLS renegotiation:
+Session renegotiation not supported
+
+  TLS Compression:
+Compression disabled
+
+  Heartbleed:
+TLSv1.3 not vulnerable to heartbleed
+TLSv1.2 not vulnerable to heartbleed
+
+  Supported Server Cipher(s):
+Preferred TLSv1.3  128 bits  TLS_AES_128_GCM_SHA256        Curve 25519 DHE 253
+Accepted  TLSv1.3  256 bits  TLS_AES_256_GCM_SHA384        Curve 25519 DHE 253
+Accepted  TLSv1.3  256 bits  TLS_CHACHA20_POLY1305_SHA256  Curve 25519 DHE 253
+Preferred TLSv1.2  256 bits  ECDHE-RSA-AES256-GCM-SHA384   Curve 25519 DHE 253
+Accepted  TLSv1.2  256 bits  DHE-RSA-AES256-GCM-SHA384     DHE 4096 bits
+Accepted  TLSv1.2  256 bits  ECDHE-RSA-CHACHA20-POLY1305   Curve 25519 DHE 253
+Accepted  TLSv1.2  256 bits  DHE-RSA-CHACHA20-POLY1305     DHE 4096 bits
+Accepted  TLSv1.2  128 bits  ECDHE-RSA-AES128-GCM-SHA256   Curve 25519 DHE 253
+Accepted  TLSv1.2  128 bits  DHE-RSA-AES128-GCM-SHA256     DHE 4096 bits
+Accepted  TLSv1.2  256 bits  ECDHE-RSA-AES256-SHA384       Curve 25519 DHE 253
+Accepted  TLSv1.2  256 bits  DHE-RSA-AES256-SHA256         DHE 4096 bits
+Accepted  TLSv1.2  128 bits  ECDHE-RSA-AES128-SHA256       Curve 25519 DHE 253
+Accepted  TLSv1.2  128 bits  DHE-RSA-AES128-SHA256         DHE 4096 bits
+Accepted  TLSv1.2  256 bits  ECDHE-RSA-AES256-SHA          Curve 25519 DHE 253
+Accepted  TLSv1.2  256 bits  DHE-RSA-AES256-SHA            DHE 4096 bits
+Accepted  TLSv1.2  128 bits  ECDHE-RSA-AES128-SHA          Curve 25519 DHE 253
+Accepted  TLSv1.2  128 bits  DHE-RSA-AES128-SHA            DHE 4096 bits
+Accepted  TLSv1.2  256 bits  AES256-GCM-SHA384
+Accepted  TLSv1.2  128 bits  AES128-GCM-SHA256
+Accepted  TLSv1.2  256 bits  AES256-SHA256
+Accepted  TLSv1.2  128 bits  AES128-SHA256
+Accepted  TLSv1.2  256 bits  AES256-SHA
+Accepted  TLSv1.2  128 bits  AES128-SHA
+
+  Server Key Exchange Group(s):
+TLSv1.3  128 bits  secp256r1 (NIST P-256)
+TLSv1.3  192 bits  secp384r1 (NIST P-384)
+TLSv1.3  260 bits  secp521r1 (NIST P-521)
+TLSv1.3  128 bits  x25519
+TLSv1.3  224 bits  x448
+TLSv1.2  128 bits  secp256r1 (NIST P-256)
+TLSv1.2  192 bits  secp384r1 (NIST P-384)
+TLSv1.2  260 bits  secp521r1 (NIST P-521)
+TLSv1.2  128 bits  x25519
+TLSv1.2  224 bits  x448
+
+  SSL Certificate:
+    Certificate blob:
+-----BEGIN CERTIFICATE-----
+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
+-----END CERTIFICATE-----
+    Version: 2
+    Serial Number: 78:76:0a:bf:b4:3a:45:5a:f6:75:d1:54:39:6d:00:5e:db:08:2c:01
+    Signature Algorithm: sha256WithRSAEncryption
+    Issuer: /C=DE/ST=Berlin/L=Munich/O=RELIA/OU=IT Department/CN=web01.relia.com
+    Not valid before: Oct 12 08:55:44 2022 GMT
+    Not valid after: Oct  9 08:55:44 2032 GMT
+    Subject: /C=DE/ST=Berlin/L=Munich/O=RELIA/OU=IT Department/CN=web01.relia.com
+    Public Key Algorithm: NULL
+    RSA Public Key: (4096 bit)
+      RSA Public-Key: (4096 bit)
+      Modulus:
+          00:b1:8e:8b:7f:34:d9:13:e7:73:7f:03:9e:c2:2a:
+          be:33:6e:ea:c0:62:11:e9:13:fd:f1:ef:12:78:4e:
+          7f:04:55:9c:b8:8f:82:d2:fd:2a:88:48:c5:fa:ca:
+          e7:97:cb:97:cd:ca:dc:40:8d:94:a0:09:6d:ae:86:
+          52:95:63:83:99:75:b6:6b:32:8c:aa:68:55:9d:51:
+          d4:47:54:03:b6:12:5d:53:bd:1a:37:31:0d:b8:06:
+          1a:66:25:6d:aa:3b:63:78:81:af:3c:d8:9a:0a:6b:
+          5f:67:fd:89:f2:8c:2c:f1:1e:5e:87:f4:51:2c:10:
+          3b:40:23:c9:ae:76:de:08:4a:1d:29:8f:28:c8:72:
+          ca:2b:20:62:bb:cd:d0:af:3d:10:b2:03:85:0d:df:
+          e0:ae:67:06:87:e2:ea:5d:a1:9f:28:4e:e6:3b:ca:
+          9a:cc:6c:70:0c:20:9b:4d:41:06:e9:6f:f1:2b:58:
+          06:ef:84:cb:3a:4b:2d:22:50:4e:0e:c7:6b:f6:ce:
+          1d:3e:86:cc:4a:64:f4:4e:c3:82:73:0c:c1:1a:0c:
+          8c:57:26:1f:dd:e8:83:d5:7a:b3:eb:2b:2b:c7:0c:
+          4f:bd:19:8d:39:ad:dc:3f:91:e3:ea:09:f6:4a:00:
+          2a:3f:8b:19:12:0c:b8:ee:4e:97:b9:2c:fb:64:60:
+          c3:1b:8e:f7:48:4e:05:14:9f:5b:b7:b3:d0:ef:ba:
+          27:0a:c8:9a:bf:68:9c:27:9d:af:24:c5:9b:4e:91:
+          2b:5d:a4:ef:91:cb:1b:c5:2d:71:80:47:c3:ff:5f:
+          97:7a:80:1e:dd:c7:ca:bb:80:44:64:cc:19:eb:56:
+          b6:b2:09:ce:59:97:c8:1f:92:2c:fe:0d:d7:e1:fd:
+          7f:6f:4a:05:0d:6c:47:fd:7c:ff:78:7a:2e:66:92:
+          db:bb:ae:09:8a:5d:3e:59:51:b8:78:8e:5d:63:fc:
+          7f:17:6c:bf:b9:28:e6:3b:63:53:c5:08:4e:e6:71:
+          e5:5d:fd:64:88:f2:c3:3b:88:8a:6e:dc:9f:dc:6e:
+          2c:4b:05:54:c9:75:e2:41:11:04:eb:d7:8a:b5:02:
+          22:56:17:e8:10:9e:c2:09:86:a4:35:70:4b:75:c4:
+          5e:7a:64:d5:5b:8f:05:aa:a2:96:84:9f:b6:ee:68:
+          4c:50:08:f8:da:60:8b:8c:36:fc:0d:40:66:2c:f6:
+          0c:a6:4c:6e:a5:b3:76:a2:c8:80:4e:e1:ce:f5:d8:
+          81:14:c4:d9:db:b3:a1:04:ea:7d:4b:b3:29:62:5d:
+          72:f6:2c:9b:52:72:12:c0:c1:71:8c:e4:4b:5b:20:
+          42:e2:b0:26:ce:ee:7d:c9:81:2b:6e:f5:22:d7:68:
+          1e:fc:09
+      Exponent: 65537 (0x10001)
+    X509v3 Extensions:
+      X509v3 Subject Key Identifier:
+        0E:BF:30:DB:A3:DE:F9:2C:41:5A:02:97:21:1C:D1:11:E3:BA:5A:C9
+      X509v3 Authority Key Identifier:
+        0E:BF:30:DB:A3:DE:F9:2C:41:5A:02:97:21:1C:D1:11:E3:BA:5A:C9
+      X509v3 Basic Constraints: critical
+        CA:TRUE
+  Verify Certificate:
+    self-signed certificate
+
+  SSL Certificate:
+Signature Algorithm: sha256WithRSAEncryption
+RSA Key Strength:    4096
+
+Subject:  web01.relia.com
+Issuer:   web01.relia.com
+
+Not valid before: Oct 12 08:55:44 2022 GMT
+Not valid after:  Oct  9 08:55:44 2032 GMT
+
+
+```

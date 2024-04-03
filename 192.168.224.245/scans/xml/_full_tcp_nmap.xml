@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Tue Apr  2 20:58:09 2024 as: nmap -vv -&#45;reason -Pn -T4 -T4 -&#45;min-rate=500 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/kali/Documents/Relia/results/192.168.224.245/scans/_full_tcp_nmap.txt -oX /home/kali/Documents/Relia/results/192.168.224.245/scans/xml/_full_tcp_nmap.xml 192.168.224.245 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -T4 -&#45;min-rate=500 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/kali/Documents/Relia/results/192.168.224.245/scans/_full_tcp_nmap.txt -oX /home/kali/Documents/Relia/results/192.168.224.245/scans/xml/_full_tcp_nmap.xml 192.168.224.245" start="1712116689" startstr="Tue Apr  2 20:58:09 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1712116689"/>
+<taskend task="NSE" time="1712116689"/>
+<taskbegin task="NSE" time="1712116689"/>
+<taskend task="NSE" time="1712116689"/>
+<taskbegin task="NSE" time="1712116689"/>
+<taskend task="NSE" time="1712116689"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1712116689"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1712116689"/>
+<taskbegin task="SYN Stealth Scan" time="1712116689"/>
+<taskprogress task="SYN Stealth Scan" time="1712116720" percent="19.22" remaining="131" etc="1712116850"/>
+<taskprogress task="SYN Stealth Scan" time="1712116750" percent="38.36" remaining="99" etc="1712116848"/>
+<taskprogress task="SYN Stealth Scan" time="1712116780" percent="56.57" remaining="70" etc="1712116850"/>
+<taskprogress task="SYN Stealth Scan" time="1712116810" percent="76.09" remaining="39" etc="1712116848"/>
+<taskend task="SYN Stealth Scan" time="1712116854" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1712116854"/>
+<taskend task="Service scan" time="1712117276" extrainfo="5 services on 1 host"/>
+<taskbegin task="Traceroute" time="1712117292"/>
+<taskend task="Traceroute" time="1712117293"/>
+<taskbegin task="Parallel DNS resolution of 4 hosts." time="1712117293"/>
+<taskend task="Parallel DNS resolution of 4 hosts." time="1712117293"/>
+<taskbegin task="NSE" time="1712117293"/>
+<taskprogress task="NSE" time="1712117324" percent="99.86" remaining="1" etc="1712117324"/>
+<taskend task="NSE" time="1712117335"/>
+<taskbegin task="NSE" time="1712117335"/>
+<taskend task="NSE" time="1712117343"/>
+<taskbegin task="NSE" time="1712117343"/>
+<taskend task="NSE" time="1712117343"/>
+<host starttime="1712116689" endtime="1712117343"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.224.245" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65123">
+<extrareasons reason="reset" count="65123" proto="tcp" ports="1-20,22-79,81-129,131-173,175-442,444-672,674-896,898-959,961-1082,1084-1276,1278-1449,1451-1723,1725-1766,1768-1773,1775-1804,1806-1860,1862-2141,2143-2168,2170-2221,2223-2321,2323-2345,2347,2349-2369,2371-2458,2460-2475,2477-2536,2538-2571,2573-2780,2782-2984,2986-3172,3174-3176,3178-4049,4051-4204,4206-4243,4245-4358,4360-4385,4387-4515,4517-4547,4549-4594,4596-5056,5058-5489,5491-5517,5519-5756,5758-5779,5781-5814,5816-6242,6244-6390,6392-6394,6396-6450,6452-6821,6823-6872,6874-7118,7120-7358,7360-7454,7456-7593,7595-7937,7939-7999,8001-8036,8038-8052,8054-8430,8432-8476,8478-8781,8783-8987,8989-9090,9092-9216,9218-9306,9308-9654,9656-9880,9882-10052,10054-10186,10188-10243,10245-10359,10361-10396,10398-10412,10414-10462,10464-10587,10589-10652,10654-10795,10797-11172,11174-11290,11292-11350,11352-11367,11369-11411,11413-11491,11493-11584,11586-11612,11614-11651,11653-11665,11667-11670,11672-11694,11696-11775,11777-11792,11794-11873,11875-11878,11880-11928,11930-12056,12058-12120,12122-12453,12455-12657,12659-12933,12935-13085,13087-13104,13106-13135,13137-13231,13233-13280,13282-13327,13329-13400,13402-13487,13489-13520,13522-13608,13610-13657,13659-13687,13689-13716,13718-13826,13828-13842,13844-13846,13848-13853,13855-13873,13875-13906,13908-14009,14011-14117,14119-14202,14204-14514,14516-14630,14632-14639,14641-14723,14725-14736,14738-14841,14843-14939,14941-15030,15032-15139,15141-15208,15210-15243,15245-15290,15292-15345,15347-15648,15650-16055,16057-16193,16195-16517,16519-16726,16728-16821,16823-16888,16890-16929,16931-17113,17115-17167,17169-17249,17251-17373,17375-17414,17416-17637,17639-17697,17699-17709,17711-17846,17848-18378,18380-18560,18562-18716,18718-18921,18923-19091,19093-19168,19170-19475,19477-19512,19514-19863,19865-20096,20098-20114,20116-20196,20198-20349,20351-20696,20698-20762,20764-20828,20830-21155,21157-21559,21561-21584,21586-21831,21833-21905,21907-22004,22006-22119,22121-22556,22558-22668,22670-22865,22867-23036,23038-23163,23165-23344,23346-23470,23472-23541,23543-23681,23683-24080,24082-24086,24088-24246,24248-24271,24273-24425,24427-24648,24650-24790,24792-24908,24910-25224,25226-25607,25609-25635,25637-25860,25862-25944,25946-26276,26278-26289,26291-26316,26318-26716,26718-26790,26792-26898,26900-27129,27131-27204,27206-27648,27650-27826,27828-27958,27960-28006,28008-28172,28174-29195,29197-29302,29304-29496,29498-29915,29917-30297,30299-30317,30319-31210,31212-31470,31472-31722,31724,31726-32014,32016-32071,32073-32338,32340-32568,32570-32599,32601-32741,32743-32859,32861-32897,32899-32995,32997-33021,33023-33093,33095-33121,33123-33463,33465-33624,33626-34135,34137-34162,34164-34491,34493-34637,34639-35040,35042-35184,35186-35401,35403-35449,35451-35505,35507-35880,35882-36152,36154-36526,36528-36812,36814-36821,36823-36873,36875-36879,36881-37388,37390-38031,38033-38243,38245-38786,38788-39082,39084-39170,39172-39304,39306-39361,39363-39670,39672-39912,39914-40719,40721-40749,40751-41054,41056-41354,41356-41612,41614-42178,42180-42304,42306-42483,42485-42829,42831-42922,42924-43126,43128-43498,43500-43640,43642-44156,44158-44398,44400-45119,45121-45370,45372-45424,45426-45451,45453-45721,45723-45752,45754-45897,45899-46201,46203-46277,46279-46636,46638-47091,47093-47119,47121-47387,47389-48373,48375-48407,48409-48460,48462-48876,48878-48952,48954-49311,49313-49315,49317-49384,49386-49396,49398-49416,49418-49465,49467-49469,49471-49505,49507-49592,49594-50118,50120-50173,50175-50205,50207-50340,50342-50548,50550-50612,50614-50670,50672-51145,51147-51278,51280-51362,51364-51381,51383-51449,51451-51507,51509-51697,51699-52133,52135-52283,52285-52294,52296-52297,52299-52408,52410-52586,52588-52801,52803-52907,52909-52938,52940-52987,52989-53060,53062-53245,53247-53413,53415-53440,53442-53598,53600-53693,53695-53723,53725-54105,54107-54236,54238-54539,54541-54576,54578-54712,54714-54828,54830-54868,54870-54966,54968-55073,55075-55363,55365-55600,55602-55915,55917-56142,56144-56237,56239-56376,56378-56546,56548-56709,56711-57145,57148-57228,57230-57240,57242-57642,57644-57742,57744-57819,57821-57878,57880-57965,57967-58004,58007-58247,58249-58448,58450-58458,58460,58462-58520,58522-58826,58828-58906,58908-58939,58941-59298,59300-59354,59356-59668,59670-59771,59773-59784,59786-59852,59854-59980,59982-60127,60129-60231,60233-60290,60292-60379,60381-60785,60787-60872,60874-61055,61057-61074,61076-61222,61224-61309,61311-61455,61457-61543,61545-61568,61570-61719,61721-62057,62059-62098,62100-62214,62216-62360,62362-62691,62693-62941,62943-62969,62971-63046,63048-63055,63057-63078,63080,63082-63109,63111-63313,63315-63460,63462-63664,63666-63926,63928-64268,64270-64346,64348-64409,64411-64711,64713-65140,65142-65358,65360-65535"/>
+</extraports>
+<extraports state="filtered" count="407">
+<extrareasons reason="no-response" count="407" proto="tcp" ports="130,174,673,897,960,1083,1277,1450,1724,1767,1774,1805,1861,2142,2169,2322,2346,2348,2370,2459,2476,2537,2572,2781,2985,3173,3177,4050,4205,4244,4359,4386,4516,4548,4595,5057,5490,5518,5757,5780,5815,6243,6391,6395,6451,6822,6873,7119,7359,7455,7594,7938,8037,8053,8431,8477,8782,8988,9091,9217,9307,9655,9881,10053,10187,10244,10360,10397,10413,10463,10588,10653,10796,11173,11291,11351,11368,11412,11492,11585,11613,11652,11666,11671,11695,11776,11793,11874,11879,11929,12057,12121,12454,12658,12934,13086,13105,13136,13232,13281,13328,13401,13488,13521,13609,13658,13688,13717,13827,13843,13847,13854,13874,13907,14010,14118,14203,14515,14631,14640,14724,14737,14842,14940,15031,15140,15209,15244,15291,15346,15649,16056,16194,16518,16727,16822,16889,16930,17114,17168,17250,17374,17415,17638,17698,17710,17847,18379,18561,18717,18922,19092,19169,19476,19513,19864,20097,20115,20197,20350,20697,20763,20829,21156,21560,21585,21832,21906,22005,22120,22557,22669,22866,23037,23164,23345,23471,23542,23682,24081,24087,24247,24272,24426,24649,24791,24909,25225,25608,25636,25861,25945,26277,26290,26317,26717,26791,26899,27130,27205,27649,27827,27959,28007,28173,29196,29303,29497,29916,30298,30318,31211,31471,31723,31725,32015,32072,32339,32569,32600,32742,32860,32898,32996,33022,33094,33122,33464,33625,34136,34163,34492,34638,35041,35185,35402,35450,35506,35881,36153,36527,36813,36822,36874,36880,37389,38032,38244,38787,39083,39171,39305,39362,39671,39913,40720,40750,41055,41355,41613,42179,42305,42484,42830,42923,43127,43499,43641,44157,44399,45120,45371,45425,45452,45722,45753,45898,46202,46278,46637,47092,47120,47388,48374,48408,48461,48877,48953,49312,49316,49385,49397,49417,49466,49470,49506,49593,50119,50174,50206,50341,50549,50613,50671,51146,51279,51363,51382,51450,51508,51698,52134,52284,52295,52298,52409,52587,52802,52908,52939,52988,53061,53246,53414,53441,53599,53694,53724,54106,54237,54540,54577,54713,54829,54869,54967,55074,55364,55601,55916,56143,56238,56377,56547,56710,57146-57147,57229,57241,57643,57743,57820,57879,57966,58005-58006,58248,58449,58459,58461,58521,58827,58907,58940,59299,59355,59669,59772,59785,59853,59981,60128,60232,60291,60380,60786,60873,61056,61075,61223,61310,61456,61544,61569,61720,62058,62099,62215,62361,62692,62942,62970,63047,63056,63079,63081,63110,63314,63461,63665,63927,64269,64347,64410,64712,65141,65359"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="61"/><service name="ftp" hostname="RELIA" servicefp="SF-Port21-TCP:V=7.94SVN%I=9%D=4/2%Time=660CD47C%P=aarch64-unknown-linux-gnu%r(NULL,1C,&quot;220\x20RELIA\x20Edge\x20FTP\x20server\.\r\n&quot;)%r(GenericLines,1C,&quot;220\x20RELIA\x20Edge\x20FTP\x20server\.\r\n&quot;)%r(GetRequest,42,&quot;220\x20RELIA\x20Edge\x20FTP\x20server\.\r\n530\x20Please\x20login\x20with\x20USER\x20and\x20PASS\.\r\n&quot;)%r(HTTPOptions,42,&quot;220\x20RELIA\x20Edge\x20FTP\x20server\.\r\n530\x20Please\x20login\x20with\x20USER\x20and\x20PASS\.\r\n&quot;)%r(RTSPRequest,42,&quot;220\x20RELIA\x20Edge\x20FTP\x20server\.\r\n530\x20Please\x20login\x20with\x20USER\x20and\x20PASS\.\r\n&quot;)%r(RPCCheck,1C,&quot;220\x20RELIA\x20Edge\x20FTP\x20server\.\r\n&quot;)%r(DNSVersionBindReqTCP,1C,&quot;220\x20RELIA\x20Edge\x20FTP\x20server\.\r\n&quot;)%r(DNSStatusRequestTCP,1C,&quot;220\x20RELIA\x20Edge\x20FTP\x20server\.\r\n&quot;)%r(Hello,42,&quot;220\x20RELIA\x20Edge\x20FTP\x20server\.\r\n530\x20Please\x20login\x20with\x20USER\x20and\x20PASS\.\r\n&quot;)%r(SSLSessionReq,42,&quot;220\x20RELIA\x20Edge\x20FTP\x20server\.\r\n530\x20Please\x20login\x20with\x20USER\x20and\x20PASS\.\r\n&quot;)%r(TerminalServerCookie,42,&quot;220\x20RELIA\x20Edge\x20FTP\x20server\.\r\n530\x20Please\x20login\x20with\x20USER\x20and\x20PASS\.\r\n&quot;)%r(TLSSessionReq,42,&quot;220\x20RELIA\x20Edge\x20FTP\x20server\.\r\n530\x20Please\x20login\x20with\x20USER\x20and\x20PASS\.\r\n&quot;)%r(SSLv23SessionReq,42,&quot;220\x20RELIA\x20Edge\x20FTP\x20server\.\r\n530\x20Please\x20login\x20with\x20USER\x20and\x20PASS\.\r\n&quot;)%r(Kerberos,42,&quot;220\x20RELIA\x20Edge\x20FTP\x20server\.\r\n530\x20Please\x20login\x20with\x20USER\x20and\x20PASS\.\r\n&quot;)%r(SMBProgNeg,1C,&quot;220\x20RELIA\x20Edge\x20FTP\x20server\.\r\n&quot;)%r(X11Probe,1C,&quot;220\x20RELIA\x20Edge\x20FTP\x20server\.\r\n&quot;)%r(FourOhFourRequest,42,&quot;220\x20RELIA\x20Edge\x20FTP\x20server\.\r\n530\x20Please\x20login\x20with\x20USER\x20and\x20PASS\.\r\n&quot;)%r(LPDString,42,&quot;220\x20RELIA\x20Edge\x20FTP\x20server\.\r\n530\x20Please\x20login\x20with\x20USER\x20and\x20PASS\.\r\n&quot;)%r(LDAPSearchReq,68,&quot;220\x20RELIA\x20Edge\x20FTP\x20server\.\r\n530\x20Please\x20login\x20with\x20USER\x20and\x20PASS\.\r\n530\x20Please\x20login\x20with\x20USER\x20and\x20PASS\.\r\n&quot;)%r(LDAPBindReq,1C,&quot;220\x20RELIA\x20Edge\x20FTP\x20server\.\r\n&quot;);" method="table" conf="3"/><script id="ftp-anon" output="Anonymous FTP login allowed (FTP code 230)"/><script id="fingerprint-strings" output="&#xa;  DNSStatusRequestTCP, DNSVersionBindReqTCP, GenericLines, LDAPBindReq, NULL, RPCCheck, SMBProgNeg, X11Probe: &#xa;    220 RELIA Edge FTP server.&#xa;  FourOhFourRequest, GetRequest, HTTPOptions, Hello, Kerberos, LPDString, RTSPRequest, SSLSessionReq, SSLv23SessionReq, TLSSessionReq, TerminalServerCookie: &#xa;    220 RELIA Edge FTP server.&#xa;    Please login with USER and PASS.&#xa;  LDAPSearchReq: &#xa;    220 RELIA Edge FTP server.&#xa;    Please login with USER and PASS.&#xa;    Please login with USER and PASS."><elem key="DNSStatusRequestTCP, DNSVersionBindReqTCP, GenericLines, LDAPBindReq, NULL, RPCCheck, SMBProgNeg, X11Probe">&#xa;    220 RELIA Edge FTP server.</elem>
+<elem key="FourOhFourRequest, GetRequest, HTTPOptions, Hello, Kerberos, LPDString, RTSPRequest, SSLSessionReq, SSLv23SessionReq, TLSSessionReq, TerminalServerCookie">&#xa;    220 RELIA Edge FTP server.&#xa;    Please login with USER and PASS.</elem>
+<elem key="LDAPSearchReq">&#xa;    220 RELIA Edge FTP server.&#xa;    Please login with USER and PASS.&#xa;    Please login with USER and PASS.</elem>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="61"/><service name="http" product="Apache httpd" version="2.4.49" extrainfo="(Unix) OpenSSL/1.1.1f mod_wsgi/4.9.4 Python/3.8" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.49</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="RELIA Corp."><elem key="title">RELIA Corp.</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="61"/><service name="http" product="Apache httpd" version="2.4.49" extrainfo="(Unix) OpenSSL/1.1.1f mod_wsgi/4.9.4 Python/3.8" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.49</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET POST OPTIONS HEAD TRACE&#xa;  Potentially risky methods: TRACE"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+<elem>HEAD</elem>
+<elem>TRACE</elem>
+</table>
+<table key="Potentially risky methods">
+<elem>TRACE</elem>
+</table>
+</script><script id="ssl-cert" output="Subject: commonName=web01.relia.com/organizationName=RELIA/stateOrProvinceName=Berlin/countryName=DE/organizationalUnitName=IT Department/localityName=Munich&#xa;Issuer: commonName=web01.relia.com/organizationName=RELIA/stateOrProvinceName=Berlin/countryName=DE/organizationalUnitName=IT Department/localityName=Munich&#xa;Public Key type: rsa&#xa;Public Key bits: 4096&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2022-10-12T08:55:44&#xa;Not valid after:  2032-10-09T08:55:44&#xa;MD5:   fa8f:53d5:841c:47dc:ac0c:8d5a:3acb:43a7&#xa;SHA-1: 9fd6:3372:2dfd:ed09:0915:6b60:2604:b238:f02a:eab7&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFwzCCA6ugAwIBAgIUeHYKv7Q6RVr2ddFUOW0AXtsILAEwDQYJKoZIhvcNAQEL&#xa;BQAwcTELMAkGA1UEBhMCREUxDzANBgNVBAgMBkJlcmxpbjEPMA0GA1UEBwwGTXVu&#xa;aWNoMQ4wDAYDVQQKDAVSRUxJQTEWMBQGA1UECwwNSVQgRGVwYXJ0bWVudDEYMBYG&#xa;A1UEAwwPd2ViMDEucmVsaWEuY29tMB4XDTIyMTAxMjA4NTU0NFoXDTMyMTAwOTA4&#xa;NTU0NFowcTELMAkGA1UEBhMCREUxDzANBgNVBAgMBkJlcmxpbjEPMA0GA1UEBwwG&#xa;TXVuaWNoMQ4wDAYDVQQKDAVSRUxJQTEWMBQGA1UECwwNSVQgRGVwYXJ0bWVudDEY&#xa;MBYGA1UEAwwPd2ViMDEucmVsaWEuY29tMIICIjANBgkqhkiG9w0BAQEFAAOCAg8A&#xa;MIICCgKCAgEAsY6LfzTZE+dzfwOewiq+M27qwGIR6RP98e8SeE5/BFWcuI+C0v0q&#xa;iEjF+srnl8uXzcrcQI2UoAltroZSlWODmXW2azKMqmhVnVHUR1QDthJdU70aNzEN&#xa;uAYaZiVtqjtjeIGvPNiaCmtfZ/2J8ows8R5eh/RRLBA7QCPJrnbeCEodKY8oyHLK&#xa;KyBiu83Qrz0QsgOFDd/grmcGh+LqXaGfKE7mO8qazGxwDCCbTUEG6W/xK1gG74TL&#xa;OkstIlBODsdr9s4dPobMSmT0TsOCcwzBGgyMVyYf3eiD1Xqz6ysrxwxPvRmNOa3c&#xa;P5Hj6gn2SgAqP4sZEgy47k6XuSz7ZGDDG473SE4FFJ9bt7PQ77onCsiav2icJ52v&#xa;JMWbTpErXaTvkcsbxS1xgEfD/1+XeoAe3cfKu4BEZMwZ61a2sgnOWZfIH5Is/g3X&#xa;4f1/b0oFDWxH/Xz/eHouZpLbu64Jil0+WVG4eI5dY/x/F2y/uSjmO2NTxQhO5nHl&#xa;Xf1kiPLDO4iKbtyf3G4sSwVUyXXiQREE69eKtQIiVhfoEJ7CCYakNXBLdcReemTV&#xa;W48FqqKWhJ+27mhMUAj42mCLjDb8DUBmLPYMpkxupbN2osiATuHO9diBFMTZ27Oh&#xa;BOp9S7MpYl1y9iybUnISwMFxjORLWyBC4rAmzu59yYErbvUi12ge/AkCAwEAAaNT&#xa;MFEwHQYDVR0OBBYEFA6/MNuj3vksQVoClyEc0RHjulrJMB8GA1UdIwQYMBaAFA6/&#xa;MNuj3vksQVoClyEc0RHjulrJMA8GA1UdEwEB/wQFMAMBAf8wDQYJKoZIhvcNAQEL&#xa;BQADggIBAFsl8YDtmYCcjjC1Oja36hpyktF1LWEuVpR/eBXzwmfxxqyRZ/BTnARx&#xa;Mj83mvizGUBEp3OgaJtAPlvBZr/lb8VT+DE7Y32ULBAboC0cpAtCl1+sjsFpy943&#xa;5RUZZqqIi4nfu12yIxsvVTiGzmPOoWjZuHQ60qgZBhPDUggbqySR2NBjYddGzxlx&#xa;N4J02WB19bv1Z56G48YPMxKmweIvmXrRqs/cKRCy6p0j/8dp9us7MwEMgbGm8EPp&#xa;Z59LYoD6V6KgX2ybhCtt1sPINuwGZ8DCnc5Hyk9Nvr791euzIpIcFhxXHmUGNwil&#xa;HuCulKvaX3jEujG3PDOONuN7sqXdzWbIbj0MuRJGwMLRjFmSgg4XA5CMAHtHAeiT&#xa;/S8cjaLwDptGLrgHvQhjfbvuC+2Qk3HCZC4bZdWBEjr62VmLiGynXI+6VtYNlAj8&#xa;eJYf2lAGpJjwVh+ZtZE9dh2fIPxLTkwS69H2yzl0KfWJX0I/u0dJGD5lTb/21nfe&#xa;Q8AwiecYICAggab3VcY5RzSSZ0Iwc7b5AijjqP4WBPasCQWcCG3l7uOoAsY/21eg&#xa;FQbyRupm5N2B0+BMBNNA4o7z75mMpe/liQyeRBWlrrU4a9aX9iDKQRN2stfmxeBx&#xa;ocvN1oS/2IZbuPCdsg7/xgo+CplY0cBFwHFz8mhspJbvaFzQXWeA&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="commonName">web01.relia.com</elem>
+<elem key="countryName">DE</elem>
+<elem key="localityName">Munich</elem>
+<elem key="organizationName">RELIA</elem>
+<elem key="organizationalUnitName">IT Department</elem>
+<elem key="stateOrProvinceName">Berlin</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">web01.relia.com</elem>
+<elem key="countryName">DE</elem>
+<elem key="localityName">Munich</elem>
+<elem key="organizationName">RELIA</elem>
+<elem key="organizationalUnitName">IT Department</elem>
+<elem key="stateOrProvinceName">Berlin</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">4096</elem>
+<elem key="modulus">B18E8B7F34D913E7737F039EC22ABE336EEAC06211E913FDF1EF12784E7F04559CB88F82D2FD2A8848C5FACAE797CB97CDCADC408D94A0096DAE86529563839975B66B328CAA68559D51D4475403B6125D53BD1A37310DB8061A66256DAA3B637881AF3CD89A0A6B5F67FD89F28C2CF11E5E87F4512C103B4023C9AE76DE084A1D298F28C872CA2B2062BBCDD0AF3D10B203850DDFE0AE670687E2EA5DA19F284EE63BCA9ACC6C700C209B4D4106E96FF12B5806EF84CB3A4B2D22504E0EC76BF6CE1D3E86CC4A64F44EC382730CC11A0C8C57261FDDE883D57AB3EB2B2BC70C4FBD198D39ADDC3F91E3EA09F64A002A3F8B19120CB8EE4E97B92CFB6460C31B8EF7484E05149F5BB7B3D0EFBA270AC89ABF689C279DAF24C59B4E912B5DA4EF91CB1BC52D718047C3FF5F977A801EDDC7CABB804464CC19EB56B6B209CE5997C81F922CFE0DD7E1FD7F6F4A050D6C47FD7CFF787A2E6692DBBBAE098A5D3E5951B8788E5D63FC7F176CBFB928E63B6353C5084EE671E55DFD6488F2C33B888A6EDC9FDC6E2C4B0554C975E2411104EBD78AB502225617E8109EC20986A435704B75C45E7A64D55B8F05AAA296849FB6EE684C5008F8DA608B8C36FC0D40662CF60CA64C6EA5B376A2C8804EE1CEF5D88114C4D9DBB3A104EA7D4BB329625D72F62C9B527212C0C1718CE44B5B2042E2B026CEEE7DC9812B6EF522D7681EFC09</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">0E:BF:30:DB:A3:DE:F9:2C:41:5A:02:97:21:1C:D1:11:E3:BA:5A:C9</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">0E:BF:30:DB:A3:DE:F9:2C:41:5A:02:97:21:1C:D1:11:E3:BA:5A:C9</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:TRUE</elem>
+<elem key="critical">true</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2022-10-12T08:55:44</elem>
+<elem key="notAfter">2032-10-09T08:55:44</elem>
+</table>
+<elem key="md5">fa8f53d5841c47dcac0c8d5a3acb43a7</elem>
+<elem key="sha1">9fd633722dfded0909156b602604b238f02aeab7</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFwzCCA6ugAwIBAgIUeHYKv7Q6RVr2ddFUOW0AXtsILAEwDQYJKoZIhvcNAQEL&#xa;BQAwcTELMAkGA1UEBhMCREUxDzANBgNVBAgMBkJlcmxpbjEPMA0GA1UEBwwGTXVu&#xa;aWNoMQ4wDAYDVQQKDAVSRUxJQTEWMBQGA1UECwwNSVQgRGVwYXJ0bWVudDEYMBYG&#xa;A1UEAwwPd2ViMDEucmVsaWEuY29tMB4XDTIyMTAxMjA4NTU0NFoXDTMyMTAwOTA4&#xa;NTU0NFowcTELMAkGA1UEBhMCREUxDzANBgNVBAgMBkJlcmxpbjEPMA0GA1UEBwwG&#xa;TXVuaWNoMQ4wDAYDVQQKDAVSRUxJQTEWMBQGA1UECwwNSVQgRGVwYXJ0bWVudDEY&#xa;MBYGA1UEAwwPd2ViMDEucmVsaWEuY29tMIICIjANBgkqhkiG9w0BAQEFAAOCAg8A&#xa;MIICCgKCAgEAsY6LfzTZE+dzfwOewiq+M27qwGIR6RP98e8SeE5/BFWcuI+C0v0q&#xa;iEjF+srnl8uXzcrcQI2UoAltroZSlWODmXW2azKMqmhVnVHUR1QDthJdU70aNzEN&#xa;uAYaZiVtqjtjeIGvPNiaCmtfZ/2J8ows8R5eh/RRLBA7QCPJrnbeCEodKY8oyHLK&#xa;KyBiu83Qrz0QsgOFDd/grmcGh+LqXaGfKE7mO8qazGxwDCCbTUEG6W/xK1gG74TL&#xa;OkstIlBODsdr9s4dPobMSmT0TsOCcwzBGgyMVyYf3eiD1Xqz6ysrxwxPvRmNOa3c&#xa;P5Hj6gn2SgAqP4sZEgy47k6XuSz7ZGDDG473SE4FFJ9bt7PQ77onCsiav2icJ52v&#xa;JMWbTpErXaTvkcsbxS1xgEfD/1+XeoAe3cfKu4BEZMwZ61a2sgnOWZfIH5Is/g3X&#xa;4f1/b0oFDWxH/Xz/eHouZpLbu64Jil0+WVG4eI5dY/x/F2y/uSjmO2NTxQhO5nHl&#xa;Xf1kiPLDO4iKbtyf3G4sSwVUyXXiQREE69eKtQIiVhfoEJ7CCYakNXBLdcReemTV&#xa;W48FqqKWhJ+27mhMUAj42mCLjDb8DUBmLPYMpkxupbN2osiATuHO9diBFMTZ27Oh&#xa;BOp9S7MpYl1y9iybUnISwMFxjORLWyBC4rAmzu59yYErbvUi12ge/AkCAwEAAaNT&#xa;MFEwHQYDVR0OBBYEFA6/MNuj3vksQVoClyEc0RHjulrJMB8GA1UdIwQYMBaAFA6/&#xa;MNuj3vksQVoClyEc0RHjulrJMA8GA1UdEwEB/wQFMAMBAf8wDQYJKoZIhvcNAQEL&#xa;BQADggIBAFsl8YDtmYCcjjC1Oja36hpyktF1LWEuVpR/eBXzwmfxxqyRZ/BTnARx&#xa;Mj83mvizGUBEp3OgaJtAPlvBZr/lb8VT+DE7Y32ULBAboC0cpAtCl1+sjsFpy943&#xa;5RUZZqqIi4nfu12yIxsvVTiGzmPOoWjZuHQ60qgZBhPDUggbqySR2NBjYddGzxlx&#xa;N4J02WB19bv1Z56G48YPMxKmweIvmXrRqs/cKRCy6p0j/8dp9us7MwEMgbGm8EPp&#xa;Z59LYoD6V6KgX2ybhCtt1sPINuwGZ8DCnc5Hyk9Nvr791euzIpIcFhxXHmUGNwil&#xa;HuCulKvaX3jEujG3PDOONuN7sqXdzWbIbj0MuRJGwMLRjFmSgg4XA5CMAHtHAeiT&#xa;/S8cjaLwDptGLrgHvQhjfbvuC+2Qk3HCZC4bZdWBEjr62VmLiGynXI+6VtYNlAj8&#xa;eJYf2lAGpJjwVh+ZtZE9dh2fIPxLTkwS69H2yzl0KfWJX0I/u0dJGD5lTb/21nfe&#xa;Q8AwiecYICAggab3VcY5RzSSZ0Iwc7b5AijjqP4WBPasCQWcCG3l7uOoAsY/21eg&#xa;FQbyRupm5N2B0+BMBNNA4o7z75mMpe/liQyeRBWlrrU4a9aX9iDKQRN2stfmxeBx&#xa;ocvN1oS/2IZbuPCdsg7/xgo+CplY0cBFwHFz8mhspJbvaFzQXWeA&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="http-title" output="400 Bad Request"><elem key="title">400 Bad Request</elem>
+</script></port>
+<port protocol="tcp" portid="2222"><state state="open" reason="syn-ack" reason_ttl="61"/><service name="ssh" product="OpenSSH" version="8.2p1 Ubuntu 4ubuntu0.5" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.2p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  3072 30:0c:6c:9b:ac:07:47:5e:df:6d:ff:38:63:38:2a:fd (RSA)&#xa;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCkRPaVboTfq+VZYyf1bsUlg+WZrPP1F6fRrA0TNkHmamfuFAhW9XfCiuh2GOnSkNeGUXLcMAgMtbki6uj4l6vTw5/pqM/jBz00be6Ty+g0CDz9gmb+p0iX+8vCeG6aB0vea9bvkjaABticCS1CmUEbfEe/jCn/11c4NmHleCFfVxE8PBRE2OyVWlFQkkcB74O0FS4AOfbnrAx3pAF4rcd7XsTgi4V1e/sKZ8RIcTlueVdnzZEMcpLeZXUR1cXsJ9zwklFLuMWuUjonYC7BFvT+Bf81jlO1/e9B0RxfalfCfeUthSoa2VGwpfvesCdHl0exvy1PXaeR2XUX5ZJ0jmoP7cvj1rb+ZrnUU/Sie0qpVklHpkjggz0li7Mk4h/CI+est9oeHP+UXVv+Xl/jpnXz/RX/1y03wkTe9Pygxo3NsLdrs22/UCQ5GZ5x78UJQBXCCI93KHY1BG28B9V8xT9PGmpFDgjnF3pFuZoMevmeHSVNBlNQV42/qFCJr48XbAM=&#xa;  256 f3:a9:70:76:c8:d4:c4:17:f4:39:1f:be:58:9d:1f:a5 (ECDSA)&#xa;ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBK6SiUV5zqxqNJ9a/p9l+VpxxqiXnYri40OjXMExS/tP0EbTAEpojn4uXKOgR3oEaMmQVmI9QLPTehCFLNJ3iJo=&#xa;  256 21:a0:79:82:2d:e6:2a:76:11:24:2f:7e:2e:a8:c7:83 (ED25519)&#xa;ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ9WPZpl/+VGWtnGi3tQSn1u5FAiDr9bKTV2xCUqje/c"><table>
+<elem key="bits">3072</elem>
+<elem key="fingerprint">300c6c9bac07475edf6dff3863382afd</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABgQCkRPaVboTfq+VZYyf1bsUlg+WZrPP1F6fRrA0TNkHmamfuFAhW9XfCiuh2GOnSkNeGUXLcMAgMtbki6uj4l6vTw5/pqM/jBz00be6Ty+g0CDz9gmb+p0iX+8vCeG6aB0vea9bvkjaABticCS1CmUEbfEe/jCn/11c4NmHleCFfVxE8PBRE2OyVWlFQkkcB74O0FS4AOfbnrAx3pAF4rcd7XsTgi4V1e/sKZ8RIcTlueVdnzZEMcpLeZXUR1cXsJ9zwklFLuMWuUjonYC7BFvT+Bf81jlO1/e9B0RxfalfCfeUthSoa2VGwpfvesCdHl0exvy1PXaeR2XUX5ZJ0jmoP7cvj1rb+ZrnUU/Sie0qpVklHpkjggz0li7Mk4h/CI+est9oeHP+UXVv+Xl/jpnXz/RX/1y03wkTe9Pygxo3NsLdrs22/UCQ5GZ5x78UJQBXCCI93KHY1BG28B9V8xT9PGmpFDgjnF3pFuZoMevmeHSVNBlNQV42/qFCJr48XbAM=</elem>
+<elem key="type">ssh-rsa</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="fingerprint">f3a97076c8d4c417f4391fbe589d1fa5</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBK6SiUV5zqxqNJ9a/p9l+VpxxqiXnYri40OjXMExS/tP0EbTAEpojn4uXKOgR3oEaMmQVmI9QLPTehCFLNJ3iJo=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="fingerprint">21a079822de62a7611242f7e2ea8c783</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIJ9WPZpl/+VGWtnGi3tQSn1u5FAiDr9bKTV2xCUqje/c</elem>
+<elem key="type">ssh-ed25519</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="8000"><state state="open" reason="syn-ack" reason_ttl="61"/><service name="http" product="Apache httpd" version="2.4.49" extrainfo="(Unix) OpenSSL/1.1.1f mod_wsgi/4.9.4 Python/3.8" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.49</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET POST"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>POST</elem>
+</table>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html)."></script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="32136"/>
+<osmatch name="Linux 2.6.28" accuracy="94" line="53570">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.28</cpe></osclass>
+</osmatch>
+<osmatch name="Fortinet FortiGate 100D firewall" accuracy="94" line="25558">
+<osclass type="firewall" vendor="Fortinet" osfamily="embedded" accuracy="94"><cpe>cpe:/h:fortinet:fortigate_100d</cpe></osclass>
+</osmatch>
+<osmatch name="Cisco Unified Communications Manager VoIP adapter" accuracy="89" line="14759">
+<osclass type="VoIP adapter" vendor="Cisco" osfamily="embedded" accuracy="89"><cpe>cpe:/h:cisco:unified_call_manager</cpe></osclass>
+</osmatch>
+<osmatch name="Android 5.0.1" accuracy="89" line="31591">
+<osclass type="phone" vendor="Google" osfamily="Android" osgen="5.X" accuracy="89"><cpe>cpe:/o:google:android:5.0.1</cpe></osclass>
+</osmatch>
+<osmatch name="Android 7.1.2 (Linux 3.10)" accuracy="89" line="31822">
+<osclass type="phone" vendor="Google" osfamily="Android" osgen="7.X" accuracy="89"><cpe>cpe:/o:google:android:7.1.2</cpe></osclass>
+<osclass type="phone" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:3.10</cpe></osclass>
+</osmatch>
+<osmatch name="Linksys WRV200 wireless broadband router" accuracy="89" line="43727">
+<osclass type="broadband router" vendor="Linksys" osfamily="embedded" accuracy="89"><cpe>cpe:/h:linksys:wrv200</cpe></osclass>
+</osmatch>
+<osmatch name="DD-WRT v23 (Linux 2.4.36)" accuracy="89" line="46455">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:2.4.36</cpe></osclass>
+</osmatch>
+<osmatch name="DD-WRT v24-sp2 (Linux 2.4.36)" accuracy="89" line="46605">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:2.4.36</cpe></osclass>
+</osmatch>
+<osmatch name="Vyatta router (Linux 2.6.26)" accuracy="89" line="47461">
+<osclass type="firewall" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:2.6.26</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.18" accuracy="89" line="49010">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:2.6.18</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=7.94SVN%E=4%D=4/2%OT=21%CT=1%CU=32136%PV=Y%DS=4%DC=T%G=Y%TM=660CD&#xa;OS:65F%P=aarch64-unknown-linux-gnu)SEQ()SEQ(TI=Z%TS=A)SEQ(SP=FC%GCD=1%ISR=1&#xa;OS:04%TI=Z%TS=A)SEQ(SP=FF%GCD=1%ISR=108%TI=Z%TS=A)OPS(O1=M551ST11NW7%O2=M55&#xa;OS:1ST11NW7%O3=M551NNT11NW7%O4=M551ST11NW7%O5=M551ST11NW7%O6=M551ST11)WIN(W&#xa;OS:1=FE88%W2=FE88%W3=FE88%W4=FE88%W5=FE88%W6=FE88)ECN(R=N)ECN(R=Y%DF=Y%T=40&#xa;OS:%W=FAF0%O=M551NNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R&#xa;OS:=N)T3(R=N)T4(R=N)T5(R=N)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6&#xa;OS:(R=N)T7(R=N)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=AD78&#xa;OS:%RUD=G)IE(R=N)IE(R=Y%DFI=N%T=40%CD=S)&#xa;"/>
+</os>
+<uptime seconds="695991" lastboot="Mon Mar 25 19:49:12 2024"/>
+<distance value="4"/>
+<tcpsequence index="252" difficulty="Good luck!" values="7A409F00,8A705E2E,BC4CC6DE,92B82A65"/>
+<ipidsequence class="All zeros" values="0,0,0,0"/>
+<tcptssequence class="1000HZ" values="297B2CA4,297B2D0E,297B2D81,297B2DDA"/>
+<trace port="8080" proto="tcp">
+<hop ttl="1" ipaddr="192.168.45.1" rtt="74.58"/>
+<hop ttl="2" ipaddr="192.168.45.254" rtt="76.62"/>
+<hop ttl="3" ipaddr="192.168.251.1" rtt="77.46"/>
+<hop ttl="4" ipaddr="192.168.224.245" rtt="77.92"/>
+</trace>
+<times srtt="80247" rttvar="4535" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1712117343"/>
+<taskend task="NSE" time="1712117343"/>
+<taskbegin task="NSE" time="1712117343"/>
+<taskend task="NSE" time="1712117343"/>
+<taskbegin task="NSE" time="1712117343"/>
+<taskend task="NSE" time="1712117343"/>
+<runstats><finished time="1712117343" timestr="Tue Apr  2 21:09:03 2024" summary="Nmap done at Tue Apr  2 21:09:03 2024; 1 IP address (1 host up) scanned in 654.93 seconds" elapsed="654.93" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
