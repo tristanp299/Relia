@@ -1,0 +1,675 @@
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-04-02 20:54 PDT
+NSE: Loaded 156 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 20:54
+Completed NSE at 20:54, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 20:54
+Completed NSE at 20:54, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 20:54
+Completed NSE at 20:54, 0.00s elapsed
+Initiating Parallel DNS resolution of 8 hosts. at 20:54
+Completed Parallel DNS resolution of 8 hosts. at 20:54, 0.01s elapsed
+Initiating Connect Scan at 20:54
+Scanning 8 hosts [1000 ports/host]
+Discovered open port 80/tcp on 192.168.224.247
+Discovered open port 80/tcp on 192.168.224.191
+Discovered open port 80/tcp on 192.168.224.245
+Discovered open port 139/tcp on 192.168.224.191
+Discovered open port 139/tcp on 192.168.224.247
+Discovered open port 80/tcp on 192.168.224.248
+Discovered open port 80/tcp on 192.168.224.246
+Discovered open port 139/tcp on 192.168.224.248
+Discovered open port 80/tcp on 192.168.224.249
+Discovered open port 139/tcp on 192.168.224.250
+Discovered open port 139/tcp on 192.168.224.189
+Discovered open port 139/tcp on 192.168.224.249
+Discovered open port 3389/tcp on 192.168.224.247
+Discovered open port 3389/tcp on 192.168.224.248
+Discovered open port 3389/tcp on 192.168.224.250
+Discovered open port 135/tcp on 192.168.224.248
+Discovered open port 3389/tcp on 192.168.224.191
+Discovered open port 135/tcp on 192.168.224.250
+Discovered open port 135/tcp on 192.168.224.247
+Discovered open port 135/tcp on 192.168.224.189
+Discovered open port 135/tcp on 192.168.224.191
+Discovered open port 443/tcp on 192.168.224.247
+Discovered open port 3389/tcp on 192.168.224.249
+Discovered open port 135/tcp on 192.168.224.249
+Discovered open port 443/tcp on 192.168.224.245
+Discovered open port 443/tcp on 192.168.224.246
+Discovered open port 445/tcp on 192.168.224.248
+Discovered open port 445/tcp on 192.168.224.247
+Discovered open port 445/tcp on 192.168.224.249
+Discovered open port 445/tcp on 192.168.224.189
+Discovered open port 110/tcp on 192.168.224.189
+Discovered open port 445/tcp on 192.168.224.250
+Discovered open port 21/tcp on 192.168.224.245
+Discovered open port 445/tcp on 192.168.224.191
+Discovered open port 25/tcp on 192.168.224.189
+Discovered open port 587/tcp on 192.168.224.189
+Discovered open port 143/tcp on 192.168.224.189
+Discovered open port 8000/tcp on 192.168.224.245
+Discovered open port 2222/tcp on 192.168.224.245
+Discovered open port 2222/tcp on 192.168.224.246
+Discovered open port 8000/tcp on 192.168.224.249
+Completed Connect Scan against 192.168.224.245 in 5.85s (7 hosts left)
+Completed Connect Scan against 192.168.224.250 in 5.92s (6 hosts left)
+Completed Connect Scan against 192.168.224.246 in 5.92s (5 hosts left)
+Completed Connect Scan against 192.168.224.189 in 5.93s (4 hosts left)
+Completed Connect Scan against 192.168.224.247 in 5.94s (3 hosts left)
+Completed Connect Scan against 192.168.224.191 in 5.94s (2 hosts left)
+Completed Connect Scan against 192.168.224.248 in 5.96s (1 host left)
+Completed Connect Scan at 20:54, 5.96s elapsed (8000 total ports)
+Initiating Service scan at 20:54
+Scanning 41 services on 8 hosts
+Completed Service scan at 20:55, 78.62s elapsed (41 services on 8 hosts)
+NSE: Script scanning 8 hosts.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 20:55
+NSE: [ftp-bounce 192.168.224.245:21] PORT response: 500 Illegal PORT command.
+Stats: 0:01:44 elapsed; 0 hosts completed (8 up), 8 undergoing Script Scan
+NSE: Active NSE Script Threads: 82 (82 waiting)
+NSE Timing: About 98.57% done; ETC: 20:55 (0:00:00 remaining)
+Stats: 0:01:47 elapsed; 0 hosts completed (8 up), 8 undergoing Script Scan
+NSE: Active NSE Script Threads: 80 (80 waiting)
+NSE Timing: About 98.60% done; ETC: 20:55 (0:00:00 remaining)
+Completed NSE at 20:56, 49.38s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 20:56
+Completed NSE at 20:56, 4.51s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 20:56
+Stats: 0:02:18 elapsed; 0 hosts completed (8 up), 8 undergoing Script Scan
+NSE: Active NSE Script Threads: 8 (0 waiting)
+NSE Timing: About 0.00% done
+Completed NSE at 20:56, 0.00s elapsed
+Nmap scan report for 192.168.224.249
+Host is up, received user-set (0.074s latency).
+Scanned at 2024-04-02 20:54:07 PDT for 138s
+Not shown: 994 closed tcp ports (conn-refused)
+PORT     STATE SERVICE       REASON  VERSION
+80/tcp   open  http          syn-ack Microsoft IIS httpd 10.0
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+|_http-title: IIS Windows Server
+|_http-server-header: Microsoft-IIS/10.0
+135/tcp  open  msrpc         syn-ack Microsoft Windows RPC
+139/tcp  open  netbios-ssn   syn-ack Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds? syn-ack
+3389/tcp open  ms-wbt-server syn-ack Microsoft Terminal Services
+| ssl-cert: Subject: commonName=LEGACY
+| Issuer: commonName=LEGACY
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2024-01-13T23:01:30
+| Not valid after:  2024-07-14T23:01:30
+| MD5:   ced0:46fb:0382:2c78:4f8e:6e99:7ce2:feaa
+| SHA-1: 5931:bfe6:185b:7084:5964:45fb:b55a:3383:85b3:9f7f
+| -----BEGIN CERTIFICATE-----
+| MIIC0DCCAbigAwIBAgIQYUbza/e+y6VDeQQningixDANBgkqhkiG9w0BAQsFADAR
+| MQ8wDQYDVQQDEwZMRUdBQ1kwHhcNMjQwMTEzMjMwMTMwWhcNMjQwNzE0MjMwMTMw
+| WjARMQ8wDQYDVQQDEwZMRUdBQ1kwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK
+| AoIBAQCqwka8tAMwtxNQW84u3c2UTguRuAqMNN/4StHyBwGRYKaMS+TfJC/HaWqN
+| F0szmrm0L2wTibd/Ndj29TZV0jVOfkTroDoriaHlpjo+cFA6t46e6p0gzuW0K0NK
+| 8Npn7FgtlVNgtV8NUvqYq0Juu+z0EhscYh7GhuCdcDLZ1tK6/ehBQkFW96JWpaWo
+| Hwus91+dtveOUGxU5+V1UpvW3OkboxoK6Z3bKiqdnevSi5O79BFl9KOQsPJlgwNW
+| k8tkWrpAWiSldsNgQ1ZHbKETPdQLFKLPmD0mb8ycw5OIxsaKTwdVbFu/g70UlN5W
+| CsMuUJnTiFGpOSHljGDAa7PhN6NVAgMBAAGjJDAiMBMGA1UdJQQMMAoGCCsGAQUF
+| BwMBMAsGA1UdDwQEAwIEMDANBgkqhkiG9w0BAQsFAAOCAQEAaUqBAi7tO/D2ZVTy
+| N9zEVSnrKvZQ3mJSQNd7Tykw9q4vuMYqmziwd1zrkALTxmWOJ70YTaR14DxQFZ/0
+| 9+9TY8d3aeAcA+JxMeSDbXcE2FNCKV8CBc/iD5dUIr+wF3Psb6Va1l3636Al1g9x
+| NUMtGoJhfnuxERQOyR+HioGz8dtnK+GSaSfa+4r7jYUySuIL405Cgk0PDPs29D3F
+| BrTvzgZsYu8L4tZMOhD8LMMEFQ7axISAUNBRXnAI5/kOkdoCe5m/KMpzIsFi5Pyj
+| MPNRNYsGnI+RGBgUpPgtVDGWIvRRkzZ+Ogqw3CUaR9NaxrOLtPMvNjrgUGpd9RR5
+| VvEnKg==
+|_-----END CERTIFICATE-----
+|_ssl-date: 2024-04-03T03:56:21+00:00; 0s from scanner time.
+| rdp-ntlm-info: 
+|   Target_Name: LEGACY
+|   NetBIOS_Domain_Name: LEGACY
+|   NetBIOS_Computer_Name: LEGACY
+|   DNS_Domain_Name: LEGACY
+|   DNS_Computer_Name: LEGACY
+|   Product_Version: 10.0.20348
+|_  System_Time: 2024-04-03T03:55:37+00:00
+8000/tcp open  http          syn-ack Apache httpd 2.4.54 ((Win64) OpenSSL/1.1.1p PHP/7.4.30)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/7.4.30
+|_http-favicon: Unknown favicon MD5: 6EB4A43CB64C97F76562AF703893C8FD
+| http-title: Welcome to XAMPP
+|_Requested resource was http://192.168.224.249:8000/dashboard/
+|_http-open-proxy: Proxy might be redirecting requests
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 62732/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 51162/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 54655/udp): CLEAN (Failed to receive data)
+|   Check 4 (port 8612/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb2-time: 
+|   date: 2024-04-03T03:55:34
+|_  start_date: N/A
+|_clock-skew: mean: 0s, deviation: 0s, median: 0s
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+
+Nmap scan report for 192.168.224.248
+Host is up, received user-set (0.073s latency).
+Scanned at 2024-04-02 20:54:07 PDT for 138s
+Not shown: 995 closed tcp ports (conn-refused)
+PORT     STATE SERVICE       REASON  VERSION
+80/tcp   open  http          syn-ack Microsoft IIS httpd 10.0
+| http-robots.txt: 16 disallowed entries 
+| /*/ctl/ /admin/ /App_Browsers/ /App_Code/ /App_Data/ 
+| /App_GlobalResources/ /bin/ /Components/ /Config/ /contest/ /controls/ 
+| /Documentation/ /HttpModules/ /Install/ /Providers/ 
+|_/Activity-Feed/userId/
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+|_http-favicon: Unknown favicon MD5: 2DE6897008EB657D2EC770FE5B909439
+|_http-title: Home
+135/tcp  open  msrpc         syn-ack Microsoft Windows RPC
+139/tcp  open  netbios-ssn   syn-ack Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds? syn-ack
+3389/tcp open  ms-wbt-server syn-ack Microsoft Terminal Services
+|_ssl-date: 2024-04-03T03:56:21+00:00; 0s from scanner time.
+| ssl-cert: Subject: commonName=EXTERNAL
+| Issuer: commonName=EXTERNAL
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2024-04-02T03:51:10
+| Not valid after:  2024-10-02T03:51:10
+| MD5:   a584:bf4a:b48c:d730:436b:18f8:820a:32ee
+| SHA-1: 5c85:e2ad:976d:8022:e913:8ab9:d6c4:333e:c6b8:5311
+| -----BEGIN CERTIFICATE-----
+| MIIC1DCCAbygAwIBAgIQFve+lwKgxrBIfE+bDvTHbDANBgkqhkiG9w0BAQsFADAT
+| MREwDwYDVQQDEwhFWFRFUk5BTDAeFw0yNDA0MDIwMzUxMTBaFw0yNDEwMDIwMzUx
+| MTBaMBMxETAPBgNVBAMTCEVYVEVSTkFMMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8A
+| MIIBCgKCAQEA56oZDQTDXOkiRVHOam3X3cCkYXmnyUzkGgfj3d/ivGFrGXSwqF8R
+| Yo6R0GtTDAnA/mDXxPMVIZn6X4R8e+OBjI3l33auLZlulnbVcVV14U7wD7MDdmxi
+| vUO/rGLgQiM4S2kqRbV/TFIY8lLkeQm8pyusEK2SR/d6ePd/w5SgHQayqmbtTvB9
+| VtdMJyqf47A2WkGfp0DbvfUVvXQokekP6wc9uEjRwvJXYf6qRN1MyrcbZwkROQ+d
+| 7YIkIlyDqPF0zlCmlrDtfAxaqJYzQxRAJ1N1SPXwGSd2vFg21kKEhtAdGJnA7B2I
+| p2hBv0tM32KGjOCm6lLNgdMQt7VHFu/8ZQIDAQABoyQwIjATBgNVHSUEDDAKBggr
+| BgEFBQcDATALBgNVHQ8EBAMCBDAwDQYJKoZIhvcNAQELBQADggEBAFislqelLcB7
+| VzIbb+Ch9dEEJIz99tcgpZLw3jT8aEHvLtrH6XAZ1bj3UjWS+RnoXfBOpB7PAYw4
+| SQIyeJb0chLBEdS/OsATF7wEMS/oaHM2fCHYcVBH6+ZR+bmeswJMNFBeSPA1TzB4
+| xPMZUc7Jq3rLepXmoZRoIzIKAoYZRr7eXpJtpO3U4P6seM3abdRbjdzduE5GjARt
+| nqb+qFhLRu9nkxV9EIWTj0qlfNPzTB4Gg9+El/DMcMaEXTJU/gxQ2XKHut6yWSdk
+| H4MtV5ENWDn4hGip+g5AoXgy6KF6s10FBkNZPpEdM14c8wjQwJeMMQINxryw6p/r
+| Y6br6Wk8ydg=
+|_-----END CERTIFICATE-----
+| rdp-ntlm-info: 
+|   Target_Name: EXTERNAL
+|   NetBIOS_Domain_Name: EXTERNAL
+|   NetBIOS_Computer_Name: EXTERNAL
+|   DNS_Domain_Name: EXTERNAL
+|   DNS_Computer_Name: EXTERNAL
+|   Product_Version: 10.0.20348
+|_  System_Time: 2024-04-03T03:55:32+00:00
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-time: 
+|   date: 2024-04-03T03:55:40
+|_  start_date: N/A
+|_clock-skew: mean: 0s, deviation: 0s, median: 0s
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 17086/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 4156/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 45331/udp): CLEAN (Failed to receive data)
+|   Check 4 (port 52002/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+
+Nmap scan report for 192.168.224.247
+Host is up, received user-set (0.074s latency).
+Scanned at 2024-04-02 20:54:07 PDT for 138s
+Not shown: 994 closed tcp ports (conn-refused)
+PORT     STATE SERVICE       REASON  VERSION
+80/tcp   open  http          syn-ack Apache httpd 2.4.54 ((Win64) OpenSSL/1.1.1p PHP/8.1.10)
+|_http-title: RELIA - New Hire Information
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-favicon: Unknown favicon MD5: 6EB4A43CB64C97F76562AF703893C8FD
+|_http-server-header: Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.10
+135/tcp  open  msrpc         syn-ack Microsoft Windows RPC
+139/tcp  open  netbios-ssn   syn-ack Microsoft Windows netbios-ssn
+443/tcp  open  ssl/http      syn-ack Apache httpd 2.4.54 ((Win64) OpenSSL/1.1.1p PHP/8.1.10)
+|_http-favicon: Unknown favicon MD5: 6EB4A43CB64C97F76562AF703893C8FD
+|_http-title: RELIA - New Hire Information
+| ssl-cert: Subject: commonName=localhost
+| Issuer: commonName=localhost
+| Public Key type: rsa
+| Public Key bits: 1024
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2009-11-10T23:48:47
+| Not valid after:  2019-11-08T23:48:47
+| MD5:   a0a4:4cc9:9e84:b26f:9e63:9f9e:d229:dee0
+| SHA-1: b023:8c54:7a90:5bfa:119c:4e8b:acca:eacf:3649:1ff6
+| -----BEGIN CERTIFICATE-----
+| MIIBnzCCAQgCCQC1x1LJh4G1AzANBgkqhkiG9w0BAQUFADAUMRIwEAYDVQQDEwls
+| b2NhbGhvc3QwHhcNMDkxMTEwMjM0ODQ3WhcNMTkxMTA4MjM0ODQ3WjAUMRIwEAYD
+| VQQDEwlsb2NhbGhvc3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMEl0yfj
+| 7K0Ng2pt51+adRAj4pCdoGOVjx1BmljVnGOMW3OGkHnMw9ajibh1vB6UfHxu463o
+| J1wLxgxq+Q8y/rPEehAjBCspKNSq+bMvZhD4p8HNYMRrKFfjZzv3ns1IItw46kgT
+| gDpAl1cMRzVGPXFimu5TnWMOZ3ooyaQ0/xntAgMBAAEwDQYJKoZIhvcNAQEFBQAD
+| gYEAavHzSWz5umhfb/MnBMa5DL2VNzS+9whmmpsDGEG+uR0kM1W2GQIdVHHJTyFd
+| aHXzgVJBQcWTwhp84nvHSiQTDBSaT6cQNQpvag/TaED/SEQpm0VqDFwpfFYuufBL
+| vVNbLkKxbK2XwUvu0RxoLdBMC/89HqrZ0ppiONuQ+X2MtxE=
+|_-----END CERTIFICATE-----
+|_http-server-header: Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.10
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|_  http/1.1
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+445/tcp  open  microsoft-ds? syn-ack
+3389/tcp open  ms-wbt-server syn-ack Microsoft Terminal Services
+|_ssl-date: 2024-04-03T03:56:21+00:00; 0s from scanner time.
+| ssl-cert: Subject: commonName=WEB02
+| Issuer: commonName=WEB02
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2024-04-02T03:51:09
+| Not valid after:  2024-10-02T03:51:09
+| MD5:   f22b:9bf1:9594:98da:b395:098d:f202:d2cf
+| SHA-1: 832f:3545:10e1:9ae2:9511:7e8c:70ba:bf11:931e:0440
+| -----BEGIN CERTIFICATE-----
+| MIICzjCCAbagAwIBAgIQMBzqK4I/dYZGHyAZ1HsbEDANBgkqhkiG9w0BAQsFADAQ
+| MQ4wDAYDVQQDEwVXRUIwMjAeFw0yNDA0MDIwMzUxMDlaFw0yNDEwMDIwMzUxMDla
+| MBAxDjAMBgNVBAMTBVdFQjAyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC
+| AQEAp01R4pjmdmISv24hs9qEOM2/O3Sz6H7b2xSU7CiCOVnzwc7hJaP5raJFd0am
+| 18xDRiOlB4Qks6+snvVeDj/j/gLZh4G4bwfD2G8Wp5lEkwkCQ0qQeMnPaVZxcKM6
+| 8BUrYYPwyjFTczXWE2d/7Prinx7xUsjbZrPy7SqqSxXtIeWoUxAuW+vw6dF/TEPZ
+| ZM4sOD170dolr5bOcRCEtRDMYUeZSVAHZBTwL5RBuh6qPyEdLhRWS5tLTn374KUS
+| Ydse3J7+OrItNpwbBj44ziYmSbPwahfZbhwxWvGGIKbb3KOsrFyvPjT11bk6klz8
+| KlT+5ab1Sloc0xCiDiHiMCT8zQIDAQABoyQwIjATBgNVHSUEDDAKBggrBgEFBQcD
+| ATALBgNVHQ8EBAMCBDAwDQYJKoZIhvcNAQELBQADggEBAGm9FpqKXZDsW5m2iG5w
+| 6sgDJhlv6GSuke7Y6QkiOWajoYxkXUNeCW2l/mzeLE8r5ZIiyKRAD/fWKVWT0dE8
+| xd26juMctbXQNhQZ3rTan/p9JylF0crpij70NsapWS8EKUwiYShT0MWXP49ghOPz
+| hHvzLCCgHkpLCAgH/AfWe7U8hbscivpgoPT8czyz6LpuB+jXxezvMa+/qEiUs7od
+| 5rDivHnA2uNvflShfardw92SIFi+/0Cd8D9wPunM2AvhDuM8H0XrwKcXBjGtCJdg
+| rGwHwexpRgwr4y5mzujqI/OupEiU8wMMYxxMS7IFPz+C5XNWWjhyvN+LRtmM2Jvh
+| BOQ=
+|_-----END CERTIFICATE-----
+| rdp-ntlm-info: 
+|   Target_Name: WEB02
+|   NetBIOS_Domain_Name: WEB02
+|   NetBIOS_Computer_Name: WEB02
+|   DNS_Domain_Name: WEB02
+|   DNS_Computer_Name: WEB02
+|   Product_Version: 10.0.20348
+|_  System_Time: 2024-04-03T03:55:33+00:00
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+|_clock-skew: mean: 0s, deviation: 0s, median: 0s
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 58263/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 10381/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 12958/udp): CLEAN (Failed to receive data)
+|   Check 4 (port 36024/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb2-time: 
+|   date: 2024-04-03T03:55:48
+|_  start_date: N/A
+
+Nmap scan report for 192.168.224.246
+Host is up, received user-set (0.074s latency).
+Scanned at 2024-04-02 20:54:07 PDT for 138s
+Not shown: 997 closed tcp ports (conn-refused)
+PORT     STATE SERVICE  REASON  VERSION
+80/tcp   open  http     syn-ack Apache httpd 2.4.52 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.52 (Ubuntu)
+|_http-title: Code Validation
+443/tcp  open  ssl/http syn-ack Apache httpd 2.4.52 ((Ubuntu))
+|_http-title: Code Validation
+|_http-server-header: Apache/2.4.52 (Ubuntu)
+| ssl-cert: Subject: commonName=demo
+| Subject Alternative Name: DNS:demo
+| Issuer: commonName=demo
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2022-10-12T07:46:27
+| Not valid after:  2032-10-09T07:46:27
+| MD5:   6361:be08:5259:3a75:cd26:f869:1614:3c94
+| SHA-1: 8fa0:04a7:5d03:4c29:44b7:6b14:119f:fd79:3c7e:5093
+| -----BEGIN CERTIFICATE-----
+| MIIC6TCCAdGgAwIBAgIUIN3Z/giwrWikVN/gzzofa98CJ1AwDQYJKoZIhvcNAQEL
+| BQAwDzENMAsGA1UEAwwEZGVtbzAeFw0yMjEwMTIwNzQ2MjdaFw0zMjEwMDkwNzQ2
+| MjdaMA8xDTALBgNVBAMMBGRlbW8wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK
+| AoIBAQCMPw2+IkC55uip8gDmvy+mN/FtQJBck6audIht6POsdrE2GzfhAoxZY9al
+| XkTc3WPOxP2X1I4ea1t1y8SQuX7jomUlNOgkGtVbj+RYzU8Qau7XWSTBMbVkRluc
+| B+w5vPsGL1XGMd35V7Td6ZhotXLwc0j19smwewETujURfSmGCKdwbHztKozyW9Qg
+| QFOtNI4gOHpvMxTYpR3QDkBYvIzaH+FaU8xqrr/GJiFSz8MUhxVPSM2QyqSmsFyE
+| HYijIDbxBNRyf1lAmReLdwpwGqpRvBF1wYfpYyTvjW/j0LQPfvCcCVxD1v/3N3oK
+| VR4/EYqBrCr9umF7Q3w5E4hC0x5VAgMBAAGjPTA7MAkGA1UdEwQCMAAwDwYDVR0R
+| BAgwBoIEZGVtbzAdBgNVHQ4EFgQUqWpscb2cgQbMGE4Nh4vVDLAs55EwDQYJKoZI
+| hvcNAQELBQADggEBACvVHEqW54LzwFNKfLMlbbrSitnXhGc1zgOaYdBnF95weO3j
+| 5gEbGNElednFgWQEZzLz5ruS9i0aiKsQYKuh+AL+QQRdycfCbTxDVTopO9sxFYGd
+| UpSxCGToYe5JULiNpnBpTWPEldc608y2jhpJpsH5UGifvRp/VpHW/3A+9t8oAUeN
+| /SVW3bQ7sLEEvCmHH4E1uJS3k6kBidDY1A9OOxaL0k2v/cB8PONnEMwP4DcmKRA1
+| cVrgXiR8x7E5zcVUPj8cM5+DqSOQTAphAcVbVx2c/K2XMENFZqVUbRFbuZSXVExp
+| TQICNlWeutzCZGE7rREsIUUIigT9erEAvTu28RI=
+|_-----END CERTIFICATE-----
+| tls-alpn: 
+|_  http/1.1
+|_ssl-date: TLS randomness does not represent time
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+2222/tcp open  ssh      syn-ack OpenSSH 8.9p1 Ubuntu 3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 42:2d:8d:48:ad:10:dd:ff:70:25:8b:46:2e:5c:ff:1d (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEpVNr/0MSfOq95rNQVnUXG+NF7yHDkPeFEXylLHxnZSqLAEqWi+z67gxHF0QVSjtaeEVbOnind7C3LKLGe1b8g=
+|   256 aa:4a:c3:27:b1:19:30:d7:63:91:96:ae:63:3c:07:dc (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFcUmhqn+iJNZi0wDswh/Jusg6ZX0SGGoKcsNCB69vQA
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 192.168.224.245
+Host is up, received user-set (0.074s latency).
+Scanned at 2024-04-02 20:54:07 PDT for 138s
+Not shown: 995 closed tcp ports (conn-refused)
+PORT     STATE SERVICE  REASON  VERSION
+21/tcp   open  ftp      syn-ack vsftpd 2.0.8 or later
+|_ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to 192.168.45.189
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 1
+|      vsFTPd 3.0.3 - secure, fast, stable
+|_End of status
+80/tcp   open  http     syn-ack Apache httpd 2.4.49 ((Unix) OpenSSL/1.1.1f mod_wsgi/4.9.4 Python/3.8)
+|_http-title: RELIA Corp.
+|_http-server-header: Apache/2.4.49 (Unix) OpenSSL/1.1.1f mod_wsgi/4.9.4 Python/3.8
+| http-methods: 
+|   Supported Methods: GET POST OPTIONS HEAD TRACE
+|_  Potentially risky methods: TRACE
+443/tcp  open  ssl/http syn-ack Apache httpd 2.4.49 ((Unix) OpenSSL/1.1.1f mod_wsgi/4.9.4 Python/3.8)
+| ssl-cert: Subject: commonName=web01.relia.com/organizationName=RELIA/stateOrProvinceName=Berlin/countryName=DE/localityName=Munich/organizationalUnitName=IT Department
+| Issuer: commonName=web01.relia.com/organizationName=RELIA/stateOrProvinceName=Berlin/countryName=DE/localityName=Munich/organizationalUnitName=IT Department
+| Public Key type: rsa
+| Public Key bits: 4096
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2022-10-12T08:55:44
+| Not valid after:  2032-10-09T08:55:44
+| MD5:   fa8f:53d5:841c:47dc:ac0c:8d5a:3acb:43a7
+| SHA-1: 9fd6:3372:2dfd:ed09:0915:6b60:2604:b238:f02a:eab7
+| -----BEGIN CERTIFICATE-----
+| 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
+|_-----END CERTIFICATE-----
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|_  http/1.1
+| http-methods: 
+|   Supported Methods: GET POST OPTIONS HEAD TRACE
+|_  Potentially risky methods: TRACE
+|_http-server-header: Apache/2.4.49 (Unix) OpenSSL/1.1.1f mod_wsgi/4.9.4 Python/3.8
+|_http-title: RELIA Corp.
+2222/tcp open  ssh      syn-ack OpenSSH 8.2p1 Ubuntu 4ubuntu0.5 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 30:0c:6c:9b:ac:07:47:5e:df:6d:ff:38:63:38:2a:fd (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCkRPaVboTfq+VZYyf1bsUlg+WZrPP1F6fRrA0TNkHmamfuFAhW9XfCiuh2GOnSkNeGUXLcMAgMtbki6uj4l6vTw5/pqM/jBz00be6Ty+g0CDz9gmb+p0iX+8vCeG6aB0vea9bvkjaABticCS1CmUEbfEe/jCn/11c4NmHleCFfVxE8PBRE2OyVWlFQkkcB74O0FS4AOfbnrAx3pAF4rcd7XsTgi4V1e/sKZ8RIcTlueVdnzZEMcpLeZXUR1cXsJ9zwklFLuMWuUjonYC7BFvT+Bf81jlO1/e9B0RxfalfCfeUthSoa2VGwpfvesCdHl0exvy1PXaeR2XUX5ZJ0jmoP7cvj1rb+ZrnUU/Sie0qpVklHpkjggz0li7Mk4h/CI+est9oeHP+UXVv+Xl/jpnXz/RX/1y03wkTe9Pygxo3NsLdrs22/UCQ5GZ5x78UJQBXCCI93KHY1BG28B9V8xT9PGmpFDgjnF3pFuZoMevmeHSVNBlNQV42/qFCJr48XbAM=
+|   256 f3:a9:70:76:c8:d4:c4:17:f4:39:1f:be:58:9d:1f:a5 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBK6SiUV5zqxqNJ9a/p9l+VpxxqiXnYri40OjXMExS/tP0EbTAEpojn4uXKOgR3oEaMmQVmI9QLPTehCFLNJ3iJo=
+|   256 21:a0:79:82:2d:e6:2a:76:11:24:2f:7e:2e:a8:c7:83 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ9WPZpl/+VGWtnGi3tQSn1u5FAiDr9bKTV2xCUqje/c
+8000/tcp open  http     syn-ack Apache httpd 2.4.49 ((Unix) OpenSSL/1.1.1f mod_wsgi/4.9.4 Python/3.8)
+|_http-title: Site doesn't have a title (text/html).
+|_http-server-header: Apache/2.4.49 (Unix) OpenSSL/1.1.1f mod_wsgi/4.9.4 Python/3.8
+| http-methods: 
+|   Supported Methods: GET POST OPTIONS HEAD TRACE
+|_  Potentially risky methods: TRACE
+Service Info: Host: RELIA; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 192.168.224.191
+Host is up, received user-set (0.074s latency).
+Scanned at 2024-04-02 20:54:07 PDT for 138s
+Not shown: 995 closed tcp ports (conn-refused)
+PORT     STATE SERVICE       REASON  VERSION
+80/tcp   open  http          syn-ack Microsoft IIS httpd 10.0
+| http-auth: 
+| HTTP/1.1 401 Unauthorized\x0D
+|_  Basic realm=192.168.224.191
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: 401 - Unauthorized: Access is denied due to invalid credentials.
+135/tcp  open  msrpc         syn-ack Microsoft Windows RPC
+139/tcp  open  netbios-ssn   syn-ack Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds? syn-ack
+3389/tcp open  ms-wbt-server syn-ack Microsoft Terminal Services
+|_ssl-date: 2024-04-03T03:56:21+00:00; 0s from scanner time.
+| rdp-ntlm-info: 
+|   Target_Name: RELIA
+|   NetBIOS_Domain_Name: RELIA
+|   NetBIOS_Computer_Name: LOGIN
+|   DNS_Domain_Name: relia.com
+|   DNS_Computer_Name: login.relia.com
+|   DNS_Tree_Name: relia.com
+|   Product_Version: 10.0.20348
+|_  System_Time: 2024-04-03T03:55:36+00:00
+| ssl-cert: Subject: commonName=login.relia.com
+| Issuer: commonName=login.relia.com
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2024-04-02T03:51:24
+| Not valid after:  2024-10-02T03:51:24
+| MD5:   a11e:74d0:3e26:9798:2cd2:23b4:042e:7ea8
+| SHA-1: 7baa:db80:8004:6091:c748:8c30:31ec:b549:df13:cbc4
+| -----BEGIN CERTIFICATE-----
+| MIIC4jCCAcqgAwIBAgIQdtruqDnQ7o1IYp27loS04zANBgkqhkiG9w0BAQsFADAa
+| MRgwFgYDVQQDEw9sb2dpbi5yZWxpYS5jb20wHhcNMjQwNDAyMDM1MTI0WhcNMjQx
+| MDAyMDM1MTI0WjAaMRgwFgYDVQQDEw9sb2dpbi5yZWxpYS5jb20wggEiMA0GCSqG
+| SIb3DQEBAQUAA4IBDwAwggEKAoIBAQC8DfO9QNR6IxkrhxgIcZJlF9X079dzXb6N
+| Q8qp64tpPKS27rkJXJPbkqNL+46rx10B9pZZ+WH0bo6AEzxfOmlckq9Fe6cyhC6m
+| vhJcO4z58Rw9zf80K9LgSDLIE6+QplWGyTMuI9kSAyfLWlUxse16YCuDqlg+H+LT
+| XHrGkBPsuIrsl+MRWcGJzl7DhhAVCuoN+MW9TgEGbzyos8Sk+KrmnSADFmZB4cy6
+| QfhQJQ6NpZGrc6piG/88fLikkfHg39xjxulOStJBiTqAkTjTonrCmTaCkPKn/m3d
+| 5bSkGasE85nDV7VK0DHBdVyVPNbnJzbseEGNEEWj71yW6EigR5/9AgMBAAGjJDAi
+| MBMGA1UdJQQMMAoGCCsGAQUFBwMBMAsGA1UdDwQEAwIEMDANBgkqhkiG9w0BAQsF
+| AAOCAQEACXRXVXR8GGwZfbEoeWtaYarPb3tckZSBigGZQPztq86zO4qZELPiKxsp
+| s0YCWsbkoQxS9FrZNhHPgGTeMRbhVPo2X88imYAiRArPl8MRMuVnerfgrMl95J+I
+| j4wWtE2MquG6YiReFaHnQXaOxn6x4ePSWz8qooQ6+Yv3yzFgo4uKTdiTeYzNrP66
+| 1BeeUNlgmnOuB6jkA4uTz94wvL56W+gQho+Y7Y4xPHkfZ7ec/Q7jBiNgquC/2PEN
+| zcOLE6hcvFvV3L+RvvuNsslXmdXUSDW8YUx1F7s1id1jBFPqLnXC/fpK9BkG8Nr1
+| Al1W/WvjrrFH0KMIayCzSTLjzPBxNw==
+|_-----END CERTIFICATE-----
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 0s, deviation: 0s, median: 0s
+| smb2-time: 
+|   date: 2024-04-03T03:55:51
+|_  start_date: N/A
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 30372/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 47919/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 6821/udp): CLEAN (Failed to receive data)
+|   Check 4 (port 57822/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+
+Nmap scan report for 192.168.224.189
+Host is up, received user-set (0.074s latency).
+Scanned at 2024-04-02 20:54:07 PDT for 138s
+Not shown: 993 closed tcp ports (conn-refused)
+PORT    STATE SERVICE       REASON  VERSION
+25/tcp  open  smtp          syn-ack hMailServer smtpd
+| smtp-commands: MAIL, SIZE 20480000, AUTH LOGIN, HELP
+|_ 211 DATA HELO EHLO MAIL NOOP QUIT RCPT RSET SAML TURN VRFY
+110/tcp open  pop3          syn-ack hMailServer pop3d
+|_pop3-capabilities: USER TOP UIDL
+135/tcp open  msrpc         syn-ack Microsoft Windows RPC
+139/tcp open  netbios-ssn   syn-ack Microsoft Windows netbios-ssn
+143/tcp open  imap          syn-ack hMailServer imapd
+|_imap-capabilities: completed IDLE NAMESPACE CHILDREN QUOTA RIGHTS=texkA0001 ACL SORT CAPABILITY OK IMAP4 IMAP4rev1
+445/tcp open  microsoft-ds? syn-ack
+587/tcp open  smtp          syn-ack hMailServer smtpd
+| smtp-commands: MAIL, SIZE 20480000, AUTH LOGIN, HELP
+|_ 211 DATA HELO EHLO MAIL NOOP QUIT RCPT RSET SAML TURN VRFY
+Service Info: Host: MAIL; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 18226/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 54478/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 36637/udp): CLEAN (Failed to receive data)
+|   Check 4 (port 28753/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb2-time: 
+|   date: 2024-04-03T03:55:56
+|_  start_date: N/A
+|_clock-skew: 0s
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+
+Nmap scan report for 192.168.224.250
+Host is up, received user-set (0.074s latency).
+Scanned at 2024-04-02 20:54:07 PDT for 138s
+Not shown: 996 closed tcp ports (conn-refused)
+PORT     STATE SERVICE            REASON  VERSION
+135/tcp  open  msrpc              syn-ack Microsoft Windows RPC
+139/tcp  open  netbios-ssn        syn-ack Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?      syn-ack
+3389/tcp open  ssl/ms-wbt-server? syn-ack
+|_ssl-date: 2024-04-03T03:56:21+00:00; 0s from scanner time.
+| rdp-ntlm-info: 
+|   Target_Name: WINPREP
+|   NetBIOS_Domain_Name: WINPREP
+|   NetBIOS_Computer_Name: WINPREP
+|   DNS_Domain_Name: WINPREP
+|   DNS_Computer_Name: WINPREP
+|   Product_Version: 10.0.22000
+|_  System_Time: 2024-04-03T03:55:33+00:00
+| ssl-cert: Subject: commonName=WINPREP
+| Issuer: commonName=WINPREP
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2024-03-07T05:25:18
+| Not valid after:  2024-09-06T05:25:18
+| MD5:   51fe:9a6b:977e:78b5:d2d2:35a0:4b19:cb0a
+| SHA-1: 9ec8:635a:9ebb:0933:560e:50e5:16ed:948c:4b98:430d
+| -----BEGIN CERTIFICATE-----
+| MIIC0jCCAbqgAwIBAgIQVyQ8hwp5ja5On/WxoMbIQzANBgkqhkiG9w0BAQsFADAS
+| MRAwDgYDVQQDEwdXSU5QUkVQMB4XDTI0MDMwNzA1MjUxOFoXDTI0MDkwNjA1MjUx
+| OFowEjEQMA4GA1UEAxMHV0lOUFJFUDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCC
+| AQoCggEBALgBTSknRu2n0JD9KIyDYjk/bFfD5N7iY4IQ6/+tgkzTO7N3LfpMn0iB
+| y4El/3mwFEZk58RSrbxfbuBmKTN7U3k1skhoOt7tK557/Nbl81M/YM2QqzmT8Kho
+| WHXLo5bI1ePY+VZHkgLBvWuNohutkcLnnADFO/9YvaWorPBcB43T6630cfPCLYJC
+| xTSXOYKMmVG/mu79fbwZDng44QmAKGJjIpmU9a+OJCZEsHE5DwMav+V2HWjiUrU4
+| 47JdUqOMpetrPp/BsE4ztCBlD5qXVQAycNYzjyXCtu//DwpZfNhS+RExkxjX34X9
+| syVhpIJnvsfOdKFwH5lBIzf1YrT2dd0CAwEAAaMkMCIwEwYDVR0lBAwwCgYIKwYB
+| BQUHAwEwCwYDVR0PBAQDAgQwMA0GCSqGSIb3DQEBCwUAA4IBAQB2BaKxWEpYJ+Lb
+| slcgSZcKq+NHYZMYexA8Ip+1j44zsAKdfH3cfTEh3gMGNxjWRuW7K0Zr2/enIcKW
+| LmyH7M2Nqz3c9+g7jR7Rt8uhniHVrF59A0fMw+HTEs9ofDIFU92ap1Yn/bx51cC3
+| ITCXykxjDvnb4oiqkIMolps3fC71Y4+f9TXeHoOMSoJ0PQqS9eqC/bnWanpWhTVQ
+| LGGGTk071eHTvP5jxUOe/nqDs5HYzqktcp3DAf7QtcL38a0csZmMFg6MWrMTcdWB
+| jsx1a0FUIf9Qk+00n7dlipCnT7MwGqMwH6n1njs/Zsvkh90oRgE5Ett95gX3L5B9
+| KiBcAO4P
+|_-----END CERTIFICATE-----
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-time: 
+|   date: 2024-04-03T03:56:00
+|_  start_date: N/A
+|_clock-skew: mean: 0s, deviation: 0s, median: 0s
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 25404/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 37595/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 55819/udp): CLEAN (Failed to receive data)
+|   Check 4 (port 16210/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 20:56
+Completed NSE at 20:56, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 20:56
+Completed NSE at 20:56, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 20:56
+Completed NSE at 20:56, 0.00s elapsed
+Post-scan script results:
+| clock-skew: 
+|   0s: 
+|     192.168.224.250
+|     192.168.224.189
+|     192.168.224.248
+|     192.168.224.247
+|     192.168.224.249
+|_    192.168.224.191
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 8 IP addresses (8 hosts up) scanned in 138.67 seconds

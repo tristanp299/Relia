@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Tue Apr  2 21:05:12 2024 as: nmap -vv -&#45;reason -Pn -T4 -T4 -&#45;min-rate=500 -sV -p 14020 &quot;-&#45;script=banner,(ftp* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/kali/Documents/Relia/results/192.168.224.247/scans/tcp14020/tcp_14020_ftp_nmap.txt -oX /home/kali/Documents/Relia/results/192.168.224.247/scans/tcp14020/xml/tcp_14020_ftp_nmap.xml 192.168.224.247 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -T4 -&#45;min-rate=500 -sV -p 14020 &quot;-&#45;script=banner,(ftp* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/kali/Documents/Relia/results/192.168.224.247/scans/tcp14020/tcp_14020_ftp_nmap.txt -oX /home/kali/Documents/Relia/results/192.168.224.247/scans/tcp14020/xml/tcp_14020_ftp_nmap.xml 192.168.224.247" start="1712117112" startstr="Tue Apr  2 21:05:12 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="14020"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1712117112"/>
+<taskend task="NSE" time="1712117112"/>
+<taskbegin task="NSE" time="1712117112"/>
+<taskend task="NSE" time="1712117112"/>
+<taskbegin task="NSE" time="1712117112"/>
+<taskend task="NSE" time="1712117112"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1712117112"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1712117112"/>
+<taskbegin task="SYN Stealth Scan" time="1712117112"/>
+<taskend task="SYN Stealth Scan" time="1712117112" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1712117113"/>
+<taskend task="Service scan" time="1712117124" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1712117124"/>
+<taskend task="NSE" time="1712117124"/>
+<taskbegin task="NSE" time="1712117124"/>
+<taskend task="NSE" time="1712117126"/>
+<taskbegin task="NSE" time="1712117126"/>
+<taskend task="NSE" time="1712117126"/>
+<host starttime="1712117112" endtime="1712117126"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.224.247" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="14020"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="ftp" product="FileZilla ftpd" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:filezilla-project:filezilla_server</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="banner" output="220 RELIA FTP Server for DEV resources. Please contact your man&#xa;ager for access."/><script id="ftp-bounce" output="bounce working!"/><script id="ftp-anon" output="Anonymous FTP login allowed (FTP code 230)&#xa;-r-&#45;r-&#45;r-&#45; 1 ftp ftp         237639 Nov 04  2022 umbraco.pdf"/><script id="ftp-syst" output="&#xa;  SYST: UNIX emulated by FileZilla"><elem key="SYST">UNIX emulated by FileZilla</elem>
+</script></port>
+</ports>
+<times srtt="73904" rttvar="73904" to="369520"/>
+</host>
+<taskbegin task="NSE" time="1712117126"/>
+<taskend task="NSE" time="1712117126"/>
+<taskbegin task="NSE" time="1712117126"/>
+<taskend task="NSE" time="1712117126"/>
+<taskbegin task="NSE" time="1712117126"/>
+<taskend task="NSE" time="1712117126"/>
+<runstats><finished time="1712117126" timestr="Tue Apr  2 21:05:26 2024" summary="Nmap done at Tue Apr  2 21:05:26 2024; 1 IP address (1 host up) scanned in 14.33 seconds" elapsed="14.33" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

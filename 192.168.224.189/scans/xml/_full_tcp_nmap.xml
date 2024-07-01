@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Tue Apr  2 21:02:45 2024 as: nmap -vv -&#45;reason -Pn -T4 -T4 -&#45;min-rate=500 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/kali/Documents/Relia/results/192.168.224.189/scans/_full_tcp_nmap.txt -oX /home/kali/Documents/Relia/results/192.168.224.189/scans/xml/_full_tcp_nmap.xml 192.168.224.189 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -T4 -&#45;min-rate=500 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/kali/Documents/Relia/results/192.168.224.189/scans/_full_tcp_nmap.txt -oX /home/kali/Documents/Relia/results/192.168.224.189/scans/xml/_full_tcp_nmap.xml 192.168.224.189" start="1712116965" startstr="Tue Apr  2 21:02:45 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1712116965"/>
+<taskend task="NSE" time="1712116965"/>
+<taskbegin task="NSE" time="1712116965"/>
+<taskend task="NSE" time="1712116965"/>
+<taskbegin task="NSE" time="1712116965"/>
+<taskend task="NSE" time="1712116965"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1712116965"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1712116965"/>
+<taskbegin task="SYN Stealth Scan" time="1712116965"/>
+<taskprogress task="SYN Stealth Scan" time="1712116996" percent="19.71" remaining="127" etc="1712117122"/>
+<taskprogress task="SYN Stealth Scan" time="1712117026" percent="39.24" remaining="95" etc="1712117120"/>
+<taskprogress task="SYN Stealth Scan" time="1712117056" percent="59.52" remaining="62" etc="1712117118"/>
+<taskprogress task="SYN Stealth Scan" time="1712117086" percent="79.87" remaining="31" etc="1712117116"/>
+<taskend task="SYN Stealth Scan" time="1712117119" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1712117120"/>
+<taskprogress task="Service scan" time="1712117187" percent="56.25" remaining="53" etc="1712117239"/>
+<taskend task="Service scan" time="1712117212" extrainfo="16 services on 1 host"/>
+<taskbegin task="Traceroute" time="1712117227"/>
+<taskend task="Traceroute" time="1712117230"/>
+<taskbegin task="Parallel DNS resolution of 3 hosts." time="1712117230"/>
+<taskend task="Parallel DNS resolution of 3 hosts." time="1712117230"/>
+<taskbegin task="NSE" time="1712117230"/>
+<taskend task="NSE" time="1712117240"/>
+<taskbegin task="NSE" time="1712117240"/>
+<taskend task="NSE" time="1712117247"/>
+<taskbegin task="NSE" time="1712117247"/>
+<taskend task="NSE" time="1712117247"/>
+<host starttime="1712116965" endtime="1712117247"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.224.189" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65519">
+<extrareasons reason="reset" count="65519" proto="tcp" ports="1-24,26-109,111-134,136-138,140-142,144-444,446-586,588-5984,5986-47000,47002-49663,49671-65535"/>
+</extraports>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="smtp" product="hMailServer smtpd" hostname="MAIL" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="smtp-commands" output="MAIL, SIZE 20480000, AUTH LOGIN, HELP&#xa; 211 DATA HELO EHLO MAIL NOOP QUIT RCPT RSET SAML TURN VRFY"/></port>
+<port protocol="tcp" portid="110"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="pop3" product="hMailServer pop3d" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="pop3-capabilities" output="TOP UIDL USER"/></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="143"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="imap" product="hMailServer imapd" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="imap-capabilities" output="RIGHTS=texkA0001 completed CAPABILITY ACL IDLE QUOTA IMAP4rev1 OK CHILDREN NAMESPACE SORT IMAP4"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="587"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="smtp" product="hMailServer smtpd" hostname="MAIL" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="smtp-commands" output="MAIL, SIZE 20480000, AUTH LOGIN, HELP&#xa; 211 DATA HELO EHLO MAIL NOOP QUIT RCPT RSET SAML TURN VRFY"/></port>
+<port protocol="tcp" portid="5985"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+</script><script id="http-title" output="Not Found"><elem key="title">Not Found</elem>
+</script></port>
+<port protocol="tcp" portid="47001"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="49664"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49665"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49666"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49667"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49668"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49669"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49670"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="25"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="36849"/>
+<osmatch name="Microsoft Windows Server 2022" accuracy="89" line="108094">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2022" accuracy="89"/>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=7.94SVN%E=4%D=4/2%OT=25%CT=1%CU=36849%PV=Y%DS=4%DC=T%G=Y%TM=660CD&#xa;OS:5FF%P=aarch64-unknown-linux-gnu)SEQ(SP=105%GCD=1%ISR=107%TI=RD%TS=B)SEQ(&#xa;OS:SP=105%GCD=1%ISR=107%TI=RD%TS=C)OPS(O1=M551NW8ST11%O2=M551NW8ST11%O3=M55&#xa;OS:1NW8NNT11%O4=M551NW8ST11%O5=M551NW8ST11%O6=M551ST11)WIN(W1=FFFF%W2=FFFF%&#xa;OS:W3=FFFF%W4=FFFF%W5=FFFF%W6=FFDC)ECN(R=Y%DF=Y%T=80%W=FFFF%O=M551NW8NNS%CC&#xa;OS:=N%Q=)ECN(R=Y%DF=Y%T=80%W=FFFF%O=M551NW8NNS%CC=Y%Q=)T1(R=Y%DF=Y%T=80%S=O&#xa;OS:%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=N)T5(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=&#xa;OS:AR%O=%RD=0%Q=)T6(R=N)T7(R=N)U1(R=Y%DF=N%T=80%IPL=164%UN=0%RIPL=G%RID=G%R&#xa;OS:IPCK=G%RUCK=990D%RUD=G)IE(R=N)&#xa;"/>
+</os>
+<uptime seconds="451" lastboot="Tue Apr  2 20:59:56 2024"/>
+<distance value="4"/>
+<tcpsequence index="261" difficulty="Good luck!" values="F534A3F1,128B48CF,2DA7DC26,4C6D51D,EB0C0691,714B103C"/>
+<ipidsequence class="Randomized" values="BACD,BACE,BACF,BAC0,BAC1,BAC2"/>
+<tcptssequence class="other" values="11438F,1143ED,11445A,1140C5,114128,11418E"/>
+<hostscript><script id="smb2-time" output="&#xa;  date: 2024-04-03T04:07:13&#xa;  start_date: N/A"><elem key="date">2024-04-03T04:07:13</elem>
+<elem key="start_date">N/A</elem>
+</script><script id="p2p-conficker" output="&#xa;  Checking for Conficker.C or higher...&#xa;  Check 1 (port 18226/tcp): CLEAN (Couldn&apos;t connect)&#xa;  Check 2 (port 54478/tcp): CLEAN (Couldn&apos;t connect)&#xa;  Check 3 (port 36637/udp): CLEAN (Failed to receive data)&#xa;  Check 4 (port 28753/udp): CLEAN (Timeout)&#xa;  0/4 checks are positive: Host is CLEAN or ports are blocked&#xa;"/><script id="smb2-security-mode" output="&#xa;  3:1:1: &#xa;    Message signing enabled but not required"><table key="3:1:1">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script><script id="clock-skew" output="0s"><elem key="median">0</elem>
+<elem key="stddev">0</elem>
+<elem key="count">1</elem>
+<elem key="mean">0</elem>
+</script></hostscript><trace port="8888" proto="tcp">
+<hop ttl="1" ipaddr="192.168.45.1" rtt="73.49"/>
+<hop ttl="2" ipaddr="192.168.45.254" rtt="73.47"/>
+<hop ttl="4" ipaddr="192.168.224.189" rtt="80.08"/>
+</trace>
+<times srtt="72875" rttvar="15576" to="135179"/>
+</host>
+<taskbegin task="NSE" time="1712117247"/>
+<taskend task="NSE" time="1712117247"/>
+<taskbegin task="NSE" time="1712117247"/>
+<taskend task="NSE" time="1712117247"/>
+<taskbegin task="NSE" time="1712117247"/>
+<taskend task="NSE" time="1712117247"/>
+<runstats><finished time="1712117247" timestr="Tue Apr  2 21:07:27 2024" summary="Nmap done at Tue Apr  2 21:07:27 2024; 1 IP address (1 host up) scanned in 282.38 seconds" elapsed="282.38" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

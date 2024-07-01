@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Tue Apr  2 21:01:03 2024 as: nmap -vv -&#45;reason -Pn -T4 -T4 -&#45;min-rate=500 -sV -p 443 &quot;-&#45;script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)&quot; -oN /home/kali/Documents/Relia/results/192.168.224.246/scans/tcp443/tcp_443_https_nmap.txt -oX /home/kali/Documents/Relia/results/192.168.224.246/scans/tcp443/xml/tcp_443_https_nmap.xml 192.168.224.246 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -T4 -&#45;min-rate=500 -sV -p 443 &quot;-&#45;script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)&quot; -oN /home/kali/Documents/Relia/results/192.168.224.246/scans/tcp443/tcp_443_https_nmap.txt -oX /home/kali/Documents/Relia/results/192.168.224.246/scans/tcp443/xml/tcp_443_https_nmap.xml 192.168.224.246" start="1712116863" startstr="Tue Apr  2 21:01:03 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="443"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1712116863"/>
+<taskend task="NSE" time="1712116863"/>
+<taskbegin task="NSE" time="1712116863"/>
+<taskend task="NSE" time="1712116863"/>
+<taskbegin task="NSE" time="1712116863"/>
+<taskend task="NSE" time="1712116863"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1712116863"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1712116863"/>
+<taskbegin task="SYN Stealth Scan" time="1712116863"/>
+<taskend task="SYN Stealth Scan" time="1712116864" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1712116864"/>
+<taskend task="Service scan" time="1712116877" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1712116877"/>
+<taskprogress task="NSE" time="1712116908" percent="63.89" remaining="18" etc="1712116926"/>
+<taskprogress task="NSE" time="1712116938" percent="80.62" remaining="15" etc="1712116953"/>
+<taskprogress task="NSE" time="1712116968" percent="82.76" remaining="19" etc="1712116987"/>
+<taskprogress task="NSE" time="1712116998" percent="83.45" remaining="25" etc="1712117022"/>
+<taskprogress task="NSE" time="1712117028" percent="85.57" remaining="26" etc="1712117053"/>
+<taskprogress task="NSE" time="1712117058" percent="98.38" remaining="3" etc="1712117061"/>
+<taskprogress task="NSE" time="1712117088" percent="99.68" remaining="1" etc="1712117089"/>
+<taskend task="NSE" time="1712117110"/>
+<taskbegin task="NSE" time="1712117110"/>
+<taskend task="NSE" time="1712117128"/>
+<taskbegin task="NSE" time="1712117128"/>
+<taskend task="NSE" time="1712117141"/>
+<host starttime="1712116863" endtime="1712117141"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.224.246" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="61"/><service name="http" product="Apache httpd" version="2.4.52" extrainfo="(Ubuntu)" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.52</cpe></service><script id="http-headers" output="&#xa;  Date: Wed, 03 Apr 2024 04:03:49 GMT&#xa;  Server: Apache/2.4.52 (Ubuntu)&#xa;  Vary: Accept-Encoding&#xa;  Content-Length: 1516&#xa;  Connection: close&#xa;  Content-Type: text/html; charset=UTF-8&#xa;  &#xa;  (Request type: GET)&#xa;"/><script id="http-wordpress-users" output="[Error] Wordpress installation was not found. We couldn&apos;t find wp-login.php"/><script id="http-stored-xss" output="Couldn&apos;t find any stored XSS vulnerabilities."/><script id="http-csrf" output="Couldn&apos;t find any CSRF vulnerabilities."/><script id="http-fileupload-exploiter" output="&#xa;  &#xa;    Couldn&apos;t find a file-type field."><table>
+<elem>Couldn&apos;t find a file-type field.</elem>
+</table>
+</script><script id="http-dombased-xss" output="Couldn&apos;t find any DOM based XSS."/><script id="http-chrono" output="Request times for /; avg: 536.13ms; min: 377.77ms; max: 1117.07ms"/><script id="http-errors" output="&#xa;Spidering limited to: maxpagecount=40; withinhost=192.168.224.246&#xa;  Found the following error pages: &#xa;  &#xa;  Error Code: 404&#xa;  &#x9;http://192.168.224.246:443/css/styles.css&#xa;"/><script id="http-malware-host" output="Host appears to be clean"/><script id="http-feed" output="Couldn&apos;t find any feeds."/><script id="http-referer-checker" output="Couldn&apos;t find any cross-domain scripts."/><script id="http-mobileversion-checker" output="No mobile version detected."/><script id="http-traceroute" output="ERROR: Script execution failed (use -d to debug)"/><script id="ssl-cert" output="Subject: commonName=demo&#xa;Subject Alternative Name: DNS:demo&#xa;Issuer: commonName=demo&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2022-10-12T07:46:27&#xa;Not valid after:  2032-10-09T07:46:27&#xa;MD5:   6361:be08:5259:3a75:cd26:f869:1614:3c94&#xa;SHA-1: 8fa0:04a7:5d03:4c29:44b7:6b14:119f:fd79:3c7e:5093&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC6TCCAdGgAwIBAgIUIN3Z/giwrWikVN/gzzofa98CJ1AwDQYJKoZIhvcNAQEL&#xa;BQAwDzENMAsGA1UEAwwEZGVtbzAeFw0yMjEwMTIwNzQ2MjdaFw0zMjEwMDkwNzQ2&#xa;MjdaMA8xDTALBgNVBAMMBGRlbW8wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK&#xa;AoIBAQCMPw2+IkC55uip8gDmvy+mN/FtQJBck6audIht6POsdrE2GzfhAoxZY9al&#xa;XkTc3WPOxP2X1I4ea1t1y8SQuX7jomUlNOgkGtVbj+RYzU8Qau7XWSTBMbVkRluc&#xa;B+w5vPsGL1XGMd35V7Td6ZhotXLwc0j19smwewETujURfSmGCKdwbHztKozyW9Qg&#xa;QFOtNI4gOHpvMxTYpR3QDkBYvIzaH+FaU8xqrr/GJiFSz8MUhxVPSM2QyqSmsFyE&#xa;HYijIDbxBNRyf1lAmReLdwpwGqpRvBF1wYfpYyTvjW/j0LQPfvCcCVxD1v/3N3oK&#xa;VR4/EYqBrCr9umF7Q3w5E4hC0x5VAgMBAAGjPTA7MAkGA1UdEwQCMAAwDwYDVR0R&#xa;BAgwBoIEZGVtbzAdBgNVHQ4EFgQUqWpscb2cgQbMGE4Nh4vVDLAs55EwDQYJKoZI&#xa;hvcNAQELBQADggEBACvVHEqW54LzwFNKfLMlbbrSitnXhGc1zgOaYdBnF95weO3j&#xa;5gEbGNElednFgWQEZzLz5ruS9i0aiKsQYKuh+AL+QQRdycfCbTxDVTopO9sxFYGd&#xa;UpSxCGToYe5JULiNpnBpTWPEldc608y2jhpJpsH5UGifvRp/VpHW/3A+9t8oAUeN&#xa;/SVW3bQ7sLEEvCmHH4E1uJS3k6kBidDY1A9OOxaL0k2v/cB8PONnEMwP4DcmKRA1&#xa;cVrgXiR8x7E5zcVUPj8cM5+DqSOQTAphAcVbVx2c/K2XMENFZqVUbRFbuZSXVExp&#xa;TQICNlWeutzCZGE7rREsIUUIigT9erEAvTu28RI=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="commonName">demo</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">demo</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">8C3F0DBE2240B9E6E8A9F200E6BF2FA637F16D40905C93A6AE74886DE8F3AC76B1361B37E1028C5963D6A55E44DCDD63CEC4FD97D48E1E6B5B75CBC490B97EE3A2652534E8241AD55B8FE458CD4F106AEED75924C131B564465B9C07EC39BCFB062F55C631DDF957B4DDE99868B572F07348F5F6C9B07B0113BA35117D298608A7706C7CED2A8CF25BD4204053AD348E20387A6F3314D8A51DD00E4058BC8CDA1FE15A53CC6AAEBFC6262152CFC31487154F48CD90CAA4A6B05C841D88A32036F104D4727F594099178B770A701AAA51BC1175C187E96324EF8D6FE3D0B40F7EF09C095C43D6FFF7377A0A551E3F118A81AC2AFDBA617B437C39138842D31E55</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:demo</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">A9:6A:6C:71:BD:9C:81:06:CC:18:4E:0D:87:8B:D5:0C:B0:2C:E7:91</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2022-10-12T07:46:27</elem>
+<elem key="notAfter">2032-10-09T07:46:27</elem>
+</table>
+<elem key="md5">6361be0852593a75cd26f86916143c94</elem>
+<elem key="sha1">8fa004a75d034c2944b76b14119ffd793c7e5093</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC6TCCAdGgAwIBAgIUIN3Z/giwrWikVN/gzzofa98CJ1AwDQYJKoZIhvcNAQEL&#xa;BQAwDzENMAsGA1UEAwwEZGVtbzAeFw0yMjEwMTIwNzQ2MjdaFw0zMjEwMDkwNzQ2&#xa;MjdaMA8xDTALBgNVBAMMBGRlbW8wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK&#xa;AoIBAQCMPw2+IkC55uip8gDmvy+mN/FtQJBck6audIht6POsdrE2GzfhAoxZY9al&#xa;XkTc3WPOxP2X1I4ea1t1y8SQuX7jomUlNOgkGtVbj+RYzU8Qau7XWSTBMbVkRluc&#xa;B+w5vPsGL1XGMd35V7Td6ZhotXLwc0j19smwewETujURfSmGCKdwbHztKozyW9Qg&#xa;QFOtNI4gOHpvMxTYpR3QDkBYvIzaH+FaU8xqrr/GJiFSz8MUhxVPSM2QyqSmsFyE&#xa;HYijIDbxBNRyf1lAmReLdwpwGqpRvBF1wYfpYyTvjW/j0LQPfvCcCVxD1v/3N3oK&#xa;VR4/EYqBrCr9umF7Q3w5E4hC0x5VAgMBAAGjPTA7MAkGA1UdEwQCMAAwDwYDVR0R&#xa;BAgwBoIEZGVtbzAdBgNVHQ4EFgQUqWpscb2cgQbMGE4Nh4vVDLAs55EwDQYJKoZI&#xa;hvcNAQELBQADggEBACvVHEqW54LzwFNKfLMlbbrSitnXhGc1zgOaYdBnF95weO3j&#xa;5gEbGNElednFgWQEZzLz5ruS9i0aiKsQYKuh+AL+QQRdycfCbTxDVTopO9sxFYGd&#xa;UpSxCGToYe5JULiNpnBpTWPEldc608y2jhpJpsH5UGifvRp/VpHW/3A+9t8oAUeN&#xa;/SVW3bQ7sLEEvCmHH4E1uJS3k6kBidDY1A9OOxaL0k2v/cB8PONnEMwP4DcmKRA1&#xa;cVrgXiR8x7E5zcVUPj8cM5+DqSOQTAphAcVbVx2c/K2XMENFZqVUbRFbuZSXVExp&#xa;TQICNlWeutzCZGE7rREsIUUIigT9erEAvTu28RI=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="http-security-headers" output="&#xa;  Strict_Transport_Security: &#xa;    HSTS not configured in HTTPS Server"><table key="Strict_Transport_Security">
+<elem>HSTS not configured in HTTPS Server</elem>
+</table>
+</script><script id="http-vhosts" output="&#xa;128 names had status ERROR"/><script id="http-userdir-enum" output="Potential Users: root, admin, administrator, webadmin, sysadmin, netadmin, guest, user, web, test"/><script id="http-devframework" output="Couldn&apos;t determine the underlying framework or CMS. Try increasing &apos;httpspider.maxpagecount&apos; value to spider more pages."/><script id="http-drupal-enum" output="Nothing found amongst the top 100 resources,use -&#45;script-args number=&lt;number|all&gt; for deeper analysis)"/><script id="http-jsonp-detection" output="Couldn&apos;t find any JSONP endpoints."/><script id="http-vuln-cve2014-3704" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-aspnet-debug" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-sitemap-generator" output="&#xa;  Directory structure:&#xa;    /&#xa;      Other: 1&#xa;    /css/&#xa;      css: 1&#xa;    /icons/&#xa;      gif: 3&#xa;    /js/&#xa;      Other: 1; js: 2&#xa;  Longest directory structure:&#xa;    Depth: 1&#xa;    Dir: /js/&#xa;  Total files found (by extension):&#xa;    Other: 2; css: 1; gif: 3; js: 2&#xa;"/><script id="http-title" output="400 Bad Request"><elem key="title">400 Bad Request</elem>
+</script><script id="http-useragent-tester" output="&#xa;  Status for browser useragent: 200&#xa;  Allowed User Agents: &#xa;    Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)&#xa;    libwww&#xa;    lwp-trivial&#xa;    libcurl-agent/1.0&#xa;    PHP/&#xa;    Python-urllib/2.5&#xa;    GT::WWW&#xa;    MFC_Tear_Sample&#xa;    HTTP::Lite&#xa;    PHPCrawl&#xa;    URI::Fetch&#xa;    http client&#xa;    Wget/1.13.4 (linux-gnu)&#xa;    WWW-Mechanize/1.34&#xa;  Change in Status Code: &#xa;    Zend_Http_Client: 400&#xa;    PECL::HTTP: 400&#xa;    Snoopy: 400"><elem key="Status for browser useragent">200</elem>
+<table key="Allowed User Agents">
+<elem>Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)</elem>
+<elem>libwww</elem>
+<elem>lwp-trivial</elem>
+<elem>libcurl-agent/1.0</elem>
+<elem>PHP/</elem>
+<elem>Python-urllib/2.5</elem>
+<elem>GT::WWW</elem>
+<elem>MFC_Tear_Sample</elem>
+<elem>HTTP::Lite</elem>
+<elem>PHPCrawl</elem>
+<elem>URI::Fetch</elem>
+<elem>http client</elem>
+<elem>Wget/1.13.4 (linux-gnu)</elem>
+<elem>WWW-Mechanize/1.34</elem>
+</table>
+<table key="Change in Status Code">
+<elem key="Zend_Http_Client">400</elem>
+<elem key="PECL::HTTP">400</elem>
+<elem key="Snoopy">400</elem>
+</table>
+</script><script id="ssl-enum-ciphers" output="&#xa;  TLSv1.3: &#xa;    ciphers: &#xa;      TLS_AKE_WITH_AES_128_GCM_SHA256 (ecdh_x25519) - A&#xa;      TLS_AKE_WITH_AES_256_GCM_SHA384 (ecdh_x25519) - A&#xa;      TLS_AKE_WITH_CHACHA20_POLY1305_SHA256 (ecdh_x25519) - A&#xa;    cipher preference: client&#xa;  least strength: A"><table key="TLSv1.3">
+<table key="ciphers">
+<table>
+<elem key="kex_info">ecdh_x25519</elem>
+<elem key="name">TLS_AKE_WITH_AES_128_GCM_SHA256</elem>
+<elem key="strength">A</elem>
+</table>
+<table>
+<elem key="kex_info">ecdh_x25519</elem>
+<elem key="name">TLS_AKE_WITH_AES_256_GCM_SHA384</elem>
+<elem key="strength">A</elem>
+</table>
+<table>
+<elem key="kex_info">ecdh_x25519</elem>
+<elem key="name">TLS_AKE_WITH_CHACHA20_POLY1305_SHA256</elem>
+<elem key="strength">A</elem>
+</table>
+</table>
+<elem key="cipher preference">client</elem>
+</table>
+<elem key="least strength">A</elem>
+</script><script id="http-sql-injection" output="&#xa;  Possible sqli for queries:&#xa;    http://192.168.224.246:443/js/?C=S%3BO%3DA%27%20OR%20sqlspider&#xa;    http://192.168.224.246:443/js/?C=M%3BO%3DA%27%20OR%20sqlspider&#xa;    http://192.168.224.246:443/js/?C=D%3BO%3DA%27%20OR%20sqlspider&#xa;    http://192.168.224.246:443/js/?C=N%3BO%3DD%27%20OR%20sqlspider&#xa;    http://192.168.224.246:443/js/?C=S%3BO%3DD%27%20OR%20sqlspider&#xa;    http://192.168.224.246:443/js/?C=N%3BO%3DA%27%20OR%20sqlspider&#xa;    http://192.168.224.246:443/js/?C=M%3BO%3DA%27%20OR%20sqlspider&#xa;    http://192.168.224.246:443/js/?C=D%3BO%3DA%27%20OR%20sqlspider&#xa;    http://192.168.224.246:443/js/?C=S%3BO%3DA%27%20OR%20sqlspider&#xa;    http://192.168.224.246:443/js/?C=N%3BO%3DA%27%20OR%20sqlspider&#xa;    http://192.168.224.246:443/js/?C=M%3BO%3DD%27%20OR%20sqlspider&#xa;    http://192.168.224.246:443/js/?C=D%3BO%3DA%27%20OR%20sqlspider&#xa;    http://192.168.224.246:443/js/?C=S%3BO%3DA%27%20OR%20sqlspider&#xa;"/><script id="http-wordpress-enum" output="&#xa;Search limited to top 100 themes/plugins&#xa;  themes&#xa;    twentyeleven&#xa;"><table key="twentyeleven">
+<elem key="path">/wp-content/themes/twentyeleven/</elem>
+<elem key="category">themes</elem>
+<elem key="name">twentyeleven</elem>
+</table>
+<elem key="title">Search limited to top 100 themes/plugins</elem>
+</script><script id="http-fetch" output="Please enter the complete path of the directory to save data in."><elem key="ERROR">Please enter the complete path of the directory to save data in.</elem>
+</script><script id="http-comments-displayer" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=192.168.224.246&#xa;    &#xa;    Path: http://192.168.224.246:443/css/bootstrap.min.css&#xa;    Line number: 1&#xa;    Comment: &#xa;        /*!&#xa;         * Bootstrap v3.3.7 (http://getbootstrap.com)&#xa;         * Copyright 2011-2016 Twitter, Inc.&#xa;         * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)&#xa;         */&#xa;    &#xa;    Path: http://192.168.224.246:443/&#xa;    Line number: 14&#xa;    Comment: &#xa;        &lt;!-&#45; &lt;link rel=&quot;stylesheet&quot; href=&quot;css/styles.css&quot; /&gt; -&#45;&gt;&#xa;    &#xa;    Path: http://192.168.224.246:443/js/jquery-1.12.4.min.js&#xa;    Line number: 1&#xa;    Comment: &#xa;        /*! jQuery v1.12.4 | (c) jQuery Foundation | jquery.org/license */&#xa;    &#xa;    Path: http://192.168.224.246:443/css/bootstrap.min.css&#xa;    Line number: 6&#xa;    Comment: &#xa;        /*# sourceMappingURL=bootstrap.min.css.map */&#xa;    &#xa;    Path: http://192.168.224.246:443/css/bootstrap.min.css&#xa;    Line number: 5&#xa;    Comment: &#xa;        /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */&#xa;    &#xa;    Path: http://192.168.224.246:443/css/bootstrap.min.css&#xa;    Line number: 5&#xa;    Comment: &#xa;        /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */&#xa;"/><script id="http-grep" output="&#xa;  (1) https://192.168.224.246:443/css/styles.css: &#xa;    (1) ip: &#xa;      + 192.168.224.246"><table key="(1) https://192.168.224.246:443/css/styles.css">
+<table key="(1) ip">
+<elem>+ 192.168.224.246</elem>
+</table>
+</table>
+</script><script id="http-server-header" output="Apache/2.4.52 (Ubuntu)"><elem>Apache/2.4.52 (Ubuntu)</elem>
+</script></port>
+</ports>
+<times srtt="76570" rttvar="76570" to="382850"/>
+</host>
+<taskbegin task="NSE" time="1712117141"/>
+<taskend task="NSE" time="1712117141"/>
+<taskbegin task="NSE" time="1712117141"/>
+<taskend task="NSE" time="1712117141"/>
+<taskbegin task="NSE" time="1712117141"/>
+<taskend task="NSE" time="1712117141"/>
+<runstats><finished time="1712117141" timestr="Tue Apr  2 21:05:41 2024" summary="Nmap done at Tue Apr  2 21:05:41 2024; 1 IP address (1 host up) scanned in 277.70 seconds" elapsed="277.70" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

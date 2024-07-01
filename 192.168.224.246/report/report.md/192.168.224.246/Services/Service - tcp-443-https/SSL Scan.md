@@ -1,0 +1,40 @@
+```bash
+sslscan --show-certificate --no-colour 192.168.224.246:443 2>&1
+```
+
+[/home/kali/Documents/Relia/results/192.168.224.246/scans/tcp443/tcp_443_sslscan.html](file:///home/kali/Documents/Relia/results/192.168.224.246/scans/tcp443/tcp_443_sslscan.html):
+
+```
+ERROR: Could not open a connection to host 192.168.224.246 (192.168.224.246) on port 443 (connect: Timed out).
+Version: 2.1.3-static
+OpenSSL 3.0.12 24 Oct 2023
+
+Connected to 192.168.224.246
+
+Testing SSL server 192.168.224.246 on port 443 using SNI name 192.168.224.246
+
+  SSL/TLS Protocols:
+SSLv2     disabled
+SSLv3     disabled
+TLSv1.0   disabled
+TLSv1.1   disabled
+TLSv1.2   enabled
+TLSv1.3   enabled
+
+  TLS Fallback SCSV:
+Server supports TLS Fallback SCSV
+
+  TLS renegotiation:
+Session renegotiation not supported
+
+  TLS Compression:
+Compression disabled
+
+  Heartbleed:
+TLSv1.3 not vulnerable to heartbleed
+TLSv1.2 not vulnerable to heartbleed
+
+  Supported Server Cipher(s):
+
+
+```

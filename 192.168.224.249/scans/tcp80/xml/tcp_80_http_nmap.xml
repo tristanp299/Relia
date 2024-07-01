@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Tue Apr  2 20:58:07 2024 as: nmap -vv -&#45;reason -Pn -T4 -T4 -&#45;min-rate=500 -sV -p 80 &quot;-&#45;script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)&quot; -oN /home/kali/Documents/Relia/results/192.168.224.249/scans/tcp80/tcp_80_http_nmap.txt -oX /home/kali/Documents/Relia/results/192.168.224.249/scans/tcp80/xml/tcp_80_http_nmap.xml 192.168.224.249 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -T4 -&#45;min-rate=500 -sV -p 80 &quot;-&#45;script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)&quot; -oN /home/kali/Documents/Relia/results/192.168.224.249/scans/tcp80/tcp_80_http_nmap.txt -oX /home/kali/Documents/Relia/results/192.168.224.249/scans/tcp80/xml/tcp_80_http_nmap.xml 192.168.224.249" start="1712116687" startstr="Tue Apr  2 20:58:07 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="80"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1712116688"/>
+<taskend task="NSE" time="1712116688"/>
+<taskbegin task="NSE" time="1712116688"/>
+<taskend task="NSE" time="1712116688"/>
+<taskbegin task="NSE" time="1712116688"/>
+<taskend task="NSE" time="1712116688"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1712116688"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1712116688"/>
+<taskbegin task="SYN Stealth Scan" time="1712116688"/>
+<taskend task="SYN Stealth Scan" time="1712116688" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1712116688"/>
+<taskend task="Service scan" time="1712116695" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1712116695"/>
+<taskprogress task="NSE" time="1712116726" percent="99.35" remaining="1" etc="1712116726"/>
+<taskprogress task="NSE" time="1712116756" percent="99.67" remaining="1" etc="1712116756"/>
+<taskprogress task="NSE" time="1712116786" percent="99.67" remaining="1" etc="1712116786"/>
+<taskprogress task="NSE" time="1712116816" percent="99.67" remaining="1" etc="1712116816"/>
+<taskprogress task="NSE" time="1712116846" percent="99.67" remaining="1" etc="1712116846"/>
+<taskprogress task="NSE" time="1712116876" percent="99.67" remaining="1" etc="1712116877"/>
+<taskprogress task="NSE" time="1712116906" percent="99.67" remaining="1" etc="1712116907"/>
+<taskprogress task="NSE" time="1712116936" percent="99.67" remaining="1" etc="1712116937"/>
+<taskprogress task="NSE" time="1712116966" percent="99.67" remaining="1" etc="1712116967"/>
+<taskprogress task="NSE" time="1712116996" percent="99.67" remaining="1" etc="1712116997"/>
+<taskprogress task="NSE" time="1712117026" percent="99.67" remaining="2" etc="1712117027"/>
+<taskprogress task="NSE" time="1712117056" percent="99.67" remaining="2" etc="1712117057"/>
+<taskprogress task="NSE" time="1712117086" percent="99.67" remaining="2" etc="1712117087"/>
+<taskprogress task="NSE" time="1712117116" percent="99.67" remaining="2" etc="1712117117"/>
+<taskend task="NSE" time="1712117132"/>
+<taskbegin task="NSE" time="1712117132"/>
+<taskend task="NSE" time="1712117133"/>
+<taskbegin task="NSE" time="1712117133"/>
+<taskend task="NSE" time="1712117133"/>
+<host starttime="1712116688" endtime="1712117133"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.224.249" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="http" product="Microsoft IIS httpd" version="10.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:internet_information_services:10.0</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-devframework" output="ASP.NET detected. Found related header."/><script id="http-jsonp-detection" output="Couldn&apos;t find any JSONP endpoints."/><script id="http-dombased-xss" output="Couldn&apos;t find any DOM based XSS."/><script id="http-php-version" output="Logo query returned unknown hash 242c23ea412530c7d94b77a7a978c176&#xa;Credits query returned unknown hash 242c23ea412530c7d94b77a7a978c176"/><script id="http-wordpress-users" output="[Error] Wordpress installation was not found. We couldn&apos;t find wp-login.php"/><script id="http-headers" output="&#xa;  Content-Length: 703&#xa;  Content-Type: text/html&#xa;  Last-Modified: Tue, 11 Oct 2022 08:08:24 GMT&#xa;  Accept-Ranges: bytes&#xa;  ETag: &quot;766ac5a248ddd81:0&quot;&#xa;  Server: Microsoft-IIS/10.0&#xa;  X-Powered-By: ASP.NET&#xa;  Date: Wed, 03 Apr 2024 03:58:17 GMT&#xa;  Connection: close&#xa;  &#xa;  (Request type: HEAD)&#xa;"/><script id="http-csrf" output="Couldn&apos;t find any CSRF vulnerabilities."/><script id="http-referer-checker" output="Couldn&apos;t find any cross-domain scripts."/><script id="http-sitemap-generator" output="&#xa;  Directory structure:&#xa;    /&#xa;      Other: 1; png: 1&#xa;  Longest directory structure:&#xa;    Depth: 0&#xa;    Dir: /&#xa;  Total files found (by extension):&#xa;    Other: 1; png: 1&#xa;"/><script id="http-traceroute" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-mobileversion-checker" output="No mobile version detected."/><script id="http-vhosts" output="&#xa;15 names had status ERROR&#xa;113 names had status 200"/><script id="http-malware-host" output="Host appears to be clean"/><script id="http-security-headers" output=""></script><script id="http-server-header" output="Microsoft-IIS/10.0"><elem>Microsoft-IIS/10.0</elem>
+</script><script id="http-fetch" output="Please enter the complete path of the directory to save data in."><elem key="ERROR">Please enter the complete path of the directory to save data in.</elem>
+</script><script id="http-chrono" output="Request times for /; avg: 206.24ms; min: 203.53ms; max: 209.17ms"/><script id="http-methods" output="&#xa;  Supported Methods: GET"><table key="Supported Methods">
+<elem>GET</elem>
+</table>
+</script><script id="http-feed" output="Couldn&apos;t find any feeds."/><script id="http-stored-xss" output="Couldn&apos;t find any stored XSS vulnerabilities."/><script id="http-errors" output="Couldn&apos;t find any error pages."/><script id="http-comments-displayer" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=192.168.224.249&#xa;    &#xa;    Path: http://192.168.224.249:80/&#xa;    Line number: 7&#xa;    Comment: &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        -&#45;&gt;&#xa;"/><script id="http-title" output="IIS Windows Server"><elem key="title">IIS Windows Server</elem>
+</script><script id="http-useragent-tester" output="&#xa;  Status for browser useragent: 200&#xa;  Allowed User Agents: &#xa;    Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)&#xa;    libwww&#xa;    lwp-trivial&#xa;    libcurl-agent/1.0&#xa;    PHP/&#xa;    Python-urllib/2.5&#xa;    GT::WWW&#xa;    Snoopy&#xa;    HTTP::Lite&#xa;    PHPCrawl&#xa;    URI::Fetch&#xa;    PECL::HTTP&#xa;    Wget/1.13.4 (linux-gnu)&#xa;    WWW-Mechanize/1.34"><elem key="Status for browser useragent">200</elem>
+<table key="Allowed User Agents">
+<elem>Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)</elem>
+<elem>libwww</elem>
+<elem>lwp-trivial</elem>
+<elem>libcurl-agent/1.0</elem>
+<elem>PHP/</elem>
+<elem>Python-urllib/2.5</elem>
+<elem>GT::WWW</elem>
+<elem>Snoopy</elem>
+<elem>HTTP::Lite</elem>
+<elem>PHPCrawl</elem>
+<elem>URI::Fetch</elem>
+<elem>PECL::HTTP</elem>
+<elem>Wget/1.13.4 (linux-gnu)</elem>
+<elem>WWW-Mechanize/1.34</elem>
+</table>
+</script></port>
+</ports>
+<times srtt="93386" rttvar="93386" to="466930"/>
+</host>
+<taskbegin task="NSE" time="1712117133"/>
+<taskend task="NSE" time="1712117133"/>
+<taskbegin task="NSE" time="1712117133"/>
+<taskend task="NSE" time="1712117133"/>
+<taskbegin task="NSE" time="1712117133"/>
+<taskend task="NSE" time="1712117133"/>
+<runstats><finished time="1712117133" timestr="Tue Apr  2 21:05:33 2024" summary="Nmap done at Tue Apr  2 21:05:33 2024; 1 IP address (1 host up) scanned in 445.48 seconds" elapsed="445.48" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

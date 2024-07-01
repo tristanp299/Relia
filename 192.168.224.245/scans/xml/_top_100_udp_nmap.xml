@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Tue Apr  2 20:58:55 2024 as: nmap -vv -&#45;reason -Pn -T4 -T4 -&#45;min-rate=500 -sU -A -&#45;top-ports 100 -oN /home/kali/Documents/Relia/results/192.168.224.245/scans/_top_100_udp_nmap.txt -oX /home/kali/Documents/Relia/results/192.168.224.245/scans/xml/_top_100_udp_nmap.xml 192.168.224.245 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -T4 -&#45;min-rate=500 -sU -A -&#45;top-ports 100 -oN /home/kali/Documents/Relia/results/192.168.224.245/scans/_top_100_udp_nmap.txt -oX /home/kali/Documents/Relia/results/192.168.224.245/scans/xml/_top_100_udp_nmap.xml 192.168.224.245" start="1712116735" startstr="Tue Apr  2 20:58:55 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="udp" protocol="udp" numservices="100" services="7,9,17,19,49,53,67-69,80,88,111,120,123,135-139,158,161-162,177,427,443,445,497,500,514-515,518,520,593,623,626,631,996-999,1022-1023,1025-1030,1433-1434,1645-1646,1701,1718-1719,1812-1813,1900,2000,2048-2049,2222-2223,3283,3456,3703,4444,4500,5000,5060,5353,5632,9200,10000,17185,20031,30718,31337,32768-32769,32771,32815,33281,49152-49154,49156,49181-49182,49185-49186,49188,49190-49194,49200-49201,65024"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1712116735"/>
+<taskend task="NSE" time="1712116735"/>
+<taskbegin task="NSE" time="1712116735"/>
+<taskend task="NSE" time="1712116735"/>
+<taskbegin task="NSE" time="1712116735"/>
+<taskend task="NSE" time="1712116735"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1712116735"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1712116735"/>
+<taskbegin task="UDP Scan" time="1712116735"/>
+<taskend task="UDP Scan" time="1712116736" extrainfo="100 total ports"/>
+<taskbegin task="Service scan" time="1712116736"/>
+<taskprogress task="Service scan" time="1712116796" percent="1.06" remaining="5580" etc="1712122376"/>
+<taskprogress task="Service scan" time="1712116828" percent="19.15" remaining="389" etc="1712117216"/>
+<taskprogress task="Service scan" time="1712116879" percent="32.98" remaining="291" etc="1712117170"/>
+<taskprogress task="Service scan" time="1712116916" percent="45.74" remaining="214" etc="1712117129"/>
+<taskprogress task="Service scan" time="1712116950" percent="65.96" remaining="111" etc="1712117060"/>
+<taskprogress task="Service scan" time="1712116992" percent="73.40" remaining="93" etc="1712117085"/>
+<taskend task="Service scan" time="1712117025" extrainfo="94 services on 1 host"/>
+<taskbegin task="Traceroute" time="1712117028"/>
+<taskend task="Traceroute" time="1712117031"/>
+<taskbegin task="Parallel DNS resolution of 4 hosts." time="1712117031"/>
+<taskend task="Parallel DNS resolution of 4 hosts." time="1712117031"/>
+<taskbegin task="NSE" time="1712117031"/>
+<taskprogress task="NSE" time="1712117062" percent="98.69" remaining="1" etc="1712117062"/>
+<taskprogress task="NSE" time="1712117092" percent="98.81" remaining="1" etc="1712117093"/>
+<taskprogress task="NSE" time="1712117122" percent="98.89" remaining="2" etc="1712117123"/>
+<taskprogress task="NSE" time="1712117152" percent="99.02" remaining="2" etc="1712117153"/>
+<taskprogress task="NSE" time="1712117182" percent="99.11" remaining="2" etc="1712117183"/>
+<taskprogress task="NSE" time="1712117212" percent="99.30" remaining="2" etc="1712117213"/>
+<taskprogress task="NSE" time="1712117242" percent="99.39" remaining="2" etc="1712117243"/>
+<taskprogress task="NSE" time="1712117272" percent="99.50" remaining="2" etc="1712117273"/>
+<taskprogress task="NSE" time="1712117302" percent="99.61" remaining="2" etc="1712117303"/>
+<taskprogress task="NSE" time="1712117332" percent="99.72" remaining="1" etc="1712117333"/>
+<taskprogress task="NSE" time="1712117362" percent="99.85" remaining="1" etc="1712117362"/>
+<taskprogress task="NSE" time="1712117392" percent="99.98" remaining="1" etc="1712117392"/>
+<taskend task="NSE" time="1712117402"/>
+<taskbegin task="NSE" time="1712117402"/>
+<taskend task="NSE" time="1712117408"/>
+<taskbegin task="NSE" time="1712117408"/>
+<taskend task="NSE" time="1712117408"/>
+<host starttime="1712116735" endtime="1712117408"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.224.245" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="open|filtered" count="94">
+<extrareasons reason="no-response" count="94" proto="udp" ports="7,9,17,19,49,53,67-69,80,88,111,120,123,135-138,158,161-162,427,443,445,497,500,514-515,518,520,593,623,626,631,996-999,1023,1025-1030,1433-1434,1645-1646,1701,1718-1719,1812-1813,1900,2000,2048-2049,2222-2223,3283,3456,3703,4444,4500,5060,5353,5632,9200,10000,17185,30718,31337,32768-32769,32771,32815,33281,49152-49154,49156,49181-49182,49185-49186,49188,49190-49194,49200-49201"/>
+</extraports>
+<port protocol="udp" portid="139"><state state="closed" reason="port-unreach" reason_ttl="61"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="udp" portid="177"><state state="closed" reason="port-unreach" reason_ttl="61"/><service name="xdmcp" method="table" conf="3"/></port>
+<port protocol="udp" portid="1022"><state state="closed" reason="port-unreach" reason_ttl="61"/><service name="exp2" method="table" conf="3"/></port>
+<port protocol="udp" portid="5000"><state state="closed" reason="port-unreach" reason_ttl="61"/><service name="upnp" method="table" conf="3"/></port>
+<port protocol="udp" portid="20031"><state state="closed" reason="port-unreach" reason_ttl="61"/><service name="bakbonenetvault" method="table" conf="3"/></port>
+<port protocol="udp" portid="65024"><state state="closed" reason="port-unreach" reason_ttl="61"/></port>
+</ports>
+<os><portused state="closed" proto="udp" portid="139"/>
+<osmatch name="Linux 2.6.18" accuracy="96" line="49083">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:2.6.18</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.30" accuracy="96" line="53735">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:2.6.30</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.28" accuracy="95" line="53570">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.28</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.24 (Palm Pre mobile phone)" accuracy="94" line="59929">
+<osclass type="phone" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.24</cpe></osclass>
+</osmatch>
+<osmatch name="Avocent DSR1021 KVM switch" accuracy="93" line="9015">
+<osclass type="remote management" vendor="Avocent" osfamily="embedded" accuracy="93"/>
+</osmatch>
+<osmatch name="Buffalo TeraStation Pro II NAS device" accuracy="93" line="12167">
+<osclass type="storage-misc" vendor="Buffalo" osfamily="embedded" accuracy="93"/>
+</osmatch>
+<osmatch name="Dish Network Hopper media device" accuracy="93" line="23165">
+<osclass type="media device" vendor="Dish" osfamily="embedded" accuracy="93"><cpe>cpe:/h:dish:hopper</cpe></osclass>
+</osmatch>
+<osmatch name="Android 4.0" accuracy="93" line="31389">
+<osclass type="phone" vendor="Google" osfamily="Android" osgen="4.X" accuracy="93"><cpe>cpe:/o:google:android:4.0</cpe></osclass>
+</osmatch>
+<osmatch name="Kyocera CopyStar CS-2560 printer" accuracy="93" line="42265">
+<osclass type="printer" vendor="Kyocera" osfamily="embedded" accuracy="93"><cpe>cpe:/h:kyocera:cs-2560</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.5" accuracy="93" line="65710">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3.5</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="SCAN(V=7.94SVN%E=4%D=4/2%OT=%CT=%CU=139%PV=Y%DS=9%DC=T%G=N%TM=660CD6A0%P=aarch64-unknown-linux-gnu)&#xa;SEQ()&#xa;SEQ(II=I)&#xa;T1(R=Y%DF=Y%T=40%S=O%A=O%F=AP%RD=0%Q=)&#xa;T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)&#xa;U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=4EDC%RUD=G)&#xa;IE(R=Y%DFI=N%T=40%CD=S)&#xa;"/>
+</os>
+<distance value="9"/>
+<trace port="139" proto="udp">
+<hop ttl="1" ipaddr="192.168.45.1" rtt="73.04"/>
+<hop ttl="2" ipaddr="192.168.45.254" rtt="73.03"/>
+<hop ttl="3" ipaddr="192.168.251.1" rtt="73.31"/>
+<hop ttl="9" ipaddr="192.168.224.245" rtt="90.18"/>
+</trace>
+<times srtt="81876" rttvar="10318" to="123148"/>
+</host>
+<taskbegin task="NSE" time="1712117408"/>
+<taskend task="NSE" time="1712117408"/>
+<taskbegin task="NSE" time="1712117408"/>
+<taskend task="NSE" time="1712117408"/>
+<taskbegin task="NSE" time="1712117408"/>
+<taskend task="NSE" time="1712117408"/>
+<runstats><finished time="1712117408" timestr="Tue Apr  2 21:10:08 2024" summary="Nmap done at Tue Apr  2 21:10:08 2024; 1 IP address (1 host up) scanned in 673.26 seconds" elapsed="673.26" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

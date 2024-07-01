@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Tue Apr  2 21:08:26 2024 as: nmap -vv -&#45;reason -Pn -T4 -T4 -&#45;min-rate=500 -sV -p 110 &quot;-&#45;script=banner,(pop3* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/kali/Documents/Relia/results/192.168.224.189/scans/tcp110/tcp_110_pop3_nmap.txt -oX /home/kali/Documents/Relia/results/192.168.224.189/scans/tcp110/xml/tcp_110_pop3_nmap.xml 192.168.224.189 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -T4 -&#45;min-rate=500 -sV -p 110 &quot;-&#45;script=banner,(pop3* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/kali/Documents/Relia/results/192.168.224.189/scans/tcp110/tcp_110_pop3_nmap.txt -oX /home/kali/Documents/Relia/results/192.168.224.189/scans/tcp110/xml/tcp_110_pop3_nmap.xml 192.168.224.189" start="1712117306" startstr="Tue Apr  2 21:08:26 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="110"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1712117306"/>
+<taskend task="NSE" time="1712117306"/>
+<taskbegin task="NSE" time="1712117306"/>
+<taskend task="NSE" time="1712117306"/>
+<taskbegin task="NSE" time="1712117306"/>
+<taskend task="NSE" time="1712117306"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1712117306"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1712117306"/>
+<taskbegin task="SYN Stealth Scan" time="1712117306"/>
+<taskend task="SYN Stealth Scan" time="1712117306" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1712117306"/>
+<taskend task="Service scan" time="1712117314" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1712117314"/>
+<taskend task="NSE" time="1712117315"/>
+<taskbegin task="NSE" time="1712117315"/>
+<taskend task="NSE" time="1712117316"/>
+<taskbegin task="NSE" time="1712117316"/>
+<taskend task="NSE" time="1712117316"/>
+<host starttime="1712117306" endtime="1712117316"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.224.189" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="110"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="pop3" product="hMailServer pop3d" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="banner" output="+OK POP3"/></port>
+</ports>
+<times srtt="90345" rttvar="90345" to="451725"/>
+</host>
+<taskbegin task="NSE" time="1712117316"/>
+<taskend task="NSE" time="1712117316"/>
+<taskbegin task="NSE" time="1712117316"/>
+<taskend task="NSE" time="1712117316"/>
+<taskbegin task="NSE" time="1712117316"/>
+<taskend task="NSE" time="1712117316"/>
+<runstats><finished time="1712117316" timestr="Tue Apr  2 21:08:36 2024" summary="Nmap done at Tue Apr  2 21:08:36 2024; 1 IP address (1 host up) scanned in 9.94 seconds" elapsed="9.94" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
