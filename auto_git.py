@@ -8,7 +8,7 @@ def main():
       run('git pull'.split())
       run('git add .'.split())
       run('git commit -m "auto_git_runner"'.split())
-      run('git push')
+      run('git push'.split())
       time.sleep(60)
     except Exception as e:
         print('ERROR', e)
