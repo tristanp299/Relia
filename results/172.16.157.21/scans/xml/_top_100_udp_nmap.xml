@@ -17,3 +17,4 @@
 <taskbegin task="UDP Scan" time="1723067445"/>
 <taskend task="UDP Scan" time="1723067447" extrainfo="100 total ports"/>
 <taskbegin task="Service scan" time="1723067447"/>
+<taskprogress task="Service scan" time="1723067544" percent="1.00" remaining="9604" etc="1723077147"/>
