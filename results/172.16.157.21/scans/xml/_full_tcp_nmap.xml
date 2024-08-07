@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Wed Aug  7 21:47:17 2024 as: nmap -vv -&#45;reason -Pn -T4 -T3 -&#45;min-rate=500 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/kali/Documents/Relia/results/172.16.157.21/scans/_full_tcp_nmap.txt -oX /home/kali/Documents/Relia/results/172.16.157.21/scans/xml/_full_tcp_nmap.xml 172.16.157.21 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -T3 -&#45;min-rate=500 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/kali/Documents/Relia/results/172.16.157.21/scans/_full_tcp_nmap.txt -oX /home/kali/Documents/Relia/results/172.16.157.21/scans/xml/_full_tcp_nmap.xml 172.16.157.21" start="1723067237" startstr="Wed Aug  7 21:47:17 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1723067237"/>
+<taskend task="NSE" time="1723067237"/>
+<taskbegin task="NSE" time="1723067237"/>
+<taskend task="NSE" time="1723067237"/>
+<taskbegin task="NSE" time="1723067237"/>
+<taskend task="NSE" time="1723067237"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1723067237"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1723067237"/>
+<taskbegin task="SYN Stealth Scan" time="1723067237"/>
+<taskprogress task="SYN Stealth Scan" time="1723067268" percent="11.63" remaining="236" etc="1723067504"/>
+<taskprogress task="SYN Stealth Scan" time="1723067298" percent="23.07" remaining="204" etc="1723067501"/>
