@@ -22,3 +22,10 @@
 <taskprogress task="SYN Stealth Scan" time="1723069190" percent="57.45" remaining="112" etc="1723069302"/>
 <taskprogress task="SYN Stealth Scan" time="1723069220" percent="68.90" remaining="82" etc="1723069302"/>
 <taskprogress task="SYN Stealth Scan" time="1723069250" percent="80.34" remaining="52" etc="1723069302"/>
+<taskend task="SYN Stealth Scan" time="1723069302" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1723069302"/>
+<taskbegin task="Traceroute" time="1723069307"/>
+<taskend task="Traceroute" time="1723069316"/>
+<taskbegin task="Parallel DNS resolution of 3 hosts." time="1723069316"/>
+<taskend task="Parallel DNS resolution of 3 hosts." time="1723069316"/>
+<taskbegin task="NSE" time="1723069316"/>
