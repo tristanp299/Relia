@@ -1,0 +1,1 @@
+# Nmap 7.94SVN scan initiated Wed Aug  7 21:41:43 2024 as: nmap -vv --reason -Pn -T4 -T3 --min-rate=500 -sV -sC --version-all -A --osscan-guess -p- -oN /home/kali/Documents/Relia/results/192.168.197.248/scans/_full_tcp_nmap.txt -oX /home/kali/Documents/Relia/results/192.168.197.248/scans/xml/_full_tcp_nmap.xml 192.168.197.248

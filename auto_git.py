@@ -1,5 +1,5 @@
 from subprocess import run,Popen,PIPE
-import os,sys,path,time
+import os,sys,time
 
 def main():
   print(__name__ +': Started...')
