@@ -1,0 +1,2 @@
+nmap -vv --reason -Pn -T4 -T3 --min-rate=500 -sV -sC --version-all -A --osscan-guess -oN "/home/kali/Documents/Relia/results/172.16.157.19/scans/_quick_tcp_nmap.txt" -oX "/home/kali/Documents/Relia/results/172.16.157.19/scans/xml/_quick_tcp_nmap.xml" 172.16.157.19
+
