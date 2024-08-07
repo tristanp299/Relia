@@ -28,3 +28,5 @@
 <taskend task="Parallel DNS resolution of 3 hosts." time="1723067320"/>
 <taskbegin task="NSE" time="1723067320"/>
 <taskprogress task="NSE" time="1723067351" percent="98.57" remaining="1" etc="1723067351"/>
+<taskprogress task="NSE" time="1723067381" percent="98.59" remaining="1" etc="1723067382"/>
+<taskprogress task="NSE" time="1723067411" percent="98.61" remaining="2" etc="1723067412"/>
