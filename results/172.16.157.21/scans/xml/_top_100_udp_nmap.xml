@@ -25,3 +25,5 @@
 <taskbegin task="Traceroute" time="1723067852"/>
 <taskend task="Traceroute" time="1723067861"/>
 <taskbegin task="NSE" time="1723067861"/>
+<taskprogress task="NSE" time="1723067892" percent="98.57" remaining="1" etc="1723067892"/>
+<taskprogress task="NSE" time="1723067922" percent="98.60" remaining="1" etc="1723067923"/>
