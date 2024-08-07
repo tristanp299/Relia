@@ -23,3 +23,6 @@
 <taskprogress task="Service scan" time="1723069693" percent="91.00" remaining="40" etc="1723069732"/>
 <taskend task="Service scan" time="1723069698" extrainfo="100 services on 1 host"/>
 <taskbegin task="Traceroute" time="1723069703"/>
+<taskend task="Traceroute" time="1723069712"/>
+<taskbegin task="NSE" time="1723069713"/>
+<taskprogress task="NSE" time="1723069744" percent="98.57" remaining="1" etc="1723069744"/>
