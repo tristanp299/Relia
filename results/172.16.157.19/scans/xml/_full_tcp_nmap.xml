@@ -16,3 +16,6 @@
 <taskend task="Parallel DNS resolution of 1 host." time="1723067495"/>
 <taskbegin task="SYN Stealth Scan" time="1723067495"/>
 <taskprogress task="SYN Stealth Scan" time="1723067526" percent="11.50" remaining="239" etc="1723067765"/>
+<taskprogress task="SYN Stealth Scan" time="1723067556" percent="22.94" remaining="205" etc="1723067761"/>
+<taskprogress task="SYN Stealth Scan" time="1723067586" percent="34.39" remaining="174" etc="1723067760"/>
+<taskprogress task="SYN Stealth Scan" time="1723067616" percent="45.83" remaining="144" etc="1723067759"/>
