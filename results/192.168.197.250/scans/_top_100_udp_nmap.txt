@@ -1,0 +1,1 @@
+# Nmap 7.94SVN scan initiated Wed Aug  7 22:17:43 2024 as: nmap -vv --reason -Pn -T4 -T3 --min-rate=500 -sU -A --top-ports 100 -oN /home/kali/Documents/Relia/results/192.168.197.250/scans/_top_100_udp_nmap.txt -oX /home/kali/Documents/Relia/results/192.168.197.250/scans/xml/_top_100_udp_nmap.xml 192.168.197.250

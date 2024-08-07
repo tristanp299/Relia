@@ -73,3 +73,34 @@
 <taskprogress task="NSE" time="1723068925" percent="99.90" remaining="2" etc="1723068926"/>
 <taskprogress task="NSE" time="1723068955" percent="99.94" remaining="1" etc="1723068956"/>
 <taskprogress task="NSE" time="1723068985" percent="99.96" remaining="1" etc="1723068986"/>
+<taskend task="NSE" time="1723069007"/>
+<taskbegin task="NSE" time="1723069007"/>
+<taskend task="NSE" time="1723069013"/>
+<taskbegin task="NSE" time="1723069013"/>
+<taskend task="NSE" time="1723069013"/>
+<host starttime="1723067188" endtime="1723069013"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.197.245" addrtype="ipv4"/>
+<hostnames>
+<hostname name="ip-192-168-197-245.us-west-1.compute.internal" type="PTR"/>
+</hostnames>
+<ports><extraports state="open|filtered" count="100">
+<extrareasons reason="no-response" count="100" proto="udp" ports="7,9,17,19,49,53,67-69,80,88,111,120,123,135-139,158,161-162,177,427,443,445,497,500,514-515,518,520,593,623,626,631,996-999,1022-1023,1025-1030,1433-1434,1645-1646,1701,1718-1719,1812-1813,1900,2000,2048-2049,2222-2223,3283,3456,3703,4444,4500,5000,5060,5353,5632,9200,10000,17185,20031,30718,31337,32768-32769,32771,32815,33281,49152-49154,49156,49181-49182,49185-49186,49188,49190-49194,49200-49201,65024"/>
+</extraports>
+</ports>
+<os><osfingerprint fingerprint="SCAN(V=7.94SVN%E=4%D=8/7%OT=%CT=%CU=%PV=Y%G=N%TM=66B3F256%P=x86_64-pc-linux-gnu)&#xa;SEQ()&#xa;U1(R=N)&#xa;IE(R=N)&#xa;"/>
+</os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="192.168.45.1" rtt="65.76" host="ip-192-168-45-1.us-west-1.compute.internal"/>
+<hop ttl="2" ipaddr="192.168.45.254" rtt="65.74" host="ip-192-168-45-254.us-west-1.compute.internal"/>
+<hop ttl="3" ipaddr="192.168.251.1" rtt="66.42" host="ip-192-168-251-1.us-west-1.compute.internal"/>
+</trace>
+</host>
+<taskbegin task="NSE" time="1723069014"/>
+<taskend task="NSE" time="1723069014"/>
+<taskbegin task="NSE" time="1723069014"/>
+<taskend task="NSE" time="1723069014"/>
+<taskbegin task="NSE" time="1723069014"/>
+<taskend task="NSE" time="1723069014"/>
+<runstats><finished time="1723069014" timestr="Wed Aug  7 22:16:54 2024" summary="Nmap done at Wed Aug  7 22:16:54 2024; 1 IP address (1 host up) scanned in 1826.02 seconds" elapsed="1826.02" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
