@@ -20,3 +20,11 @@
 <taskprogress task="Service scan" time="1723069163" percent="1.00" remaining="9702" etc="1723078865"/>
 <taskprogress task="Service scan" time="1723069260" percent="31.00" remaining="435" etc="1723069694"/>
 <taskprogress task="Service scan" time="1723069358" percent="61.00" remaining="188" etc="1723069545"/>
+<taskprogress task="Service scan" time="1723069460" percent="91.00" remaining="40" etc="1723069499"/>
+<taskend task="Service scan" time="1723069465" extrainfo="100 services on 1 host"/>
+<taskbegin task="Traceroute" time="1723069471"/>
+<taskend task="Traceroute" time="1723069480"/>
+<taskbegin task="Parallel DNS resolution of 3 hosts." time="1723069480"/>
+<taskend task="Parallel DNS resolution of 3 hosts." time="1723069480"/>
+<taskbegin task="NSE" time="1723069480"/>
+<taskprogress task="NSE" time="1723069511" percent="98.57" remaining="1" etc="1723069511"/>
