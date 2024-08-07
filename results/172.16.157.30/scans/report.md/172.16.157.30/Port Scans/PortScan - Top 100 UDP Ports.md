@@ -1,3 +1,10 @@
+```bash
+nmap -vv --reason -Pn -T4 -T3 --min-rate=500 -sU -A --top-ports 100 -oN "/home/kali/Documents/Relia/results/172.16.157.30/scans/_top_100_udp_nmap.txt" -oX "/home/kali/Documents/Relia/results/172.16.157.30/scans/xml/_top_100_udp_nmap.xml" 172.16.157.30
+```
+
+[/home/kali/Documents/Relia/results/172.16.157.30/scans/_top_100_udp_nmap.txt](file:///home/kali/Documents/Relia/results/172.16.157.30/scans/_top_100_udp_nmap.txt):
+
+```
 # Nmap 7.94SVN scan initiated Wed Aug  7 22:11:45 2024 as: nmap -vv --reason -Pn -T4 -T3 --min-rate=500 -sU -A --top-ports 100 -oN /home/kali/Documents/Relia/results/172.16.157.30/scans/_top_100_udp_nmap.txt -oX /home/kali/Documents/Relia/results/172.16.157.30/scans/xml/_top_100_udp_nmap.xml 172.16.157.30
 Nmap scan report for ip-172-16-157-30.us-west-1.compute.internal (172.16.157.30)
 Host is up, received user-set.
@@ -19,3 +26,5 @@ HOP RTT    ADDRESS
 Read data files from: /usr/bin/../share/nmap
 OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 # Nmap done at Wed Aug  7 22:42:10 2024 -- 1 IP address (1 host up) scanned in 1825.15 seconds
+
+```
