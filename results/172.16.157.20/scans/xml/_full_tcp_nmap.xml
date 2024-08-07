@@ -22,3 +22,6 @@
 <taskprogress task="SYN Stealth Scan" time="1723069447" percent="57.48" remaining="112" etc="1723069559"/>
 <taskprogress task="SYN Stealth Scan" time="1723069477" percent="68.92" remaining="82" etc="1723069559"/>
 <taskprogress task="SYN Stealth Scan" time="1723069507" percent="80.36" remaining="52" etc="1723069559"/>
+<taskend task="SYN Stealth Scan" time="1723069559" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1723069559"/>
+<taskbegin task="Traceroute" time="1723069564"/>
