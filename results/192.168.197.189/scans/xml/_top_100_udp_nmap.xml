@@ -71,3 +71,7 @@
 <taskprogress task="NSE" time="1723070691" percent="99.83" remaining="3" etc="1723070693"/>
 <taskprogress task="NSE" time="1723070721" percent="99.87" remaining="2" etc="1723070723"/>
 <taskprogress task="NSE" time="1723070751" percent="99.90" remaining="2" etc="1723070752"/>
+<taskprogress task="NSE" time="1723070781" percent="99.93" remaining="1" etc="1723070782"/>
+<taskprogress task="NSE" time="1723070811" percent="99.96" remaining="1" etc="1723070812"/>
+<taskend task="NSE" time="1723070833"/>
+<taskbegin task="NSE" time="1723070833"/>
