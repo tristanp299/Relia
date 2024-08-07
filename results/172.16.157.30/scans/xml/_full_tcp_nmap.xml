@@ -22,3 +22,36 @@
 <taskprogress task="SYN Stealth Scan" time="1723068856" percent="57.28" remaining="113" etc="1723068969"/>
 <taskprogress task="SYN Stealth Scan" time="1723068886" percent="68.72" remaining="83" etc="1723068968"/>
 <taskprogress task="SYN Stealth Scan" time="1723068916" percent="80.16" remaining="53" etc="1723068968"/>
+<taskend task="SYN Stealth Scan" time="1723068968" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1723068968"/>
+<taskbegin task="Traceroute" time="1723068974"/>
+<taskend task="Traceroute" time="1723068983"/>
+<taskbegin task="NSE" time="1723068983"/>
+<taskend task="NSE" time="1723068988"/>
+<taskbegin task="NSE" time="1723068988"/>
+<taskend task="NSE" time="1723068988"/>
+<taskbegin task="NSE" time="1723068988"/>
+<taskend task="NSE" time="1723068988"/>
+<host starttime="1723068705" endtime="1723068988"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.16.157.30" addrtype="ipv4"/>
+<hostnames>
+<hostname name="ip-172-16-157-30.us-west-1.compute.internal" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="65535">
+<extrareasons reason="no-response" count="65535" proto="tcp" ports="1-65535"/>
+</extraports>
+</ports>
+<os><osfingerprint fingerprint="SCAN(V=7.94SVN%E=4%D=8/7%OT=%CT=%CU=%PV=Y%G=N%TM=66B3F23C%P=x86_64-pc-linux-gnu)&#xa;SEQ()&#xa;U1(R=N)&#xa;IE(R=N)&#xa;"/>
+</os>
+<trace proto="icmp">
+</trace>
+</host>
+<taskbegin task="NSE" time="1723068988"/>
+<taskend task="NSE" time="1723068988"/>
+<taskbegin task="NSE" time="1723068988"/>
+<taskend task="NSE" time="1723068988"/>
+<taskbegin task="NSE" time="1723068988"/>
+<taskend task="NSE" time="1723068988"/>
+<runstats><finished time="1723068988" timestr="Wed Aug  7 22:16:28 2024" summary="Nmap done at Wed Aug  7 22:16:28 2024; 1 IP address (1 host up) scanned in 283.13 seconds" elapsed="283.13" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
