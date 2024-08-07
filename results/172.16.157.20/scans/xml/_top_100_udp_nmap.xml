@@ -70,3 +70,32 @@
 <taskprogress task="NSE" time="1723071004" percent="99.86" remaining="2" etc="1723071006"/>
 <taskprogress task="NSE" time="1723071034" percent="99.91" remaining="2" etc="1723071035"/>
 <taskprogress task="NSE" time="1723071064" percent="99.93" remaining="1" etc="1723071065"/>
+<taskprogress task="NSE" time="1723071094" percent="99.97" remaining="1" etc="1723071094"/>
+<taskend task="NSE" time="1723071115"/>
+<taskbegin task="NSE" time="1723071115"/>
+<taskend task="NSE" time="1723071121"/>
+<taskbegin task="NSE" time="1723071121"/>
+<taskend task="NSE" time="1723071121"/>
+<host starttime="1723069297" endtime="1723071121"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.16.157.20" addrtype="ipv4"/>
+<hostnames>
+<hostname name="ip-172-16-157-20.us-west-1.compute.internal" type="PTR"/>
+</hostnames>
+<ports><extraports state="open|filtered" count="100">
+<extrareasons reason="no-response" count="100" proto="udp" ports="7,9,17,19,49,53,67-69,80,88,111,120,123,135-139,158,161-162,177,427,443,445,497,500,514-515,518,520,593,623,626,631,996-999,1022-1023,1025-1030,1433-1434,1645-1646,1701,1718-1719,1812-1813,1900,2000,2048-2049,2222-2223,3283,3456,3703,4444,4500,5000,5060,5353,5632,9200,10000,17185,20031,30718,31337,32768-32769,32771,32815,33281,49152-49154,49156,49181-49182,49185-49186,49188,49190-49194,49200-49201,65024"/>
+</extraports>
+</ports>
+<os><osfingerprint fingerprint="SCAN(V=7.94SVN%E=4%D=8/7%OT=%CT=%CU=%PV=Y%G=N%TM=66B3FA91%P=x86_64-pc-linux-gnu)&#xa;SEQ()&#xa;U1(R=N)&#xa;IE(R=N)&#xa;"/>
+</os>
+<trace proto="icmp">
+</trace>
+</host>
+<taskbegin task="NSE" time="1723071121"/>
+<taskend task="NSE" time="1723071121"/>
+<taskbegin task="NSE" time="1723071121"/>
+<taskend task="NSE" time="1723071121"/>
+<taskbegin task="NSE" time="1723071121"/>
+<taskend task="NSE" time="1723071121"/>
+<runstats><finished time="1723071121" timestr="Wed Aug  7 22:52:01 2024" summary="Nmap done at Wed Aug  7 22:52:01 2024; 1 IP address (1 host up) scanned in 1825.25 seconds" elapsed="1825.25" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
