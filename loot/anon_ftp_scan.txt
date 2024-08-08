@@ -1,0 +1,2 @@
+FTP                      192.168.197.245 21     192.168.197.245  [*] Banner: RELIA Edge FTP server.
+FTP                      192.168.197.245 21     192.168.197.245  [+] : - Anonymous Login!
