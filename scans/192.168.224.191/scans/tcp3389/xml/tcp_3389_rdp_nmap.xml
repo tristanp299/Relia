@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Tue Apr  2 21:09:45 2024 as: nmap -vv -&#45;reason -Pn -T4 -T4 -&#45;min-rate=500 -sV -p 3389 &quot;-&#45;script=banner,(rdp* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/kali/Documents/Relia/results/192.168.224.191/scans/tcp3389/tcp_3389_rdp_nmap.txt -oX /home/kali/Documents/Relia/results/192.168.224.191/scans/tcp3389/xml/tcp_3389_rdp_nmap.xml 192.168.224.191 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -T4 -&#45;min-rate=500 -sV -p 3389 &quot;-&#45;script=banner,(rdp* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/kali/Documents/Relia/results/192.168.224.191/scans/tcp3389/tcp_3389_rdp_nmap.txt -oX /home/kali/Documents/Relia/results/192.168.224.191/scans/tcp3389/xml/tcp_3389_rdp_nmap.xml 192.168.224.191" start="1712117385" startstr="Tue Apr  2 21:09:45 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="3389"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1712117385"/>
+<taskend task="NSE" time="1712117385"/>
+<taskbegin task="NSE" time="1712117385"/>
+<taskend task="NSE" time="1712117385"/>
+<taskbegin task="NSE" time="1712117385"/>
+<taskend task="NSE" time="1712117385"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1712117385"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1712117385"/>
+<taskbegin task="SYN Stealth Scan" time="1712117385"/>
+<taskend task="SYN Stealth Scan" time="1712117385" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1712117385"/>
+<taskend task="Service scan" time="1712117392" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1712117392"/>
+<taskend task="NSE" time="1712117412"/>
+<taskbegin task="NSE" time="1712117412"/>
+<taskend task="NSE" time="1712117434"/>
+<taskbegin task="NSE" time="1712117434"/>
+<taskend task="NSE" time="1712117438"/>
+<host starttime="1712117385" endtime="1712117438"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.224.191" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="ms-wbt-server" product="Microsoft Terminal Services" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="rdp-ntlm-info" output="&#xa;  Target_Name: RELIA&#xa;  NetBIOS_Domain_Name: RELIA&#xa;  NetBIOS_Computer_Name: LOGIN&#xa;  DNS_Domain_Name: relia.com&#xa;  DNS_Computer_Name: login.relia.com&#xa;  DNS_Tree_Name: relia.com&#xa;  Product_Version: 10.0.20348&#xa;  System_Time: 2024-04-03T04:09:54+00:00"><elem key="Target_Name">RELIA</elem>
+<elem key="NetBIOS_Domain_Name">RELIA</elem>
+<elem key="NetBIOS_Computer_Name">LOGIN</elem>
+<elem key="DNS_Domain_Name">relia.com</elem>
+<elem key="DNS_Computer_Name">login.relia.com</elem>
+<elem key="DNS_Tree_Name">relia.com</elem>
+<elem key="Product_Version">10.0.20348</elem>
+<elem key="System_Time">2024-04-03T04:09:54+00:00</elem>
+</script><script id="ssl-date" output="2024-04-03T04:10:12+00:00; -1s from scanner time."><elem key="date">2024-04-03T04:10:12+00:00</elem>
+<elem key="delta">-1.0</elem>
+</script><script id="ssl-cert" output="Subject: commonName=login.relia.com&#xa;Issuer: commonName=login.relia.com&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-04-02T03:51:24&#xa;Not valid after:  2024-10-02T03:51:24&#xa;MD5:   a11e:74d0:3e26:9798:2cd2:23b4:042e:7ea8&#xa;SHA-1: 7baa:db80:8004:6091:c748:8c30:31ec:b549:df13:cbc4&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC4jCCAcqgAwIBAgIQdtruqDnQ7o1IYp27loS04zANBgkqhkiG9w0BAQsFADAa&#xa;MRgwFgYDVQQDEw9sb2dpbi5yZWxpYS5jb20wHhcNMjQwNDAyMDM1MTI0WhcNMjQx&#xa;MDAyMDM1MTI0WjAaMRgwFgYDVQQDEw9sb2dpbi5yZWxpYS5jb20wggEiMA0GCSqG&#xa;SIb3DQEBAQUAA4IBDwAwggEKAoIBAQC8DfO9QNR6IxkrhxgIcZJlF9X079dzXb6N&#xa;Q8qp64tpPKS27rkJXJPbkqNL+46rx10B9pZZ+WH0bo6AEzxfOmlckq9Fe6cyhC6m&#xa;vhJcO4z58Rw9zf80K9LgSDLIE6+QplWGyTMuI9kSAyfLWlUxse16YCuDqlg+H+LT&#xa;XHrGkBPsuIrsl+MRWcGJzl7DhhAVCuoN+MW9TgEGbzyos8Sk+KrmnSADFmZB4cy6&#xa;QfhQJQ6NpZGrc6piG/88fLikkfHg39xjxulOStJBiTqAkTjTonrCmTaCkPKn/m3d&#xa;5bSkGasE85nDV7VK0DHBdVyVPNbnJzbseEGNEEWj71yW6EigR5/9AgMBAAGjJDAi&#xa;MBMGA1UdJQQMMAoGCCsGAQUFBwMBMAsGA1UdDwQEAwIEMDANBgkqhkiG9w0BAQsF&#xa;AAOCAQEACXRXVXR8GGwZfbEoeWtaYarPb3tckZSBigGZQPztq86zO4qZELPiKxsp&#xa;s0YCWsbkoQxS9FrZNhHPgGTeMRbhVPo2X88imYAiRArPl8MRMuVnerfgrMl95J+I&#xa;j4wWtE2MquG6YiReFaHnQXaOxn6x4ePSWz8qooQ6+Yv3yzFgo4uKTdiTeYzNrP66&#xa;1BeeUNlgmnOuB6jkA4uTz94wvL56W+gQho+Y7Y4xPHkfZ7ec/Q7jBiNgquC/2PEN&#xa;zcOLE6hcvFvV3L+RvvuNsslXmdXUSDW8YUx1F7s1id1jBFPqLnXC/fpK9BkG8Nr1&#xa;Al1W/WvjrrFH0KMIayCzSTLjzPBxNw==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="commonName">login.relia.com</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">login.relia.com</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">BC0DF3BD40D47A23192B87180871926517D5F4EFD7735DBE8D43CAA9EB8B693CA4B6EEB9095C93DB92A34BFB8EABC75D01F69659F961F46E8E80133C5F3A695C92AF457BA732842EA6BE125C3B8CF9F11C3DCDFF342BD2E04832C813AF90A65586C9332E23D9120327CB5A5531B1ED7A602B83AA583E1FE2D35C7AC69013ECB88AEC97E31159C189CE5EC38610150AEA0DF8C5BD4E01066F3CA8B3C4A4F8AAE69D2003166641E1CCBA41F850250E8DA591AB73AA621BFF3C7CB8A491F1E0DFDC63C6E94E4AD241893A809138D3A27AC299368290F2A7FE6DDDE5B4A419AB04F399C357B54AD031C1755C953CD6E72736EC78418D1045A3EF5C96E848A0479FFD</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-04-02T03:51:24</elem>
+<elem key="notAfter">2024-10-02T03:51:24</elem>
+</table>
+<elem key="md5">a11e74d03e2697982cd223b4042e7ea8</elem>
+<elem key="sha1">7baadb8080046091c7488c3031ecb549df13cbc4</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC4jCCAcqgAwIBAgIQdtruqDnQ7o1IYp27loS04zANBgkqhkiG9w0BAQsFADAa&#xa;MRgwFgYDVQQDEw9sb2dpbi5yZWxpYS5jb20wHhcNMjQwNDAyMDM1MTI0WhcNMjQx&#xa;MDAyMDM1MTI0WjAaMRgwFgYDVQQDEw9sb2dpbi5yZWxpYS5jb20wggEiMA0GCSqG&#xa;SIb3DQEBAQUAA4IBDwAwggEKAoIBAQC8DfO9QNR6IxkrhxgIcZJlF9X079dzXb6N&#xa;Q8qp64tpPKS27rkJXJPbkqNL+46rx10B9pZZ+WH0bo6AEzxfOmlckq9Fe6cyhC6m&#xa;vhJcO4z58Rw9zf80K9LgSDLIE6+QplWGyTMuI9kSAyfLWlUxse16YCuDqlg+H+LT&#xa;XHrGkBPsuIrsl+MRWcGJzl7DhhAVCuoN+MW9TgEGbzyos8Sk+KrmnSADFmZB4cy6&#xa;QfhQJQ6NpZGrc6piG/88fLikkfHg39xjxulOStJBiTqAkTjTonrCmTaCkPKn/m3d&#xa;5bSkGasE85nDV7VK0DHBdVyVPNbnJzbseEGNEEWj71yW6EigR5/9AgMBAAGjJDAi&#xa;MBMGA1UdJQQMMAoGCCsGAQUFBwMBMAsGA1UdDwQEAwIEMDANBgkqhkiG9w0BAQsF&#xa;AAOCAQEACXRXVXR8GGwZfbEoeWtaYarPb3tckZSBigGZQPztq86zO4qZELPiKxsp&#xa;s0YCWsbkoQxS9FrZNhHPgGTeMRbhVPo2X88imYAiRArPl8MRMuVnerfgrMl95J+I&#xa;j4wWtE2MquG6YiReFaHnQXaOxn6x4ePSWz8qooQ6+Yv3yzFgo4uKTdiTeYzNrP66&#xa;1BeeUNlgmnOuB6jkA4uTz94wvL56W+gQho+Y7Y4xPHkfZ7ec/Q7jBiNgquC/2PEN&#xa;zcOLE6hcvFvV3L+RvvuNsslXmdXUSDW8YUx1F7s1id1jBFPqLnXC/fpK9BkG8Nr1&#xa;Al1W/WvjrrFH0KMIayCzSTLjzPBxNw==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="rdp-enum-encryption" output="&#xa;  Security layer&#xa;    CredSSP (NLA): SUCCESS&#xa;    CredSSP with Early User Auth: SUCCESS&#xa;    RDSTLS: SUCCESS&#xa;"/></port>
+</ports>
+<times srtt="77837" rttvar="77837" to="389185"/>
+</host>
+<taskbegin task="NSE" time="1712117438"/>
+<taskend task="NSE" time="1712117438"/>
+<taskbegin task="NSE" time="1712117438"/>
+<taskend task="NSE" time="1712117438"/>
+<taskbegin task="NSE" time="1712117438"/>
+<taskend task="NSE" time="1712117438"/>
+<runstats><finished time="1712117438" timestr="Tue Apr  2 21:10:38 2024" summary="Nmap done at Tue Apr  2 21:10:38 2024; 1 IP address (1 host up) scanned in 52.96 seconds" elapsed="52.96" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,326 @@
+WINRM                    192.168.197.189 5985   MAIL             [*] Windows Server 2022 Build 20348 (name:MAIL) (domain:relia.com)
+WINRM                    192.168.197.248 5985   EXTERNAL         [*] Windows Server 2022 Build 20348 (name:EXTERNAL) (domain:EXTERNAL)
+WINRM                    192.168.197.249 5985   LEGACY           [*] Windows Server 2022 Build 20348 (name:LEGACY) (domain:LEGACY)
+WINRM                    192.168.197.247 5985   WEB02            [*] Windows Server 2022 Build 20348 (name:WEB02) (domain:WEB02)
+WINRM                    192.168.197.191 5985   LOGIN            [*] Windows Server 2022 Build 20348 (name:LOGIN) (domain:relia.com)
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\miranda:DPuBT9tGCBrTbr
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\steven:DPuBT9tGCBrTbr
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\mark:DPuBT9tGCBrTbr
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\anita:DPuBT9tGCBrTbr
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\jim:DPuBT9tGCBrTbr
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\dmzadmin:DPuBT9tGCBrTbr
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\damon:DPuBT9tGCBrTbr
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\emma:DPuBT9tGCBrTbr
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\miranda:SomersetVinyl1!
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\steven:SomersetVinyl1!
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\mark:SomersetVinyl1!
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\anita:SomersetVinyl1!
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\jim:SomersetVinyl1!
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\dmzadmin:SomersetVinyl1!
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\damon:SomersetVinyl1!
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\emma:SomersetVinyl1!
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\miranda:i6yuT6tym
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\steven:i6yuT6tym
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\mark:i6yuT6tym
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\anita:i6yuT6tym
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\jim:i6yuT6tym
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\dmzadmin:i6yuT6tym
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\damon:i6yuT6tym
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\emma:i6yuT6tym
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\miranda:OathDeeplyReprive91
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\steven:OathDeeplyReprive91
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\mark:OathDeeplyReprive91
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\anita:OathDeeplyReprive91
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\jim:OathDeeplyReprive91
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\dmzadmin:OathDeeplyReprive91
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\damon:OathDeeplyReprive91
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\emma:OathDeeplyReprive91
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\miranda:mercedes1
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\steven:mercedes1
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\mark:mercedes1
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\anita:mercedes1
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\jim:mercedes1
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\dmzadmin:mercedes1
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\damon:mercedes1
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\emma:mercedes1
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\miranda:SlimGodhoodMope
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\steven:SlimGodhoodMope
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\mark:SlimGodhoodMope
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\anita:SlimGodhoodMope
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\jim:SlimGodhoodMope
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\dmzadmin:SlimGodhoodMope
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\damon:SlimGodhoodMope
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\emma:SlimGodhoodMope
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\miranda:Castello1!
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\steven:Castello1!
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\mark:Castello1!
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\anita:Castello1!
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\jim:Castello1!
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\dmzadmin:Castello1!
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\damon:Castello1!
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\emma:Castello1!
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\miranda: SpnegoError (16): Operation not supported or available, Context: Retrieving NTLM store without NTLM_USER_FILE set to a filepath
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\steven: SpnegoError (16): Operation not supported or available, Context: Retrieving NTLM store without NTLM_USER_FILE set to a filepath
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\mark: SpnegoError (16): Operation not supported or available, Context: Retrieving NTLM store without NTLM_USER_FILE set to a filepath
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\anita: SpnegoError (16): Operation not supported or available, Context: Retrieving NTLM store without NTLM_USER_FILE set to a filepath
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\jim: SpnegoError (16): Operation not supported or available, Context: Retrieving NTLM store without NTLM_USER_FILE set to a filepath
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\dmzadmin: SpnegoError (16): Operation not supported or available, Context: Retrieving NTLM store without NTLM_USER_FILE set to a filepath
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\damon: SpnegoError (16): Operation not supported or available, Context: Retrieving NTLM store without NTLM_USER_FILE set to a filepath
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\emma: SpnegoError (16): Operation not supported or available, Context: Retrieving NTLM store without NTLM_USER_FILE set to a filepath
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\miranda:DPuBT9tGCBrTbr
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\steven:DPuBT9tGCBrTbr
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\mark:DPuBT9tGCBrTbr
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\anita:DPuBT9tGCBrTbr
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\jim:DPuBT9tGCBrTbr
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\dmzadmin:DPuBT9tGCBrTbr
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\damon:DPuBT9tGCBrTbr
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\emma:DPuBT9tGCBrTbr
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\miranda:SomersetVinyl1!
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\steven:SomersetVinyl1!
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\mark:SomersetVinyl1!
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\anita:SomersetVinyl1!
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\jim:SomersetVinyl1!
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\dmzadmin:SomersetVinyl1!
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\damon:SomersetVinyl1!
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\emma:SomersetVinyl1!
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\miranda:i6yuT6tym
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\steven:i6yuT6tym
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\mark:i6yuT6tym
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\anita:i6yuT6tym
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\jim:i6yuT6tym
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\dmzadmin:i6yuT6tym
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\damon:i6yuT6tym
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\emma:i6yuT6tym
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\miranda:OathDeeplyReprive91
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\steven:OathDeeplyReprive91
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\mark:OathDeeplyReprive91
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\anita:OathDeeplyReprive91
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\jim:OathDeeplyReprive91
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\dmzadmin:OathDeeplyReprive91
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\damon:OathDeeplyReprive91
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\emma:OathDeeplyReprive91
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\miranda:mercedes1
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\steven:mercedes1
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\mark:mercedes1
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\anita:mercedes1
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\jim:mercedes1
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\dmzadmin:mercedes1
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\damon:mercedes1
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\emma:mercedes1
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\miranda:SlimGodhoodMope
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\steven:SlimGodhoodMope
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\mark:SlimGodhoodMope
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\anita:SlimGodhoodMope
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\jim:SlimGodhoodMope
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\dmzadmin:SlimGodhoodMope
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\damon:SlimGodhoodMope
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\emma:SlimGodhoodMope
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\miranda:Castello1!
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\steven:Castello1!
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\mark:Castello1!
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\anita:Castello1!
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\jim:Castello1!
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\dmzadmin:Castello1!
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\damon:Castello1!
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\emma:Castello1!
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\miranda: SpnegoError (16): Operation not supported or available, Context: Retrieving NTLM store without NTLM_USER_FILE set to a filepath
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\steven: SpnegoError (16): Operation not supported or available, Context: Retrieving NTLM store without NTLM_USER_FILE set to a filepath
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\mark: SpnegoError (16): Operation not supported or available, Context: Retrieving NTLM store without NTLM_USER_FILE set to a filepath
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\anita: SpnegoError (16): Operation not supported or available, Context: Retrieving NTLM store without NTLM_USER_FILE set to a filepath
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\jim: SpnegoError (16): Operation not supported or available, Context: Retrieving NTLM store without NTLM_USER_FILE set to a filepath
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\dmzadmin: SpnegoError (16): Operation not supported or available, Context: Retrieving NTLM store without NTLM_USER_FILE set to a filepath
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\damon: SpnegoError (16): Operation not supported or available, Context: Retrieving NTLM store without NTLM_USER_FILE set to a filepath
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\emma: SpnegoError (16): Operation not supported or available, Context: Retrieving NTLM store without NTLM_USER_FILE set to a filepath
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\miranda:DPuBT9tGCBrTbr
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\steven:DPuBT9tGCBrTbr
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\mark:DPuBT9tGCBrTbr
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\anita:DPuBT9tGCBrTbr
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\jim:DPuBT9tGCBrTbr
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\dmzadmin:DPuBT9tGCBrTbr
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\damon:DPuBT9tGCBrTbr
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\emma:DPuBT9tGCBrTbr
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\miranda:SomersetVinyl1!
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\steven:SomersetVinyl1!
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\mark:SomersetVinyl1!
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\anita:SomersetVinyl1!
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\jim:SomersetVinyl1!
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\dmzadmin:SomersetVinyl1!
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\damon:SomersetVinyl1!
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\emma:SomersetVinyl1!
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\miranda:i6yuT6tym
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\steven:i6yuT6tym
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\mark:i6yuT6tym
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\anita:i6yuT6tym
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\jim:i6yuT6tym
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\dmzadmin:i6yuT6tym
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\damon:i6yuT6tym
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\emma:i6yuT6tym
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\miranda:OathDeeplyReprive91
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\steven:OathDeeplyReprive91
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\mark:OathDeeplyReprive91
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\anita:OathDeeplyReprive91
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\jim:OathDeeplyReprive91
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\dmzadmin:OathDeeplyReprive91
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\damon:OathDeeplyReprive91
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\emma:OathDeeplyReprive91
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\miranda:mercedes1
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\steven:mercedes1
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\mark:mercedes1
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\anita:mercedes1
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\jim:mercedes1
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\dmzadmin:mercedes1
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\damon:mercedes1
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\emma:mercedes1
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\miranda:SlimGodhoodMope
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\steven:SlimGodhoodMope
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\mark:SlimGodhoodMope
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\anita:SlimGodhoodMope
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\jim:SlimGodhoodMope
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\dmzadmin:SlimGodhoodMope
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\damon:SlimGodhoodMope
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\emma:SlimGodhoodMope
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\miranda:Castello1!
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\steven:Castello1!
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\mark:Castello1!
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\anita:Castello1!
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\jim:Castello1!
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\dmzadmin:Castello1!
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\damon:Castello1!
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\emma:Castello1!
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\miranda: SpnegoError (16): Operation not supported or available, Context: Retrieving NTLM store without NTLM_USER_FILE set to a filepath
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\steven: SpnegoError (16): Operation not supported or available, Context: Retrieving NTLM store without NTLM_USER_FILE set to a filepath
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\mark: SpnegoError (16): Operation not supported or available, Context: Retrieving NTLM store without NTLM_USER_FILE set to a filepath
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\anita: SpnegoError (16): Operation not supported or available, Context: Retrieving NTLM store without NTLM_USER_FILE set to a filepath
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\jim: SpnegoError (16): Operation not supported or available, Context: Retrieving NTLM store without NTLM_USER_FILE set to a filepath
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\dmzadmin: SpnegoError (16): Operation not supported or available, Context: Retrieving NTLM store without NTLM_USER_FILE set to a filepath
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\damon: SpnegoError (16): Operation not supported or available, Context: Retrieving NTLM store without NTLM_USER_FILE set to a filepath
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\emma: SpnegoError (16): Operation not supported or available, Context: Retrieving NTLM store without NTLM_USER_FILE set to a filepath
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\miranda:DPuBT9tGCBrTbr
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\steven:DPuBT9tGCBrTbr
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\mark:DPuBT9tGCBrTbr
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\anita:DPuBT9tGCBrTbr
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\jim:DPuBT9tGCBrTbr
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\dmzadmin:DPuBT9tGCBrTbr
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\damon:DPuBT9tGCBrTbr
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\emma:DPuBT9tGCBrTbr
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\miranda:SomersetVinyl1!
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\steven:SomersetVinyl1!
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\mark:SomersetVinyl1!
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\anita:SomersetVinyl1!
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\jim:SomersetVinyl1!
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\dmzadmin:SomersetVinyl1!
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\damon:SomersetVinyl1!
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\emma:SomersetVinyl1!
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\miranda:i6yuT6tym
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\steven:i6yuT6tym
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\mark:i6yuT6tym
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\anita:i6yuT6tym
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\jim:i6yuT6tym
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\dmzadmin:i6yuT6tym
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\damon:i6yuT6tym
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\emma:i6yuT6tym
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\miranda:OathDeeplyReprive91
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\steven:OathDeeplyReprive91
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\mark:OathDeeplyReprive91
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\anita:OathDeeplyReprive91
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\jim:OathDeeplyReprive91
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\dmzadmin:OathDeeplyReprive91
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\damon:OathDeeplyReprive91
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\emma:OathDeeplyReprive91
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\miranda:mercedes1
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\steven:mercedes1
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\mark:mercedes1
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\anita:mercedes1
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\jim:mercedes1
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\dmzadmin:mercedes1
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\damon:mercedes1
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\emma:mercedes1
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\miranda:SlimGodhoodMope
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\steven:SlimGodhoodMope
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\mark:SlimGodhoodMope
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\anita:SlimGodhoodMope
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\jim:SlimGodhoodMope
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\dmzadmin:SlimGodhoodMope
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\damon:SlimGodhoodMope
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\emma:SlimGodhoodMope
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\miranda:Castello1!
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\steven:Castello1!
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\mark:Castello1!
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\anita:Castello1!
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\jim:Castello1!
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\dmzadmin:Castello1!
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\damon:Castello1!
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\emma:Castello1!
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\miranda: SpnegoError (16): Operation not supported or available, Context: Retrieving NTLM store without NTLM_USER_FILE set to a filepath
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\steven: SpnegoError (16): Operation not supported or available, Context: Retrieving NTLM store without NTLM_USER_FILE set to a filepath
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\mark: SpnegoError (16): Operation not supported or available, Context: Retrieving NTLM store without NTLM_USER_FILE set to a filepath
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\anita: SpnegoError (16): Operation not supported or available, Context: Retrieving NTLM store without NTLM_USER_FILE set to a filepath
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\jim: SpnegoError (16): Operation not supported or available, Context: Retrieving NTLM store without NTLM_USER_FILE set to a filepath
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\dmzadmin: SpnegoError (16): Operation not supported or available, Context: Retrieving NTLM store without NTLM_USER_FILE set to a filepath
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\damon: SpnegoError (16): Operation not supported or available, Context: Retrieving NTLM store without NTLM_USER_FILE set to a filepath
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\emma: SpnegoError (16): Operation not supported or available, Context: Retrieving NTLM store without NTLM_USER_FILE set to a filepath
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\miranda:DPuBT9tGCBrTbr
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\steven:DPuBT9tGCBrTbr
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\mark:DPuBT9tGCBrTbr
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\anita:DPuBT9tGCBrTbr
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\jim:DPuBT9tGCBrTbr
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\dmzadmin:DPuBT9tGCBrTbr
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\damon:DPuBT9tGCBrTbr
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\emma:DPuBT9tGCBrTbr
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\miranda:SomersetVinyl1!
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\steven:SomersetVinyl1!
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\mark:SomersetVinyl1!
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\anita:SomersetVinyl1!
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\jim:SomersetVinyl1!
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\dmzadmin:SomersetVinyl1!
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\damon:SomersetVinyl1!
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\emma:SomersetVinyl1!
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\miranda:i6yuT6tym
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\steven:i6yuT6tym
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\mark:i6yuT6tym
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\anita:i6yuT6tym
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\jim:i6yuT6tym
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\dmzadmin:i6yuT6tym
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\damon:i6yuT6tym
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\emma:i6yuT6tym
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\miranda:OathDeeplyReprive91
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\steven:OathDeeplyReprive91
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\mark:OathDeeplyReprive91
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\anita:OathDeeplyReprive91
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\jim:OathDeeplyReprive91
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\dmzadmin:OathDeeplyReprive91
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\damon:OathDeeplyReprive91
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\emma:OathDeeplyReprive91
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\miranda:mercedes1
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\steven:mercedes1
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\mark:mercedes1
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\anita:mercedes1
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\jim:mercedes1
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\dmzadmin:mercedes1
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\damon:mercedes1
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\emma:mercedes1
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\miranda:SlimGodhoodMope
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\steven:SlimGodhoodMope
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\mark:SlimGodhoodMope
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\anita:SlimGodhoodMope
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\jim:SlimGodhoodMope
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\dmzadmin:SlimGodhoodMope
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\damon:SlimGodhoodMope
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\emma:SlimGodhoodMope
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\miranda:Castello1!
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\steven:Castello1!
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\mark:Castello1!
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\anita:Castello1!
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\jim:Castello1!
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\dmzadmin:Castello1!
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\damon:Castello1!
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\emma:Castello1!
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\miranda: SpnegoError (16): Operation not supported or available, Context: Retrieving NTLM store without NTLM_USER_FILE set to a filepath
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\steven: SpnegoError (16): Operation not supported or available, Context: Retrieving NTLM store without NTLM_USER_FILE set to a filepath
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\mark: SpnegoError (16): Operation not supported or available, Context: Retrieving NTLM store without NTLM_USER_FILE set to a filepath
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\anita: SpnegoError (16): Operation not supported or available, Context: Retrieving NTLM store without NTLM_USER_FILE set to a filepath
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\jim: SpnegoError (16): Operation not supported or available, Context: Retrieving NTLM store without NTLM_USER_FILE set to a filepath
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\dmzadmin: SpnegoError (16): Operation not supported or available, Context: Retrieving NTLM store without NTLM_USER_FILE set to a filepath
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\damon: SpnegoError (16): Operation not supported or available, Context: Retrieving NTLM store without NTLM_USER_FILE set to a filepath
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\emma: SpnegoError (16): Operation not supported or available, Context: Retrieving NTLM store without NTLM_USER_FILE set to a filepath
+Running nxc against 9 targets ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00

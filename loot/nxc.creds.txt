@@ -1,0 +1,13 @@
+anon_ftp_scan.txt:FTP                      192.168.197.245 21     192.168.197.245  [+] : - Anonymous Login!
+rdp.AD.nxc.txt:RDP                      192.168.197.248 3389   EXTERNAL         [+] EXTERNAL\emma:SomersetVinyl1! (Pwn3d!)
+rdp.AD.nxc.txt:RDP                      192.168.197.191 3389   LOGIN            [+] relia.com\jim:Castello1!
+rdp.local.nxc.txt:RDP                      192.168.197.191 3389   LOGIN            [+] LOGIN\dmzadmin:SlimGodhoodMope (Pwn3d!)
+rdp.local.nxc.txt:RDP                      192.168.197.248 3389   EXTERNAL         [+] EXTERNAL\emma:SomersetVinyl1! (Pwn3d!)
+smb.AD.nxc.txt:SMB                      192.168.197.191 445    LOGIN            [+] relia.com\jim:Castello1!
+smb.AD.nxc.txt:SMB                      192.168.197.189 445    MAIL             [+] relia.com\jim:Castello1!
+smb.AD.nxc.txt:SMB                      192.168.197.248 445    EXTERNAL         [+] EXTERNAL\miranda:DPuBT9tGCBrTbr
+smb.local.nxc.txt:SMB                      192.168.197.191 445    LOGIN            [+] LOGIN\dmzadmin:SlimGodhoodMope
+smb.local.nxc.txt:SMB                      192.168.197.248 445    EXTERNAL         [+] EXTERNAL\miranda:DPuBT9tGCBrTbr
+winrm.AD.nxc.txt:RPC                      192.168.197.189 135    MAIL             [+] relia.com\jim:Castello1!
+winrm.AD.nxc.txt:RPC                      192.168.197.191 135    LOGIN            [+] relia.com\jim:Castello1!
+winrm.AD.nxc.txt:RPC                      192.168.197.248 135    EXTERNAL         [+] EXTERNAL\emma:SomersetVinyl1!

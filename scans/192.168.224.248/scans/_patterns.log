@@ -1,0 +1,4 @@
+Identified Architecture: 64-bit
+
+Identified HTTP Server: Virata-EmWeb/R([\d_]+)\r\nContent-Type: text/html; ?charset=UTF-8\r\nExpires: .*<title>HP (Color |)LaserJet ([\w._ -]+)&nbsp;&nbsp;&nbsp;'
+

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Tue Apr  2 21:10:40 2024 as: nmap -vv -&#45;reason -Pn -T4 -T4 -&#45;min-rate=500 -sV -p 49666 -&#45;script=banner,msrpc-enum,rpc-grind,rpcinfo -oN /home/kali/Documents/Relia/results/192.168.224.189/scans/tcp49666/tcp_49666_rpc_nmap.txt -oX /home/kali/Documents/Relia/results/192.168.224.189/scans/tcp49666/xml/tcp_49666_rpc_nmap.xml 192.168.224.189 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -T4 -&#45;min-rate=500 -sV -p 49666 -&#45;script=banner,msrpc-enum,rpc-grind,rpcinfo -oN /home/kali/Documents/Relia/results/192.168.224.189/scans/tcp49666/tcp_49666_rpc_nmap.txt -oX /home/kali/Documents/Relia/results/192.168.224.189/scans/tcp49666/xml/tcp_49666_rpc_nmap.xml 192.168.224.189" start="1712117440" startstr="Tue Apr  2 21:10:40 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="49666"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1712117440"/>
+<taskend task="NSE" time="1712117440"/>
+<taskbegin task="NSE" time="1712117440"/>
+<taskend task="NSE" time="1712117440"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1712117440"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1712117440"/>
+<taskbegin task="SYN Stealth Scan" time="1712117440"/>
+<taskend task="SYN Stealth Scan" time="1712117440" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1712117441"/>
+<taskend task="Service scan" time="1712117465" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1712117465"/>
+<taskend task="NSE" time="1712117483"/>
+<taskbegin task="NSE" time="1712117483"/>
+<taskend task="NSE" time="1712117484"/>
+<host starttime="1712117440" endtime="1712117484"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.224.189" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="49666"><state state="open" reason="syn-ack" reason_ttl="125"/></port>
+</ports>
+<times srtt="85953" rttvar="85953" to="429765"/>
+</host>
+<taskbegin task="NSE" time="1712117484"/>
+<taskend task="NSE" time="1712117484"/>
+<taskbegin task="NSE" time="1712117484"/>
+<taskend task="NSE" time="1712117484"/>
+<runstats><finished time="1712117484" timestr="Tue Apr  2 21:11:24 2024" summary="Nmap done at Tue Apr  2 21:11:24 2024; 1 IP address (1 host up) scanned in 43.84 seconds" elapsed="43.84" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

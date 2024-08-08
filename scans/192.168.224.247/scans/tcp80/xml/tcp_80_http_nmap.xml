@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Tue Apr  2 20:58:10 2024 as: nmap -vv -&#45;reason -Pn -T4 -T4 -&#45;min-rate=500 -sV -p 80 &quot;-&#45;script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)&quot; -oN /home/kali/Documents/Relia/results/192.168.224.247/scans/tcp80/tcp_80_http_nmap.txt -oX /home/kali/Documents/Relia/results/192.168.224.247/scans/tcp80/xml/tcp_80_http_nmap.xml 192.168.224.247 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -T4 -&#45;min-rate=500 -sV -p 80 &quot;-&#45;script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)&quot; -oN /home/kali/Documents/Relia/results/192.168.224.247/scans/tcp80/tcp_80_http_nmap.txt -oX /home/kali/Documents/Relia/results/192.168.224.247/scans/tcp80/xml/tcp_80_http_nmap.xml 192.168.224.247" start="1712116690" startstr="Tue Apr  2 20:58:10 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="80"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1712116690"/>
+<taskend task="NSE" time="1712116690"/>
+<taskbegin task="NSE" time="1712116690"/>
+<taskend task="NSE" time="1712116690"/>
+<taskbegin task="NSE" time="1712116690"/>
+<taskend task="NSE" time="1712116690"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1712116690"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1712116690"/>
+<taskbegin task="SYN Stealth Scan" time="1712116690"/>
+<taskend task="SYN Stealth Scan" time="1712116690" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1712116691"/>
+<taskend task="Service scan" time="1712116697" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1712116697"/>
+<taskprogress task="NSE" time="1712116728" percent="73.67" remaining="12" etc="1712116739"/>
+<taskprogress task="NSE" time="1712116758" percent="84.59" remaining="12" etc="1712116769"/>
+<taskprogress task="NSE" time="1712116788" percent="97.39" remaining="3" etc="1712116790"/>
+<taskprogress task="NSE" time="1712116818" percent="98.37" remaining="3" etc="1712116820"/>
+<taskprogress task="NSE" time="1712116848" percent="98.37" remaining="3" etc="1712116851"/>
+<taskprogress task="NSE" time="1712116878" percent="99.68" remaining="1" etc="1712116879"/>
+<taskprogress task="NSE" time="1712116908" percent="99.68" remaining="1" etc="1712116909"/>
+<taskprogress task="NSE" time="1712116938" percent="99.68" remaining="1" etc="1712116939"/>
+<taskprogress task="NSE" time="1712116968" percent="99.68" remaining="1" etc="1712116969"/>
+<taskprogress task="NSE" time="1712116998" percent="99.68" remaining="1" etc="1712116999"/>
+<taskprogress task="NSE" time="1712117028" percent="99.68" remaining="2" etc="1712117029"/>
+<taskprogress task="NSE" time="1712117058" percent="99.68" remaining="2" etc="1712117059"/>
+<taskprogress task="NSE" time="1712117088" percent="99.68" remaining="2" etc="1712117089"/>
+<taskprogress task="NSE" time="1712117118" percent="99.68" remaining="2" etc="1712117119"/>
+<taskprogress task="NSE" time="1712117148" percent="99.68" remaining="2" etc="1712117149"/>
+<taskprogress task="NSE" time="1712117178" percent="99.68" remaining="2" etc="1712117180"/>
+<taskend task="NSE" time="1712117197"/>
+<taskbegin task="NSE" time="1712117197"/>
+<taskend task="NSE" time="1712117205"/>
+<taskbegin task="NSE" time="1712117205"/>
+<taskend task="NSE" time="1712117205"/>
+<host starttime="1712116690" endtime="1712117205"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.224.247" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="http" product="Apache httpd" version="2.4.54" extrainfo="(Win64) OpenSSL/1.1.1p PHP/8.1.10" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.54</cpe></service><script id="http-jsonp-detection" output="Couldn&apos;t find any JSONP endpoints."/><script id="http-trace" output="TRACE is enabled&#xa;Headers:&#xa;Date: Wed, 03 Apr 2024 03:58:19 GMT&#xa;Server: Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.10&#xa;Connection: close&#xa;Transfer-Encoding: chunked&#xa;Content-Type: message/http&#xa;"/><script id="http-errors" output="Couldn&apos;t find any error pages."/><script id="http-feed" output="Couldn&apos;t find any feeds."/><script id="http-title" output="RELIA - New Hire Information"><elem key="title">RELIA - New Hire Information</elem>
+</script><script id="http-malware-host" output="Host appears to be clean"/><script id="http-aspnet-debug" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-php-version" output="Credits query returned unknown hash 443ee98ec8f6fb0eb7e56948348e0f32&#xa;Version from header x-powered-by: PHP/8.1.10"/><script id="http-sitemap-generator" output="&#xa;  Directory structure:&#xa;    /&#xa;      Other: 1&#xa;    /css/&#xa;      css: 1&#xa;    /js/&#xa;      js: 1&#xa;    /pdfs/&#xa;      pdf: 2&#xa;  Longest directory structure:&#xa;    Depth: 1&#xa;    Dir: /pdfs/&#xa;  Total files found (by extension):&#xa;    Other: 1; css: 1; js: 1; pdf: 2&#xa;"/><script id="http-dombased-xss" output="Couldn&apos;t find any DOM based XSS."/><script id="http-wordpress-users" output="[Error] Wordpress installation was not found. We couldn&apos;t find wp-login.php"/><script id="http-vhosts" output="&#xa;46 names had status 200&#xa;82 names had status ERROR"/><script id="http-security-headers" output=""></script><script id="http-referer-checker" output="Couldn&apos;t find any cross-domain scripts."/><script id="http-csrf" output="Couldn&apos;t find any CSRF vulnerabilities."/><script id="http-comments-displayer" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=192.168.224.247&#xa;    &#xa;    Path: http://192.168.224.247:80/js/scripts.js&#xa;    Line number: 16&#xa;    Comment: &#xa;         // if (localStorage.getItem(&apos;sb|sidebar-toggle&apos;) === &apos;true&apos;) {&#xa;    &#xa;    Path: http://192.168.224.247:80/css/styles.css&#xa;    Line number: 6117&#xa;    Comment: &#xa;        /* rtl:options: {&#xa;          &quot;autoRename&quot;: true,&#xa;          &quot;stringMap&quot;:[ {&#xa;            &quot;name&quot;    : &quot;prev-next&quot;,&#xa;            &quot;search&quot;  : &quot;prev&quot;,&#xa;            &quot;replace&quot; : &quot;next&quot;&#xa;          } ]&#xa;        } */&#xa;    &#xa;    Path: http://192.168.224.247:80/js/scripts.js&#xa;    Line number: 12&#xa;    Comment: &#xa;         // Toggle the side navigation&#xa;    &#xa;    Path: http://192.168.224.247:80/&#xa;    Line number: 13&#xa;    Comment: &#xa;        &lt;!-&#45; Sidebar-&#45;&gt;&#xa;    &#xa;    Path: http://192.168.224.247:80/&#xa;    Line number: 21&#xa;    Comment: &#xa;        &lt;!-&#45; &lt;a class=&quot;list-group-item list-group-item-action list-group-item-light p-3&quot; href=&quot;#!&quot;&gt;Laptop and Mobile Phone&lt;/a&gt; -&#45;&gt;&#xa;    &#xa;    Path: http://192.168.224.247:80/&#xa;    Line number: 25&#xa;    Comment: &#xa;        &lt;!-&#45; Page content wrapper-&#45;&gt;&#xa;    &#xa;    Path: http://192.168.224.247:80/css/styles.css&#xa;    Line number: 7&#xa;    Comment: &#xa;        /*!&#xa;         * Bootstrap v5.1.3 (https://getbootstrap.com/)&#xa;         * Copyright 2011-2021 The Bootstrap Authors&#xa;         * Copyright 2011-2021 Twitter, Inc.&#xa;         * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)&#xa;         */&#xa;    &#xa;    Path: http://192.168.224.247:80/js/scripts.js&#xa;    Line number: 6&#xa;    Comment: &#xa;        &#xa;        // &#xa;    &#xa;    Path: http://192.168.224.247:80/js/scripts.js&#xa;    Line number: 15&#xa;    Comment: &#xa;         // Uncomment Below to persist sidebar toggle between refreshes&#xa;    &#xa;    Path: http://192.168.224.247:80/&#xa;    Line number: 22&#xa;    Comment: &#xa;        &lt;!-&#45; &lt;a class=&quot;list-group-item list-group-item-action list-group-item-light p-3&quot; href=&quot;#!&quot;&gt;A word from the CEO&lt;/a&gt; -&#45;&gt;&#xa;    &#xa;    Path: http://192.168.224.247:80/js/scripts.js&#xa;    Line number: 18&#xa;    Comment: &#xa;         // }&#xa;    &#xa;    Path: http://192.168.224.247:80/js/scripts.js&#xa;    Line number: 17&#xa;    Comment: &#xa;         //     document.body.classList.toggle(&apos;sb-sidenav-toggled&apos;);&#xa;    &#xa;    Path: http://192.168.224.247:80/&#xa;    Line number: 27&#xa;    Comment: &#xa;        &lt;!-&#45; Top navigation-&#45;&gt;&#xa;    &#xa;    Path: http://192.168.224.247:80/css/styles.css&#xa;    Line number: 7716&#xa;    Comment: &#xa;        /* rtl:end:remove */&#xa;    &#xa;    Path: http://192.168.224.247:80/&#xa;    Line number: 20&#xa;    Comment: &#xa;        &lt;!-&#45; &lt;a class=&quot;list-group-item list-group-item-action list-group-item-light p-3&quot; href=&quot;/pdfs/New-Hire-Form.pdf&quot;&gt;New Hire Form&lt;/a&gt; -&#45;&gt;&#xa;    &#xa;    Path: http://192.168.224.247:80/&#xa;    Line number: 40&#xa;    Comment: &#xa;        &lt;!-&#45; Page content-&#45;&gt;&#xa;    &#xa;    Path: http://192.168.224.247:80/css/styles.css&#xa;    Line number: 7710&#xa;    Comment: &#xa;        /* rtl:begin:remove */&#xa;    &#xa;    Path: http://192.168.224.247:80/js/scripts.js&#xa;    Line number: 1&#xa;    Comment: &#xa;        /*!&#xa;        * Start Bootstrap - Simple Sidebar v6.0.5 (https://startbootstrap.com/template/simple-sidebar)&#xa;        * Copyright 2013-2022 Start Bootstrap&#xa;        * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-simple-sidebar/blob/master/LICENSE)&#xa;        */&#xa;    &#xa;    Path: http://192.168.224.247:80/css/styles.css&#xa;    Line number: 4791&#xa;    Comment: &#xa;        /* rtl: var(-&#45;bs-breadcrumb-divider, &quot;/&quot;) */&#xa;    &#xa;    Path: http://192.168.224.247:80/css/styles.css&#xa;    Line number: 256&#xa;    Comment: &#xa;        /* rtl:ignore */&#xa;    &#xa;    Path: http://192.168.224.247:80/css/styles.css&#xa;    Line number: 6041&#xa;    Comment: &#xa;        /* rtl:end:ignore */&#xa;    &#xa;    Path: http://192.168.224.247:80/css/styles.css&#xa;    Line number: 440&#xa;    Comment: &#xa;        /* rtl:raw:&#xa;        [type=&quot;tel&quot;],&#xa;        [type=&quot;url&quot;],&#xa;        [type=&quot;email&quot;],&#xa;        [type=&quot;number&quot;] {&#xa;          direction: ltr;&#xa;        }&#xa;        */&#xa;    &#xa;    Path: http://192.168.224.247:80/css/styles.css&#xa;    Line number: 6030&#xa;    Comment: &#xa;        /* rtl:begin:ignore */&#xa;"/><script id="http-vuln-cve2014-3704" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-fetch" output="Please enter the complete path of the directory to save data in."><elem key="ERROR">Please enter the complete path of the directory to save data in.</elem>
+</script><script id="http-date" output="Wed, 03 Apr 2024 03:58:26 GMT; 0s from local time."><elem key="date">2024-04-03T03:58:26+00:00</elem>
+<elem key="delta">0.0</elem>
+</script><script id="http-chrono" output="Request times for /; avg: 10593.41ms; min: 1607.67ms; max: 22218.82ms"/><script id="http-mobileversion-checker" output="No mobile version detected."/><script id="http-useragent-tester" output="&#xa;  Allowed User Agents: &#xa;    Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)&#xa;    lwp-trivial&#xa;    libcurl-agent/1.0&#xa;    PHP/&#xa;    HTTP::Lite&#xa;    PHPCrawl&#xa;    http client&#xa;    PECL::HTTP&#xa;    Wget/1.13.4 (linux-gnu)&#xa;    WWW-Mechanize/1.34&#xa;  Change in Status Code: &#xa;    MFC_Tear_Sample: 200&#xa;    Zend_Http_Client: 200&#xa;    Python-urllib/2.5: 200&#xa;    Snoopy: 200&#xa;    libwww: 200&#xa;    GT::WWW: 200&#xa;    URI::Fetch: 200"><table key="Allowed User Agents">
+<elem>Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)</elem>
+<elem>lwp-trivial</elem>
+<elem>libcurl-agent/1.0</elem>
+<elem>PHP/</elem>
+<elem>HTTP::Lite</elem>
+<elem>PHPCrawl</elem>
+<elem>http client</elem>
+<elem>PECL::HTTP</elem>
+<elem>Wget/1.13.4 (linux-gnu)</elem>
+<elem>WWW-Mechanize/1.34</elem>
+</table>
+<table key="Change in Status Code">
+<elem key="MFC_Tear_Sample">200</elem>
+<elem key="Zend_Http_Client">200</elem>
+<elem key="Python-urllib/2.5">200</elem>
+<elem key="Snoopy">200</elem>
+<elem key="libwww">200</elem>
+<elem key="GT::WWW">200</elem>
+<elem key="URI::Fetch">200</elem>
+</table>
+</script><script id="http-headers" output="&#xa;  Date: Wed, 03 Apr 2024 03:58:47 GMT&#xa;  Server: Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.10&#xa;  X-Powered-By: PHP/8.1.10&#xa;  Connection: close&#xa;  Content-Type: text/html; charset=UTF-8&#xa;  &#xa;  (Request type: HEAD)&#xa;"/><script id="http-methods" output="&#xa;  Supported Methods: GET"><table key="Supported Methods">
+<elem>GET</elem>
+</table>
+</script><script id="http-stored-xss" output="Couldn&apos;t find any stored XSS vulnerabilities."/><script id="http-devframework" output="Couldn&apos;t determine the underlying framework or CMS. Try increasing &apos;httpspider.maxpagecount&apos; value to spider more pages."/></port>
+</ports>
+<times srtt="75445" rttvar="75445" to="377225"/>
+</host>
+<taskbegin task="NSE" time="1712117205"/>
+<taskend task="NSE" time="1712117205"/>
+<taskbegin task="NSE" time="1712117205"/>
+<taskend task="NSE" time="1712117205"/>
+<taskbegin task="NSE" time="1712117205"/>
+<taskend task="NSE" time="1712117205"/>
+<runstats><finished time="1712117205" timestr="Tue Apr  2 21:06:45 2024" summary="Nmap done at Tue Apr  2 21:06:45 2024; 1 IP address (1 host up) scanned in 515.96 seconds" elapsed="515.96" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

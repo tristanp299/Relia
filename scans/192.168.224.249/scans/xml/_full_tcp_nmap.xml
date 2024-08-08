@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Tue Apr  2 20:56:39 2024 as: nmap -vv -&#45;reason -Pn -T4 -T4 -&#45;min-rate=500 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/kali/Documents/Relia/results/192.168.224.249/scans/_full_tcp_nmap.txt -oX /home/kali/Documents/Relia/results/192.168.224.249/scans/xml/_full_tcp_nmap.xml 192.168.224.249 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -T4 -&#45;min-rate=500 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/kali/Documents/Relia/results/192.168.224.249/scans/_full_tcp_nmap.txt -oX /home/kali/Documents/Relia/results/192.168.224.249/scans/xml/_full_tcp_nmap.xml 192.168.224.249" start="1712116599" startstr="Tue Apr  2 20:56:39 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1712116600"/>
+<taskend task="NSE" time="1712116600"/>
+<taskbegin task="NSE" time="1712116600"/>
+<taskend task="NSE" time="1712116600"/>
+<taskbegin task="NSE" time="1712116600"/>
+<taskend task="NSE" time="1712116600"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1712116600"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1712116600"/>
+<taskbegin task="SYN Stealth Scan" time="1712116600"/>
+<taskprogress task="SYN Stealth Scan" time="1712116631" percent="23.06" remaining="104" etc="1712116734"/>
+<taskprogress task="SYN Stealth Scan" time="1712116661" percent="44.35" remaining="77" etc="1712116738"/>
+<taskprogress task="SYN Stealth Scan" time="1712116691" percent="66.12" remaining="47" etc="1712116738"/>
+<taskend task="SYN Stealth Scan" time="1712116748" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1712116749"/>
+<taskprogress task="Service scan" time="1712116812" percent="64.29" remaining="35" etc="1712116847"/>
+<taskend task="Service scan" time="1712116813" extrainfo="14 services on 1 host"/>
+<taskbegin task="Traceroute" time="1712116853"/>
+<taskend task="Traceroute" time="1712116853"/>
+<taskbegin task="Parallel DNS resolution of 4 hosts." time="1712116853"/>
+<taskend task="Parallel DNS resolution of 4 hosts." time="1712116853"/>
+<taskbegin task="NSE" time="1712116853"/>
+<taskend task="NSE" time="1712116863"/>
+<taskbegin task="NSE" time="1712116863"/>
+<taskend task="NSE" time="1712116864"/>
+<taskbegin task="NSE" time="1712116864"/>
+<taskend task="NSE" time="1712116864"/>
+<host starttime="1712116600" endtime="1712116864"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.224.249" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65500">
+<extrareasons reason="reset" count="65500" proto="tcp" ports="1-79,81-134,136-138,140-444,446-1167,1169-2168,2170-3388,3390-5279,5281-5984,5986-7214,7216-7999,8001-10778,10780-13381,13383-15166,15168-19064,19066-24431,24433-31638,31640-35639,35641-35941,35943-36523,36525-41986,41988-42235,42237-43048,43050-47000,47002-49178,49180-49663,49670-50649,50651-53012,53014-63450,63452-64319,64321-65535"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="http" product="Microsoft IIS httpd" version="10.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:internet_information_services:10.0</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: OPTIONS TRACE GET HEAD POST&#xa;  Potentially risky methods: TRACE"><table key="Supported Methods">
+<elem>OPTIONS</elem>
+<elem>TRACE</elem>
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+<table key="Potentially risky methods">
+<elem>TRACE</elem>
+</table>
+</script><script id="http-server-header" output="Microsoft-IIS/10.0"><elem>Microsoft-IIS/10.0</elem>
+</script><script id="http-title" output="IIS Windows Server"><elem key="title">IIS Windows Server</elem>
+</script></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1168"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="vchat" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2169"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="brain" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="ms-wbt-server" product="Microsoft Terminal Services" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="rdp-ntlm-info" output="&#xa;  Target_Name: LEGACY&#xa;  NetBIOS_Domain_Name: LEGACY&#xa;  NetBIOS_Computer_Name: LEGACY&#xa;  DNS_Domain_Name: LEGACY&#xa;  DNS_Computer_Name: LEGACY&#xa;  Product_Version: 10.0.20348&#xa;  System_Time: 2024-04-03T04:00:55+00:00"><elem key="Target_Name">LEGACY</elem>
+<elem key="NetBIOS_Domain_Name">LEGACY</elem>
+<elem key="NetBIOS_Computer_Name">LEGACY</elem>
+<elem key="DNS_Domain_Name">LEGACY</elem>
+<elem key="DNS_Computer_Name">LEGACY</elem>
+<elem key="Product_Version">10.0.20348</elem>
+<elem key="System_Time">2024-04-03T04:00:55+00:00</elem>
+</script><script id="ssl-cert" output="Subject: commonName=LEGACY&#xa;Issuer: commonName=LEGACY&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-01-13T23:01:30&#xa;Not valid after:  2024-07-14T23:01:30&#xa;MD5:   ced0:46fb:0382:2c78:4f8e:6e99:7ce2:feaa&#xa;SHA-1: 5931:bfe6:185b:7084:5964:45fb:b55a:3383:85b3:9f7f&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC0DCCAbigAwIBAgIQYUbza/e+y6VDeQQningixDANBgkqhkiG9w0BAQsFADAR&#xa;MQ8wDQYDVQQDEwZMRUdBQ1kwHhcNMjQwMTEzMjMwMTMwWhcNMjQwNzE0MjMwMTMw&#xa;WjARMQ8wDQYDVQQDEwZMRUdBQ1kwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK&#xa;AoIBAQCqwka8tAMwtxNQW84u3c2UTguRuAqMNN/4StHyBwGRYKaMS+TfJC/HaWqN&#xa;F0szmrm0L2wTibd/Ndj29TZV0jVOfkTroDoriaHlpjo+cFA6t46e6p0gzuW0K0NK&#xa;8Npn7FgtlVNgtV8NUvqYq0Juu+z0EhscYh7GhuCdcDLZ1tK6/ehBQkFW96JWpaWo&#xa;Hwus91+dtveOUGxU5+V1UpvW3OkboxoK6Z3bKiqdnevSi5O79BFl9KOQsPJlgwNW&#xa;k8tkWrpAWiSldsNgQ1ZHbKETPdQLFKLPmD0mb8ycw5OIxsaKTwdVbFu/g70UlN5W&#xa;CsMuUJnTiFGpOSHljGDAa7PhN6NVAgMBAAGjJDAiMBMGA1UdJQQMMAoGCCsGAQUF&#xa;BwMBMAsGA1UdDwQEAwIEMDANBgkqhkiG9w0BAQsFAAOCAQEAaUqBAi7tO/D2ZVTy&#xa;N9zEVSnrKvZQ3mJSQNd7Tykw9q4vuMYqmziwd1zrkALTxmWOJ70YTaR14DxQFZ/0&#xa;9+9TY8d3aeAcA+JxMeSDbXcE2FNCKV8CBc/iD5dUIr+wF3Psb6Va1l3636Al1g9x&#xa;NUMtGoJhfnuxERQOyR+HioGz8dtnK+GSaSfa+4r7jYUySuIL405Cgk0PDPs29D3F&#xa;BrTvzgZsYu8L4tZMOhD8LMMEFQ7axISAUNBRXnAI5/kOkdoCe5m/KMpzIsFi5Pyj&#xa;MPNRNYsGnI+RGBgUpPgtVDGWIvRRkzZ+Ogqw3CUaR9NaxrOLtPMvNjrgUGpd9RR5&#xa;VvEnKg==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="commonName">LEGACY</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">LEGACY</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">AAC246BCB40330B713505BCE2EDDCD944E0B91B80A8C34DFF84AD1F207019160A68C4BE4DF242FC7696A8D174B339AB9B42F6C1389B77F35D8F6F53655D2354E7E44EBA03A2B89A1E5A63A3E70503AB78E9EEA9D20CEE5B42B434AF0DA67EC582D955360B55F0D52FA98AB426EBBECF4121B1C621EC686E09D7032D9D6D2BAFDE841424156F7A256A5A5A81F0BACF75F9DB6F78E506C54E7E575529BD6DCE91BA31A0AE99DDB2A2A9D9DEBD28B93BBF41165F4A390B0F26583035693CB645ABA405A24A576C3604356476CA1133DD40B14A2CF983D266FCC9CC39388C6C68A4F07556C5BBF83BD1494DE560AC32E5099D38851A93921E58C60C06BB3E137A355</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-01-13T23:01:30</elem>
+<elem key="notAfter">2024-07-14T23:01:30</elem>
+</table>
+<elem key="md5">ced046fb03822c784f8e6e997ce2feaa</elem>
+<elem key="sha1">5931bfe6185b7084596445fbb55a338385b39f7f</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC0DCCAbigAwIBAgIQYUbza/e+y6VDeQQningixDANBgkqhkiG9w0BAQsFADAR&#xa;MQ8wDQYDVQQDEwZMRUdBQ1kwHhcNMjQwMTEzMjMwMTMwWhcNMjQwNzE0MjMwMTMw&#xa;WjARMQ8wDQYDVQQDEwZMRUdBQ1kwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK&#xa;AoIBAQCqwka8tAMwtxNQW84u3c2UTguRuAqMNN/4StHyBwGRYKaMS+TfJC/HaWqN&#xa;F0szmrm0L2wTibd/Ndj29TZV0jVOfkTroDoriaHlpjo+cFA6t46e6p0gzuW0K0NK&#xa;8Npn7FgtlVNgtV8NUvqYq0Juu+z0EhscYh7GhuCdcDLZ1tK6/ehBQkFW96JWpaWo&#xa;Hwus91+dtveOUGxU5+V1UpvW3OkboxoK6Z3bKiqdnevSi5O79BFl9KOQsPJlgwNW&#xa;k8tkWrpAWiSldsNgQ1ZHbKETPdQLFKLPmD0mb8ycw5OIxsaKTwdVbFu/g70UlN5W&#xa;CsMuUJnTiFGpOSHljGDAa7PhN6NVAgMBAAGjJDAiMBMGA1UdJQQMMAoGCCsGAQUF&#xa;BwMBMAsGA1UdDwQEAwIEMDANBgkqhkiG9w0BAQsFAAOCAQEAaUqBAi7tO/D2ZVTy&#xa;N9zEVSnrKvZQ3mJSQNd7Tykw9q4vuMYqmziwd1zrkALTxmWOJ70YTaR14DxQFZ/0&#xa;9+9TY8d3aeAcA+JxMeSDbXcE2FNCKV8CBc/iD5dUIr+wF3Psb6Va1l3636Al1g9x&#xa;NUMtGoJhfnuxERQOyR+HioGz8dtnK+GSaSfa+4r7jYUySuIL405Cgk0PDPs29D3F&#xa;BrTvzgZsYu8L4tZMOhD8LMMEFQ7axISAUNBRXnAI5/kOkdoCe5m/KMpzIsFi5Pyj&#xa;MPNRNYsGnI+RGBgUpPgtVDGWIvRRkzZ+Ogqw3CUaR9NaxrOLtPMvNjrgUGpd9RR5&#xa;VvEnKg==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="2024-04-03T04:01:03+00:00; -1s from scanner time."><elem key="date">2024-04-03T04:01:03+00:00</elem>
+<elem key="delta">-1.0</elem>
+</script></port>
+<port protocol="tcp" portid="5280"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="xmpp-bosh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5985"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+</script><script id="http-title" output="Not Found"><elem key="title">Not Found</elem>
+</script></port>
+<port protocol="tcp" portid="7215"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="PS-Server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8000"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="http" product="Apache httpd" version="2.4.54" extrainfo="(Win64) OpenSSL/1.1.1p PHP/7.4.30" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.54</cpe></service><script id="http-favicon" output="Unknown favicon MD5: 6EB4A43CB64C97F76562AF703893C8FD"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Welcome to XAMPP&#xa;Requested resource was http://192.168.224.249:8000/dashboard/"><elem key="title">Welcome to XAMPP</elem>
+<elem key="redirect_url">http://192.168.224.249:8000/dashboard/</elem>
+</script><script id="http-server-header" output="Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/7.4.30"><elem>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/7.4.30</elem>
+</script><script id="http-open-proxy" output="Proxy might be redirecting requests"/></port>
+<port protocol="tcp" portid="10779"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="13382"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="15167"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="19065"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="24432"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="31639"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="35640"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="35942"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="36524"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="febooti-aw" method="table" conf="3"/></port>
+<port protocol="tcp" portid="41987"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="42236"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="43049"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="47001"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-title" output="Not Found"><elem key="title">Not Found</elem>
+</script><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+</script></port>
+<port protocol="tcp" portid="49179"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="49664"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49665"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49666"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49667"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49668"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49669"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="50650"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="53013"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="63451"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="64320"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="38459"/>
+<osmatch name="Fortinet FortiGate-50B or 310B firewall" accuracy="86" line="25613">
+<osclass type="firewall" vendor="Fortinet" osfamily="embedded" accuracy="86"/>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=7.94SVN%E=4%D=4/2%OT=80%CT=1%CU=38459%PV=Y%DS=4%DC=T%G=Y%TM=660CD&#xa;OS:480%P=aarch64-unknown-linux-gnu)SEQ()ECN(R=N)T1(R=N)T2(R=N)T3(R=N)T4(R=N&#xa;OS:)T4(R=Y%DF=Y%T=80%W=1FFE%S=O%A=O%F=AP%O=NNT11%RD=0%Q=)T4(R=Y%DF=Y%T=80%W&#xa;OS:=2000%S=O%A=O%F=AP%O=NNT11%RD=0%Q=)T5(R=N)T5(R=Y%DF=Y%TG=80%W=0%S=Z%A=S+&#xa;OS:%F=AR%O=%RD=0%Q=)T5(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=N)T7&#xa;OS:(R=N)U1(R=N)U1(R=Y%DF=N%T=80%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=7447&#xa;OS:%RUD=G)IE(R=N)&#xa;"/>
+</os>
+<distance value="4"/>
+<hostscript><script id="p2p-conficker" output="&#xa;  Checking for Conficker.C or higher...&#xa;  Check 1 (port 62732/tcp): CLEAN (Couldn&apos;t connect)&#xa;  Check 2 (port 51162/tcp): CLEAN (Couldn&apos;t connect)&#xa;  Check 3 (port 54655/udp): CLEAN (Timeout)&#xa;  Check 4 (port 8612/udp): CLEAN (Failed to receive data)&#xa;  0/4 checks are positive: Host is CLEAN or ports are blocked&#xa;"/><script id="clock-skew" output="mean: 0s, deviation: 0s, median: 0s"><elem key="median">0</elem>
+<elem key="count">3</elem>
+<elem key="mean">0</elem>
+<elem key="stddev">0</elem>
+</script><script id="smb2-time" output="&#xa;  date: 2024-04-03T04:00:58&#xa;  start_date: N/A"><elem key="date">2024-04-03T04:00:58</elem>
+<elem key="start_date">N/A</elem>
+</script><script id="smb2-security-mode" output="&#xa;  3:1:1: &#xa;    Message signing enabled but not required"><table key="3:1:1">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script></hostscript><trace port="587" proto="tcp">
+<hop ttl="1" ipaddr="192.168.45.1" rtt="73.01"/>
+<hop ttl="2" ipaddr="192.168.45.254" rtt="72.90"/>
+<hop ttl="3" ipaddr="192.168.251.1" rtt="76.97"/>
+<hop ttl="4" ipaddr="192.168.224.249" rtt="77.52"/>
+</trace>
+<times srtt="98854" rttvar="28465" to="212714"/>
+</host>
+<taskbegin task="NSE" time="1712116864"/>
+<taskend task="NSE" time="1712116864"/>
+<taskbegin task="NSE" time="1712116864"/>
+<taskend task="NSE" time="1712116864"/>
+<taskbegin task="NSE" time="1712116864"/>
+<taskend task="NSE" time="1712116864"/>
+<runstats><finished time="1712116864" timestr="Tue Apr  2 21:01:04 2024" summary="Nmap done at Tue Apr  2 21:01:04 2024; 1 IP address (1 host up) scanned in 264.67 seconds" elapsed="264.67" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
