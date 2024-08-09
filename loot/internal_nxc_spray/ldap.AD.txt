@@ -1,0 +1,53 @@
+SMB                      172.16.146.6    445    DC02             [*] Windows Server 2022 Build 20348 x64 (name:DC02) (domain:relia.com) (signing:True) (SMBv1:False)
+LDAP                     172.16.146.6    389    DC02             [-] relia.com\miranda:DPuBT9tGCBrTbr
+LDAP                     172.16.146.6    389    DC02             [-] relia.com\steven:DPuBT9tGCBrTbr 
+LDAP                     172.16.146.6    389    DC02             [-] relia.com\mark:DPuBT9tGCBrTbr 
+LDAP                     172.16.146.6    389    DC02             [-] relia.com\anita:DPuBT9tGCBrTbr 
+LDAP                     172.16.146.6    389    DC02             [-] relia.com\jim:DPuBT9tGCBrTbr 
+LDAP                     172.16.146.6    389    DC02             [-] relia.com\dmzadmin:DPuBT9tGCBrTbr
+LDAP                     172.16.146.6    389    DC02             [-] relia.com\damon:DPuBT9tGCBrTbr 
+LDAP                     172.16.146.6    389    DC02             [-] relia.com\emma:DPuBT9tGCBrTbr 
+LDAP                     172.16.146.6    389    DC02             [-] relia.com\miranda:SomersetVinyl1!
+LDAP                     172.16.146.6    389    DC02             [-] relia.com\steven:SomersetVinyl1!
+LDAP                     172.16.146.6    389    DC02             [-] relia.com\mark:SomersetVinyl1! 
+LDAP                     172.16.146.6    389    DC02             [-] relia.com\anita:SomersetVinyl1! 
+LDAP                     172.16.146.6    389    DC02             [-] relia.com\jim:SomersetVinyl1! 
+LDAP                     172.16.146.6    389    DC02             [-] relia.com\dmzadmin:SomersetVinyl1!
+LDAP                     172.16.146.6    389    DC02             [-] relia.com\damon:SomersetVinyl1! 
+LDAP                     172.16.146.6    389    DC02             [-] relia.com\emma:SomersetVinyl1! 
+LDAP                     172.16.146.6    389    DC02             [-] relia.com\miranda:i6yuT6tym 
+LDAP                     172.16.146.6    389    DC02             [-] relia.com\steven:i6yuT6tym 
+LDAP                     172.16.146.6    389    DC02             [-] relia.com\mark:i6yuT6tym 
+LDAP                     172.16.146.6    389    DC02             [-] relia.com\anita:i6yuT6tym 
+LDAP                     172.16.146.6    389    DC02             [-] relia.com\jim:i6yuT6tym 
+LDAP                     172.16.146.6    389    DC02             [-] relia.com\dmzadmin:i6yuT6tym 
+LDAP                     172.16.146.6    389    DC02             [-] relia.com\damon:i6yuT6tym 
+LDAP                     172.16.146.6    389    DC02             [-] relia.com\emma:i6yuT6tym 
+LDAP                     172.16.146.6    389    DC02             [-] relia.com\miranda:OathDeeplyReprive91
+LDAP                     172.16.146.6    389    DC02             [-] relia.com\steven:OathDeeplyReprive91
+LDAP                     172.16.146.6    389    DC02             [-] relia.com\mark:OathDeeplyReprive91
+LDAP                     172.16.146.6    389    DC02             [-] relia.com\anita:OathDeeplyReprive91
+LDAP                     172.16.146.6    389    DC02             [-] relia.com\jim:OathDeeplyReprive91
+LDAP                     172.16.146.6    389    DC02             [-] relia.com\dmzadmin:OathDeeplyReprive91
+LDAP                     172.16.146.6    389    DC02             [-] relia.com\damon:OathDeeplyReprive91
+LDAP                     172.16.146.6    389    DC02             [-] relia.com\emma:OathDeeplyReprive91
+LDAP                     172.16.146.6    389    DC02             [-] relia.com\miranda:mercedes1 
+LDAP                     172.16.146.6    389    DC02             [-] relia.com\steven:mercedes1 
+LDAP                     172.16.146.6    389    DC02             [-] relia.com\mark:mercedes1 
+LDAP                     172.16.146.6    389    DC02             [-] relia.com\anita:mercedes1 
+LDAP                     172.16.146.15   389    172.16.146.15    [-] Error retrieving os arch of 172.16.146.15: Could not connect: timed out
+LDAP                     172.16.146.21   389    172.16.146.21    [-] Error retrieving os arch of 172.16.146.21: Could not connect: timed out
+LDAP                     172.16.146.14   389    172.16.146.14    [-] Error retrieving os arch of 172.16.146.14: Could not connect: timed out
+LDAP                     172.16.146.30   389    172.16.146.30    [-] Error retrieving os arch of 172.16.146.30: Could not connect: timed out
+LDAP                     172.16.146.7    389    172.16.146.7     [-] Error retrieving os arch of 172.16.146.7: Could not connect: timed out
+LDAP                     172.16.146.6    389    DC02             [-] relia.com\jim:mercedes1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 110] Connection timed out
+SMB                      172.16.146.7    445    NONE             [*]  (name:) (domain:) (signing:False) (SMBv1:False)
+SMB                      172.16.146.15   445    NONE             [*]  (name:) (domain:) (signing:False) (SMBv1:False)
+SMB                      172.16.146.21   445    NONE             [*]  (name:) (domain:) (signing:False) (SMBv1:False)
+SMB                      172.16.146.30   445    NONE             [*]  (name:) (domain:) (signing:False) (SMBv1:False)
+SMB                      172.16.146.14   445    NONE             [*]  (name:) (domain:) (signing:False) (SMBv1:False)
+LDAP                     172.16.146.6    389    DC02             [-] relia.com\dmzadmin:mercedes1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 110] Connection timed out
+LDAP                     172.16.146.6    389    DC02             [-] relia.com\damon:mercedes1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 110] Connection timed out
