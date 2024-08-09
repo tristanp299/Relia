@@ -1,0 +1,88 @@
+# Nmap 7.94SVN scan initiated Fri Aug  9 19:32:11 2024 as: nmap -vv -sT -Pn --min-rate=1000 -T4 -sT -iL ../internal_ips -oA internal tcp_scan
+Nmap scan report for ip-172-16-157-6.us-west-1.compute.internal (172.16.157.6)
+Host is up, received user-set (0.24s latency).
+Scanned at 2024-08-09 19:32:11 UTC for 21s
+Not shown: 988 filtered tcp ports (no-response)
+PORT     STATE SERVICE          REASON
+53/tcp   open  domain           syn-ack
+88/tcp   open  kerberos-sec     syn-ack
+135/tcp  open  msrpc            syn-ack
+139/tcp  open  netbios-ssn      syn-ack
+389/tcp  open  ldap             syn-ack
+445/tcp  open  microsoft-ds     syn-ack
+464/tcp  open  kpasswd5         syn-ack
+593/tcp  open  http-rpc-epmap   syn-ack
+636/tcp  open  ldapssl          syn-ack
+3268/tcp open  globalcatLDAP    syn-ack
+3269/tcp open  globalcatLDAPssl syn-ack
+3389/tcp open  ms-wbt-server    syn-ack
+
+Nmap scan report for ip-172-16-157-7.us-west-1.compute.internal (172.16.157.7)
+Host is up, received user-set (0.16s latency).
+Scanned at 2024-08-09 19:32:11 UTC for 19s
+Not shown: 993 filtered tcp ports (no-response)
+PORT     STATE SERVICE       REASON
+80/tcp   open  http          syn-ack
+135/tcp  open  msrpc         syn-ack
+139/tcp  open  netbios-ssn   syn-ack
+443/tcp  open  https         syn-ack
+445/tcp  open  microsoft-ds  syn-ack
+3306/tcp open  mysql         syn-ack
+3389/tcp open  ms-wbt-server syn-ack
+
+Nmap scan report for ip-172-16-157-21.us-west-1.compute.internal (172.16.157.21)
+Host is up, received user-set (0.18s latency).
+Scanned at 2024-08-09 19:32:11 UTC for 19s
+Not shown: 997 filtered tcp ports (no-response)
+PORT    STATE SERVICE      REASON
+135/tcp open  msrpc        syn-ack
+139/tcp open  netbios-ssn  syn-ack
+445/tcp open  microsoft-ds syn-ack
+
+Nmap scan report for ip-172-16-157-19.us-west-1.compute.internal (172.16.157.19)
+Host is up, received user-set (0.12s latency).
+Scanned at 2024-08-09 19:32:11 UTC for 18s
+Not shown: 999 filtered tcp ports (no-response)
+PORT   STATE SERVICE REASON
+22/tcp open  ssh     syn-ack
+
+Nmap scan report for ip-172-16-157-15.us-west-1.compute.internal (172.16.157.15)
+Host is up, received user-set (0.16s latency).
+Scanned at 2024-08-09 19:32:11 UTC for 19s
+Not shown: 996 filtered tcp ports (no-response)
+PORT     STATE SERVICE       REASON
+135/tcp  open  msrpc         syn-ack
+139/tcp  open  netbios-ssn   syn-ack
+445/tcp  open  microsoft-ds  syn-ack
+3389/tcp open  ms-wbt-server syn-ack
+
+Nmap scan report for ip-172-16-157-30.us-west-1.compute.internal (172.16.157.30)
+Host is up, received user-set (0.15s latency).
+Scanned at 2024-08-09 19:32:11 UTC for 18s
+Not shown: 995 filtered tcp ports (no-response)
+PORT     STATE SERVICE       REASON
+80/tcp   open  http          syn-ack
+135/tcp  open  msrpc         syn-ack
+139/tcp  open  netbios-ssn   syn-ack
+445/tcp  open  microsoft-ds  syn-ack
+3389/tcp open  ms-wbt-server syn-ack
+
+Nmap scan report for ip-172-16-157-14.us-west-1.compute.internal (172.16.157.14)
+Host is up, received user-set (0.16s latency).
+Scanned at 2024-08-09 19:32:11 UTC for 19s
+Not shown: 996 filtered tcp ports (no-response)
+PORT     STATE SERVICE       REASON
+135/tcp  open  msrpc         syn-ack
+139/tcp  open  netbios-ssn   syn-ack
+445/tcp  open  microsoft-ds  syn-ack
+3389/tcp open  ms-wbt-server syn-ack
+
+Nmap scan report for ip-172-16-157-20.us-west-1.compute.internal (172.16.157.20)
+Host is up, received user-set (0.15s latency).
+Scanned at 2024-08-09 19:32:11 UTC for 19s
+Not shown: 999 filtered tcp ports (no-response)
+PORT   STATE SERVICE REASON
+22/tcp open  ssh     syn-ack
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Fri Aug  9 19:32:32 2024 -- 8 IP addresses (8 hosts up) scanned in 20.87 seconds
