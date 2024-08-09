@@ -1,0 +1,181 @@
+{
+  "main": {
+    "id": "60a516e4ea9f5e54",
+    "type": "split",
+    "children": [
+      {
+        "id": "4545b24e3e698e91",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d94e72a4f1002e87",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "cd4a3813d04384c0",
+    "type": "split",
+    "children": [
+      {
+        "id": "763ac5f2bb5e6b39",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "47f92072928a3c0f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "dd270ad9f947795d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6d9ac4dd37809562",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "19038249a53e1b1b",
+    "type": "split",
+    "children": [
+      {
+        "id": "d7eb2ff21a89aaba",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a759ca65e20edd42",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4930cb77e36c6e8a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "574fba086f7d5d09",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "d2360ea396db565f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false
+    }
+  },
+  "active": "d94e72a4f1002e87",
+  "lastOpenFiles": [
+    "loot/michelle.asreproast.hash",
+    "loot/internal_nxc_spray/wmi.local.txt",
+    "loot/internal_nxc_spray/wmi.AD.txt",
+    "loot/internal_nxc_spray/winrm.local.txt",
+    "loot/internal_nxc_spray/winrm.AD.txt",
+    "loot/internal_nxc_spray/smb.local.txt",
+    "loot/internal_nxc_spray/smb.AD.txt",
+    "loot/internal_nxc_spray/rdp.local.txt",
+    "loot/internal_nxc_spray/rdp.AD.txt",
+    "loot/internal_nxc_spray/mssql.local.txt",
+    "loot/internal_nxc_spray/mssql.AD.txt",
+    "scans/192.168.224.250/scans/tcp49670/tcp_49670_rpc_nmap.md",
+    "scans/192.168.224.250/scans/tcp49669/tcp_49669_rpc_nmap.md",
+    "scans/192.168.224.250/scans/tcp445/tcp_445_smb_nmap.md",
+    "scans/192.168.224.250/scans/tcp445/smbmap-share-permissions.md",
+    "scans/192.168.224.250/scans/tcp445/smbmap-list-contents.md",
+    "scans/192.168.224.250/scans/tcp445/smbmap-execute-command.md",
+    "scans/192.168.224.250/scans/tcp3389/tcp_3389_rdp_nmap.md",
+    "scans/192.168.224.250/scans/tcp139/tcp_139_smb_nmap.md",
+    "scans/192.168.224.250/scans/tcp139/smbmap-share-permissions.md",
+    "scans/192.168.224.250/scans/tcp139/smbmap-list-contents.md",
+    "scans/192.168.224.250/scans/tcp139/smbmap-execute-command.md",
+    "scans/192.168.224.250/scans/tcp139/smbclient.md",
+    "scans/192.168.224.250/scans/tcp139/nbtscan.md",
+    "scans/192.168.224.250/scans/tcp139/enum4linux.md",
+    "scans/192.168.224.250/scans/tcp135/tcp_135_rpc_rpcdump.md",
+    "scans/192.168.224.250/scans/tcp135/tcp_135_rpc_nmap.md",
+    "scans/192.168.224.250/scans/tcp135/tcp_135_rpc_architecture.md",
+    "scans/192.168.224.250/scans/_top_100_udp_nmap.md",
+    "scans/192.168.224.250/scans/_quick_tcp_nmap.md",
+    "scans/192.168.224.250/scans/_manual_commands.md",
+    "scans/192.168.224.250/scans/_full_tcp_nmap.md",
+    "scans/192.168.224.250/report/proof.md",
+    "scans/192.168.224.250/report/notes.md",
+    "scans/192.168.224.250/report/local.md",
+    "scans/192.168.224.249/scans/tcp8000/tcp_8000_http_whatweb.md"
+  ]
+}
