@@ -1,0 +1,19 @@
+WINRM                    192.168.197.249 5985   LEGACY           [*] Windows Server 2022 Build 20348 (name:LEGACY) (domain:LEGACY)
+WINRM                    192.168.197.248 5985   EXTERNAL         [*] Windows Server 2022 Build 20348 (name:EXTERNAL) (domain:EXTERNAL)
+WINRM                    192.168.197.247 5985   WEB02            [*] Windows Server 2022 Build 20348 (name:WEB02) (domain:WEB02)
+WINRM                    192.168.197.189 5985   MAIL             [*] Windows Server 2022 Build 20348 (name:MAIL) (domain:relia.com)
+WINRM                    172.16.157.7    5985   INTRANET         [*] Windows Server 2022 Build 20348 (name:INTRANET) (domain:relia.com)
+WINRM                    192.168.197.191 5985   LOGIN            [*] Windows Server 2022 Build 20348 (name:LOGIN) (domain:relia.com)
+WINRM                    172.16.157.6    5985   DC02             [*] Windows Server 2022 Build 20348 (name:DC02) (domain:relia.com)
+WINRM                    172.16.157.30   5985   WEBBY            [*] Windows Server 2022 Build 20348 (name:WEBBY) (domain:relia.com)
+WINRM                    172.16.157.21   5985   FILES            [*] Windows Server 2022 Build 20348 (name:FILES) (domain:relia.com)
+WINRM                    192.168.197.249 5985   LEGACY           [-] LEGACY\michelle:NotMyPassword0k?
+WINRM                    192.168.197.248 5985   EXTERNAL         [-] EXTERNAL\michelle:NotMyPassword0k?
+WINRM                    192.168.197.247 5985   WEB02            [-] WEB02\michelle:NotMyPassword0k?
+WINRM                    192.168.197.189 5985   MAIL             [-] MAIL\michelle:NotMyPassword0k?
+WINRM                    172.16.157.7    5985   INTRANET         [-] INTRANET\michelle:NotMyPassword0k?
+WINRM                    192.168.197.191 5985   LOGIN            [-] LOGIN\michelle:NotMyPassword0k?
+WINRM                    172.16.157.6    5985   DC02             [-] DC02\michelle:NotMyPassword0k?
+WINRM                    172.16.157.30   5985   WEBBY            [-] WEBBY\michelle:NotMyPassword0k?
+WINRM                    172.16.157.21   5985   FILES            [-] FILES\michelle:NotMyPassword0k?
+Running nxc against 16 targets ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00

@@ -1,0 +1,36 @@
+SMB                      192.168.197.249 445    LEGACY           [*] Windows Server 2022 Build 20348 x64 (name:LEGACY) (domain:LEGACY) (signing:False) (SMBv1:False)
+SMB                      192.168.197.248 445    EXTERNAL         [*] Windows Server 2022 Build 20348 x64 (name:EXTERNAL) (domain:EXTERNAL) (signing:False) (SMBv1:False)
+SMB                      192.168.197.247 445    WEB02            [*] Windows Server 2022 Build 20348 x64 (name:WEB02) (domain:WEB02) (signing:False) (SMBv1:False)
+SMB                      192.168.197.250 445    WINPREP          [*] Windows 11 Build 22000 x64 (name:WINPREP) (domain:WINPREP) (signing:False) (SMBv1:False)
+LDAP                     192.168.197.249 389    LEGACY           [-] LEGACY\michelle:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.197.248 389    EXTERNAL         [-] EXTERNAL\michelle:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.197.247 389    WEB02            [-] WEB02\michelle:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.197.250 389    WINPREP          [-] WINPREP\michelle:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+SMB                      172.16.157.6    445    DC02             [*] Windows Server 2022 Build 20348 x64 (name:DC02) (domain:relia.com) (signing:True) (SMBv1:False)
+SMB                      192.168.197.189 445    MAIL             [*] Windows Server 2022 Build 20348 x64 (name:MAIL) (domain:relia.com) (signing:False) (SMBv1:False)
+SMB                      192.168.197.191 445    LOGIN            [*] Windows Server 2022 Build 20348 x64 (name:LOGIN) (domain:relia.com) (signing:False) (SMBv1:False)
+LDAP                     172.16.157.6    389    DC02             [+] relia.com\michelle:NotMyPassword0k?
+LDAP                     192.168.197.189 389    MAIL             [-] relia.com\michelle:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.197.191 389    LOGIN            [-] relia.com\michelle:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+SMB                      172.16.157.30   445    NONE             [*]  x64 (name:) (domain:) (signing:False) (SMBv1:False)
+SMB                      172.16.157.15   445    NONE             [*]  x64 (name:) (domain:) (signing:False) (SMBv1:False)
+SMB                      172.16.157.14   445    NONE             [*]  x64 (name:) (domain:) (signing:False) (SMBv1:False)
+SMB                      172.16.157.21   445    NONE             [*]  x64 (name:) (domain:) (signing:False) (SMBv1:False)
+SMB                      172.16.157.7    445    NONE             [*]  x64 (name:) (domain:) (signing:False) (SMBv1:False)
+LDAP                     172.16.157.30   389    NONE             [-] \michelle:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 110] Connection timed out
+LDAP                     172.16.157.15   389    NONE             [-] \michelle:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 110] Connection timed out
+LDAP                     172.16.157.14   389    NONE             [-] \michelle:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 110] Connection timed out
+LDAP                     172.16.157.21   389    NONE             [-] \michelle:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 110] Connection timed out
+LDAP                     172.16.157.7    389    NONE             [-] \michelle:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 110] Connection timed out
+Running nxc against 16 targets ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00

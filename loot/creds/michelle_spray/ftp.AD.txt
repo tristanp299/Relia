@@ -1,0 +1,3 @@
+FTP                      192.168.197.245 21     192.168.197.245  [*] Banner: RELIA Edge FTP server.
+FTP                      192.168.197.245 21     192.168.197.245  [-] michelle:NotMyPassword0k? (Response:530 Login incorrect.)
+Running nxc against 16 targets ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00

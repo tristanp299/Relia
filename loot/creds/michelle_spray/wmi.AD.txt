@@ -1,0 +1,25 @@
+RPC                      192.168.197.250 135    WINPREP          [*] Windows 11 Build 22000 (name:WINPREP) (domain:WINPREP)
+RPC                      192.168.197.247 135    WEB02            [*] Windows Server 2022 Build 20348 (name:WEB02) (domain:WEB02)
+RPC                      192.168.197.249 135    LEGACY           [*] Windows Server 2022 Build 20348 (name:LEGACY) (domain:LEGACY)
+RPC                      192.168.197.248 135    EXTERNAL         [*] Windows Server 2022 Build 20348 (name:EXTERNAL) (domain:EXTERNAL)
+RPC                      192.168.197.250 135    WINPREP          [-] WINPREP\michelle:NotMyPassword0k? (RPC_S_ACCESS_DENIED)
+RPC                      192.168.197.247 135    WEB02            [-] WEB02\michelle:NotMyPassword0k? (RPC_S_ACCESS_DENIED)
+RPC                      192.168.197.249 135    LEGACY           [-] LEGACY\michelle:NotMyPassword0k? (RPC_S_ACCESS_DENIED)
+RPC                      192.168.197.248 135    EXTERNAL         [-] EXTERNAL\michelle:NotMyPassword0k? (RPC_S_SEC_PKG_ERROR)
+RPC                      192.168.197.191 135    LOGIN            [*] Windows Server 2022 Build 20348 (name:LOGIN) (domain:relia.com)
+RPC                      172.16.157.14   135    WK01             [*] Windows 11 Build 22000 (name:WK01) (domain:relia.com)
+RPC                      172.16.157.7    135    INTRANET         [*] Windows Server 2022 Build 20348 (name:INTRANET) (domain:relia.com)
+RPC                      172.16.157.30   135    WEBBY            [*] Windows Server 2022 Build 20348 (name:WEBBY) (domain:relia.com)
+RPC                      172.16.157.6    135    DC02             [*] Windows Server 2022 Build 20348 (name:DC02) (domain:relia.com)
+RPC                      192.168.197.189 135    MAIL             [*] Windows Server 2022 Build 20348 (name:MAIL) (domain:relia.com)
+RPC                      172.16.157.15   135    WK02             [*] Windows 11 Build 22000 (name:WK02) (domain:relia.com)
+RPC                      172.16.157.21   135    FILES            [*] Windows Server 2022 Build 20348 (name:FILES) (domain:relia.com)
+RPC                      192.168.197.191 135    LOGIN            [+] relia.com\michelle:NotMyPassword0k?
+RPC                      172.16.157.14   135    WK01             [+] relia.com\michelle:NotMyPassword0k?
+RPC                      172.16.157.7    135    INTRANET         [+] relia.com\michelle:NotMyPassword0k?
+RPC                      172.16.157.30   135    WEBBY            [+] relia.com\michelle:NotMyPassword0k?
+RPC                      172.16.157.6    135    DC02             [+] relia.com\michelle:NotMyPassword0k?
+RPC                      192.168.197.189 135    MAIL             [+] relia.com\michelle:NotMyPassword0k?
+RPC                      172.16.157.15   135    WK02             [+] relia.com\michelle:NotMyPassword0k?
+RPC                      172.16.157.21   135    FILES            [+] relia.com\michelle:NotMyPassword0k?
+Running nxc against 16 targets ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
