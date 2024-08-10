@@ -1,0 +1,451 @@
+SMB                      192.168.229.247 445    WEB02            [*] Windows Server 2022 Build 20348 x64 (name:WEB02) (domain:WEB02) (signing:False) (SMBv1:False)
+SMB                      192.168.229.250 445    WINPREP          [*] Windows 11 Build 22000 x64 (name:WINPREP) (domain:WINPREP) (signing:False) (SMBv1:False)
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\emma:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\Michael321:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\admin:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\administrator:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\adrian:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\andrea:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\anita:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\anna:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\brad:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\damon:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\dan:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\dmzadmin:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\emma:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\guest:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\iis_service:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\internaladmin:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\jenny:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\jim:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\larry:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\maildmz:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\mark:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\mercedes1:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\michelle:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\milana:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\miranda:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\mountuser:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\netadmin:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\offsec:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\peter:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\root:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\sa:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\steven:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\sysadmin:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\test:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\web:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\webadmin:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\zachary:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\emma:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\Michael321:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\admin:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\administrator:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\adrian:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\andrea:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\anita:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\anna:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\brad:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\damon:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\dan:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\dmzadmin:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\emma:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\guest:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\iis_service:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\internaladmin:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\jenny:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\jim:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\larry:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\maildmz:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\mark:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\mercedes1:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\michelle:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\milana:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\miranda:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\mountuser:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\netadmin:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\offsec:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\peter:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\root:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\sa:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\steven:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\sysadmin:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\test:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\web:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\webadmin:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\zachary:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+SMB                      192.168.229.249 445    LEGACY           [*] Windows Server 2022 Build 20348 x64 (name:LEGACY) (domain:LEGACY) (signing:False) (SMBv1:False)
+SMB                      192.168.229.248 445    EXTERNAL         [*] Windows Server 2022 Build 20348 x64 (name:EXTERNAL) (domain:EXTERNAL) (signing:False) (SMBv1:False)
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\emma:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\Michael321:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\admin:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\administrator:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\adrian:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\andrea:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\anita:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\anna:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\brad:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\damon:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\dan:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\dmzadmin:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\emma:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\guest:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\iis_service:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\internaladmin:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\jenny:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\jim:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\larry:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\maildmz:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\mark:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\mercedes1:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\michelle:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\milana:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\miranda:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\mountuser:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\netadmin:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\offsec:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\peter:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\root:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\sa:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\steven:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\sysadmin:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\test:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\web:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\webadmin:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\zachary:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\emma:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\Michael321:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\admin:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\administrator:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\adrian:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\andrea:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\anita:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\anna:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\brad:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\damon:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\dan:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\dmzadmin:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\emma:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\guest:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\iis_service:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\internaladmin:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\jenny:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\jim:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\larry:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\maildmz:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\mark:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\mercedes1:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\michelle:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\milana:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\miranda:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\mountuser:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\netadmin:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\offsec:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\peter:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\root:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+SMB                      192.168.229.191 445    LOGIN            [*] Windows Server 2022 Build 20348 x64 (name:LOGIN) (domain:relia.com) (signing:False) (SMBv1:False)
+SMB                      192.168.229.189 445    MAIL             [*] Windows Server 2022 Build 20348 x64 (name:MAIL) (domain:relia.com) (signing:False) (SMBv1:False)
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\sa:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\steven:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\sysadmin:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\test:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\web:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\webadmin:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\zachary:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\emma:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\Michael321:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\admin:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\administrator:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\adrian:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\andrea:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\anita:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\anna:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\brad:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\damon:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\dan:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\dmzadmin:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\emma:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\guest:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\iis_service:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\internaladmin:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\jenny:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\jim:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\larry:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\maildmz:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\mark:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\mercedes1:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\michelle:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\milana:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\miranda:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\mountuser:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\netadmin:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\offsec:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\peter:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\root:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\sa:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\steven:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\sysadmin:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\test:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\web:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\webadmin:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\zachary:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\emma:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\Michael321:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\admin:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\administrator:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\adrian:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\andrea:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\anita:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\anna:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\brad:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\damon:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\dan:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\dmzadmin:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\emma:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\guest:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\iis_service:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\internaladmin:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\jenny:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\jim:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\larry:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\maildmz:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\mark:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\mercedes1:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\michelle:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\milana:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\miranda:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\mountuser:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\netadmin:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\offsec:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\peter:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\root:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\sa:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\steven:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\sysadmin:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\test:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\web:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\webadmin:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\zachary:welcome1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+Running nxc against 16 targets ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00

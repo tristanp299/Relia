@@ -1,0 +1,15 @@
+Running nxc against 8 targets ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
+Running nxc against 8 targets ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
+RPC                      172.16.189.21   135    FILES            [*] Windows Server 2022 Build 20348 (name:FILES) (domain:relia.com)
+RPC                      172.16.189.30   135    WEBBY            [*] Windows Server 2022 Build 20348 (name:WEBBY) (domain:relia.com)
+RPC                      172.16.189.6    135    DC02             [*] Windows Server 2022 Build 20348 (name:DC02) (domain:relia.com)
+RPC                      172.16.189.15   135    WK02             [*] Windows 11 Build 22000 (name:WK02) (domain:relia.com)
+RPC                      172.16.189.14   135    WK01             [*] Windows 11 Build 22000 (name:WK01) (domain:relia.com)
+RPC                      172.16.189.21   135    FILES            [-] FILES\milana:destiny1 (RPC_S_ACCESS_DENIED)
+RPC                      172.16.189.30   135    WEBBY            [-] WEBBY\milana:destiny1 (RPC_S_ACCESS_DENIED)
+RPC                      172.16.189.6    135    DC02             [-] DC02\milana:destiny1 (RPC_S_ACCESS_DENIED)
+RPC                      172.16.189.15   135    WK02             [-] WK02\milana:destiny1 (RPC_S_ACCESS_DENIED)
+RPC                      172.16.189.14   135    WK01             [-] WK01\milana:destiny1 (RPC_S_ACCESS_DENIED)
+RPC                      172.16.189.7    135    INTRANET         [*] Windows Server 2022 Build 20348 (name:INTRANET) (domain:relia.com)
+RPC                      172.16.189.7    135    INTRANET         [-] INTRANET\milana:destiny1 (RPC_S_ACCESS_DENIED)
+Running nxc against 8 targets ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00

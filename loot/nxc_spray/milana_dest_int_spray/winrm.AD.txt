@@ -1,0 +1,9 @@
+WINRM                    172.16.189.7    5985   INTRANET         [*] Windows Server 2022 Build 20348 (name:INTRANET) (domain:relia.com)
+WINRM                    172.16.189.6    5985   DC02             [*] Windows Server 2022 Build 20348 (name:DC02) (domain:relia.com)
+WINRM                    172.16.189.21   5985   FILES            [*] Windows Server 2022 Build 20348 (name:FILES) (domain:relia.com)
+WINRM                    172.16.189.30   5985   WEBBY            [*] Windows Server 2022 Build 20348 (name:WEBBY) (domain:relia.com)
+WINRM                    172.16.189.7    5985   INTRANET         [-] relia.com\milana:destiny1
+WINRM                    172.16.189.6    5985   DC02             [-] relia.com\milana:destiny1
+WINRM                    172.16.189.21   5985   FILES            [-] relia.com\milana:destiny1
+WINRM                    172.16.189.30   5985   WEBBY            [-] relia.com\milana:destiny1
+Running nxc against 8 targets ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00

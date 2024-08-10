@@ -1,0 +1,537 @@
+SMB                      192.168.229.247 445    WEB02            [*] Windows Server 2022 Build 20348 x64 (name:WEB02) (domain:WEB02) (signing:False) (SMBv1:False)
+SMB                      192.168.229.250 445    WINPREP          [*] Windows 11 Build 22000 x64 (name:WINPREP) (domain:WINPREP) (signing:False) (SMBv1:False)
+[23:13:44] ERROR    Exception while calling proto_flow() on target 192.168.229.248: connection.py:168
+                    This session is provisioning a new connection; concurrent                        
+                    operations are not permitted (Background on this error at:                       
+                    https://sqlalche.me/e/20/isce)                                                   
+                    ╭───────────── Traceback (most recent call last) ─────────────╮                  
+                    │ /home/kali/.local/share/pipx/venvs/netexec/lib/python3.11/s │                  
+                    │ ite-packages/nxc/connection.py:163 in __init__              │                  
+                    │                                                             │                  
+                    │   160 │   │   self.logger.info(f"Socket info: host={self.ho │                  
+                    │       kerberos={self.kerberos}, ipv6={self.is_ipv6}, link-l │                  
+                    │       ipv6={self.is_link_local_ipv6}")                      │                  
+                    │   161 │   │                                                 │                  
+                    │   162 │   │   try:                                          │                  
+                    │ ❱ 163 │   │   │   self.proto_flow()                         │                  
+                    │   164 │   │   except Exception as e:                        │                  
+                    │   165 │   │   │   if "ERROR_DEPENDENT_SERVICES_RUNNING" in  │                  
+                    │   166 │   │   │   │   self.logger.error(f"Exception while c │                  
+                    │       {target}: {e}")                                       │                  
+                    │                                                             │                  
+                    │ /home/kali/.local/share/pipx/venvs/netexec/lib/python3.11/s │                  
+                    │ ite-packages/nxc/connection.py:222 in proto_flow            │                  
+                    │                                                             │                  
+                    │   219 │   │   │   self.logger.info(f"Failed to create conne │                  
+                    │       {self.host}, exiting...")                             │                  
+                    │   220 │   │   else:                                         │                  
+                    │   221 │   │   │   self.logger.debug("Created connection obj │                  
+                    │ ❱ 222 │   │   │   self.enum_host_info()                     │                  
+                    │   223 │   │   │   if self.print_host_info() and (self.login │                  
+                    │       self.password == "")):                                │                  
+                    │   224 │   │   │   │   if hasattr(self.args, "module") and s │                  
+                    │   225 │   │   │   │   │   self.load_modules()               │                  
+                    │                                                             │                  
+                    │ /home/kali/.local/share/pipx/venvs/netexec/lib/python3.11/s │                  
+                    │ ite-packages/nxc/protocols/smb.py:262 in enum_host_info     │                  
+                    │                                                             │                  
+                    │    259 │   │   self.os_arch = self.get_os_arch()            │                  
+                    │    260 │   │   self.output_filename =                       │                  
+                    │        os.path.expanduser(f"~/.nxc/logs/{self.hostname}_{se │                  
+                    │        Y-%m-%d_%H%M%S')}".replace(":", "-"))                │                  
+                    │    261 │   │                                                │                  
+                    │ ❱  262 │   │   self.db.add_host(                            │                  
+                    │    263 │   │   │   self.host,                               │                  
+                    │    264 │   │   │   self.hostname,                           │                  
+                    │    265 │   │   │   self.domain,                             │                  
+                    │                                                             │                  
+                    │ /home/kali/.local/share/pipx/venvs/netexec/lib/python3.11/s │                  
+                    │ ite-packages/nxc/protocols/smb/database.py:234 in add_host  │                  
+                    │                                                             │                  
+                    │   231 │   │   updated_ids = []                              │                  
+                    │   232 │   │                                                 │                  
+                    │   233 │   │   q = select(self.HostsTable).filter(self.Hosts │                  
+                    │ ❱ 234 │   │   results = self.conn.execute(q).all()          │                  
+                    │   235 │   │                                                 │                  
+                    │   236 │   │   # create new host                             │                  
+                    │   237 │   │   if not results:                               │                  
+                    │                                                             │                  
+                    │ /home/kali/.local/share/pipx/venvs/netexec/lib/python3.11/s │                  
+                    │ ite-packages/sqlalchemy/orm/session.py:2351 in execute      │                  
+                    │                                                             │                  
+                    │   2348 │   │                                                │                  
+                    │   2349 │   │                                                │                  
+                    │   2350 │   │   """                                          │                  
+                    │ ❱ 2351 │   │   return self._execute_internal(               │                  
+                    │   2352 │   │   │   statement,                               │                  
+                    │   2353 │   │   │   params,                                  │                  
+                    │   2354 │   │   │   execution_options=execution_options,     │                  
+                    │                                                             │                  
+                    │ /home/kali/.local/share/pipx/venvs/netexec/lib/python3.11/s │                  
+                    │ ite-packages/sqlalchemy/orm/session.py:2226 in              │                  
+                    │ _execute_internal                                           │                  
+                    │                                                             │                  
+                    │   2223 │   │                                                │                  
+                    │   2224 │   │   bind = self.get_bind(**bind_arguments)       │                  
+                    │   2225 │   │                                                │                  
+                    │ ❱ 2226 │   │   conn = self._connection_for_bind(bind)       │                  
+                    │   2227 │   │                                                │                  
+                    │   2228 │   │   if _scalar_result and not compile_state_cls: │                  
+                    │   2229 │   │   │   if TYPE_CHECKING:                        │                  
+                    │                                                             │                  
+                    │ /home/kali/.local/share/pipx/venvs/netexec/lib/python3.11/s │                  
+                    │ ite-packages/sqlalchemy/orm/session.py:2095 in              │                  
+                    │ _connection_for_bind                                        │                  
+                    │                                                             │                  
+                    │   2092 │   │   trans = self._transaction                    │                  
+                    │   2093 │   │   if trans is None:                            │                  
+                    │   2094 │   │   │   trans = self._autobegin_t()              │                  
+                    │ ❱ 2095 │   │   return trans._connection_for_bind(engine, ex │                  
+                    │   2096 │                                                    │                  
+                    │   2097 │   @overload                                        │                  
+                    │   2098 │   def _execute_internal(                           │                  
+                    │ in _connection_for_bind:2                                   │                  
+                    │                                                             │                  
+                    │ /home/kali/.local/share/pipx/venvs/netexec/lib/python3.11/s │                  
+                    │ ite-packages/sqlalchemy/orm/state_changes.py:103 in _go     │                  
+                    │                                                             │                  
+                    │   100 │   │   │   │   has_prerequisite_states               │                  
+                    │   101 │   │   │   │   and current_state not in prerequisite │                  
+                    │   102 │   │   │   ):                                        │                  
+                    │ ❱ 103 │   │   │   │   self._raise_for_prerequisite_state(fn │                  
+                    │   104 │   │   │                                             │                  
+                    │   105 │   │   │   next_state = self._next_state             │                  
+                    │   106 │   │   │   existing_fn = self._current_fn            │                  
+                    │                                                             │                  
+                    │ /home/kali/.local/share/pipx/venvs/netexec/lib/python3.11/s │                  
+                    │ ite-packages/sqlalchemy/orm/session.py:990 in               │                  
+                    │ _raise_for_prerequisite_state                               │                  
+                    │                                                             │                  
+                    │    987 │   │   elif state is SessionTransactionState.CLOSED │                  
+                    │    988 │   │   │   raise sa_exc.ResourceClosedError("This t │                  
+                    │    989 │   │   elif state is SessionTransactionState.PROVIS │                  
+                    │ ❱  990 │   │   │   raise sa_exc.InvalidRequestError(        │                  
+                    │    991 │   │   │   │   "This session is provisioning a new  │                  
+                    │    992 │   │   │   │   "operations are not permitted",      │                  
+                    │    993 │   │   │   │   code="isce",                         │                  
+                    ╰─────────────────────────────────────────────────────────────╯                  
+                    InvalidRequestError: This session is provisioning a new                          
+                    connection; concurrent operations are not permitted (Background                  
+                    on this error at: https://sqlalche.me/e/20/isce)                                 
+SMB                      192.168.229.247 445    WEB02            [-] WEB02\emma:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.247 445    WEB02            [-] WEB02\Michael321:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.247 445    WEB02            [-] WEB02\admin:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.247 445    WEB02            [-] WEB02\administrator:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.247 445    WEB02            [-] WEB02\adrian:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.247 445    WEB02            [-] WEB02\andrea:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.247 445    WEB02            [-] WEB02\anita:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.247 445    WEB02            [-] WEB02\anna:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.247 445    WEB02            [-] WEB02\brad:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.247 445    WEB02            [-] WEB02\damon:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.247 445    WEB02            [-] WEB02\dan:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.247 445    WEB02            [-] WEB02\dmzadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.247 445    WEB02            [-] WEB02\emma:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.247 445    WEB02            [-] WEB02\guest:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.247 445    WEB02            [-] WEB02\iis_service:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.247 445    WEB02            [-] WEB02\internaladmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.247 445    WEB02            [-] WEB02\jenny:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.247 445    WEB02            [-] WEB02\jim:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.247 445    WEB02            [-] WEB02\larry:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.247 445    WEB02            [-] WEB02\maildmz:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.247 445    WEB02            [-] WEB02\mark:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.247 445    WEB02            [-] WEB02\mercedes1:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.247 445    WEB02            [-] WEB02\michelle:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.247 445    WEB02            [-] WEB02\milana:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.247 445    WEB02            [-] WEB02\miranda:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.247 445    WEB02            [-] WEB02\mountuser:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.249 445    LEGACY           [*] Windows Server 2022 Build 20348 x64 (name:LEGACY) (domain:LEGACY) (signing:False) (SMBv1:False)
+SMB                      192.168.229.247 445    WEB02            [-] WEB02\netadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.247 445    WEB02            [-] WEB02\offsec:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.247 445    WEB02            [-] WEB02\peter:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.247 445    WEB02            [-] WEB02\root:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.247 445    WEB02            [-] WEB02\sa:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.7    445    INTRANET         [*] Windows Server 2022 Build 20348 x64 (name:INTRANET) (domain:relia.com) (signing:False) (SMBv1:False)
+SMB                      192.168.229.189 445    MAIL             [*] Windows Server 2022 Build 20348 x64 (name:MAIL) (domain:relia.com) (signing:False) (SMBv1:False)
+SMB                      192.168.229.191 445    LOGIN            [*] Windows Server 2022 Build 20348 x64 (name:LOGIN) (domain:relia.com) (signing:False) (SMBv1:False)
+SMB                      172.16.189.30   445    WEBBY            [*] Windows Server 2022 Build 20348 x64 (name:WEBBY) (domain:relia.com) (signing:False) (SMBv1:False)
+SMB                      172.16.189.14   445    WK01             [*] Windows 11 Build 22000 x64 (name:WK01) (domain:relia.com) (signing:False) (SMBv1:False)
+SMB                      172.16.189.21   445    FILES            [*] Windows Server 2022 Build 20348 x64 (name:FILES) (domain:relia.com) (signing:False) (SMBv1:False)
+SMB                      172.16.189.15   445    WK02             [*] Windows 11 Build 22000 x64 (name:WK02) (domain:relia.com) (signing:False) (SMBv1:False)
+SMB                      172.16.189.6    445    DC02             [*] Windows Server 2022 Build 20348 x64 (name:DC02) (domain:relia.com) (signing:True) (SMBv1:False)
+SMB                      192.168.229.247 445    WEB02            [-] WEB02\steven:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.247 445    WEB02            [-] WEB02\sysadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.247 445    WEB02            [-] WEB02\test:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.247 445    WEB02            [-] WEB02\web:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.247 445    WEB02            [-] WEB02\webadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.247 445    WEB02            [-] WEB02\zachary:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.6    445    DC02             [-] relia.com\emma:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.6    445    DC02             [-] relia.com\Michael321:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.6    445    DC02             [-] relia.com\admin:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.6    445    DC02             [-] relia.com\administrator:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.6    445    DC02             [-] relia.com\adrian:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.6    445    DC02             [-] relia.com\andrea:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.6    445    DC02             [-] relia.com\anita:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.6    445    DC02             [-] relia.com\anna:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.6    445    DC02             [-] relia.com\brad:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.6    445    DC02             [-] relia.com\damon:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.6    445    DC02             [-] relia.com\dan:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.6    445    DC02             [-] relia.com\dmzadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.6    445    DC02             [-] relia.com\emma:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.6    445    DC02             [-] relia.com\guest:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.6    445    DC02             [-] relia.com\iis_service:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.6    445    DC02             [-] relia.com\internaladmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.6    445    DC02             [-] relia.com\jenny:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.6    445    DC02             [-] relia.com\jim:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.6    445    DC02             [-] relia.com\larry:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.6    445    DC02             [-] relia.com\maildmz:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.6    445    DC02             [-] relia.com\mark:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.6    445    DC02             [-] relia.com\mercedes1:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.6    445    DC02             [-] relia.com\michelle:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.6    445    DC02             [-] relia.com\milana:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.6    445    DC02             [-] relia.com\miranda:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.6    445    DC02             [-] relia.com\mountuser:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.6    445    DC02             [-] relia.com\netadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.6    445    DC02             [-] relia.com\offsec:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.6    445    DC02             [-] relia.com\peter:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.6    445    DC02             [-] relia.com\root:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.6    445    DC02             [-] relia.com\sa:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.6    445    DC02             [-] relia.com\steven:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.6    445    DC02             [-] relia.com\sysadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.6    445    DC02             [-] relia.com\test:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.6    445    DC02             [-] relia.com\web:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.6    445    DC02             [-] relia.com\webadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.6    445    DC02             [-] relia.com\zachary:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.191 445    LOGIN            [-] relia.com\emma:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.191 445    LOGIN            [-] relia.com\Michael321:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.191 445    LOGIN            [-] relia.com\admin:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.191 445    LOGIN            [-] relia.com\administrator:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.191 445    LOGIN            [-] relia.com\adrian:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.191 445    LOGIN            [-] relia.com\andrea:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.191 445    LOGIN            [-] relia.com\anita:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.191 445    LOGIN            [-] relia.com\anna:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.191 445    LOGIN            [-] relia.com\brad:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.191 445    LOGIN            [-] relia.com\damon:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.191 445    LOGIN            [-] relia.com\dan:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.191 445    LOGIN            [-] relia.com\dmzadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.191 445    LOGIN            [-] relia.com\emma:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.191 445    LOGIN            [-] relia.com\guest:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.191 445    LOGIN            [-] relia.com\iis_service:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.191 445    LOGIN            [-] relia.com\internaladmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.191 445    LOGIN            [-] relia.com\jenny:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.191 445    LOGIN            [-] relia.com\jim:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.191 445    LOGIN            [-] relia.com\larry:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.191 445    LOGIN            [-] relia.com\maildmz:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.191 445    LOGIN            [-] relia.com\mark:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.191 445    LOGIN            [-] relia.com\mercedes1:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.191 445    LOGIN            [-] relia.com\michelle:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.191 445    LOGIN            [-] relia.com\milana:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.191 445    LOGIN            [-] relia.com\miranda:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.191 445    LOGIN            [-] relia.com\mountuser:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.191 445    LOGIN            [-] relia.com\netadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.191 445    LOGIN            [-] relia.com\offsec:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.191 445    LOGIN            [-] relia.com\peter:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.191 445    LOGIN            [-] relia.com\root:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.191 445    LOGIN            [-] relia.com\sa:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.191 445    LOGIN            [-] relia.com\steven:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.191 445    LOGIN            [-] relia.com\sysadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.191 445    LOGIN            [-] relia.com\test:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.191 445    LOGIN            [-] relia.com\web:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.191 445    LOGIN            [-] relia.com\webadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.191 445    LOGIN            [-] relia.com\zachary:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.250 445    WINPREP          [-] WINPREP\emma:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.250 445    WINPREP          [-] WINPREP\Michael321:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.250 445    WINPREP          [-] WINPREP\admin:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.250 445    WINPREP          [-] WINPREP\administrator:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.250 445    WINPREP          [-] WINPREP\adrian:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.250 445    WINPREP          [-] WINPREP\andrea:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.250 445    WINPREP          [-] WINPREP\anita:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.250 445    WINPREP          [-] WINPREP\anna:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.250 445    WINPREP          [-] WINPREP\brad:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.250 445    WINPREP          [-] WINPREP\damon:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.250 445    WINPREP          [-] WINPREP\dan:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.250 445    WINPREP          [-] WINPREP\dmzadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.250 445    WINPREP          [-] WINPREP\emma:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.250 445    WINPREP          [-] WINPREP\guest:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.250 445    WINPREP          [-] WINPREP\iis_service:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.250 445    WINPREP          [-] WINPREP\internaladmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.250 445    WINPREP          [-] WINPREP\jenny:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.250 445    WINPREP          [-] WINPREP\jim:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.250 445    WINPREP          [-] WINPREP\larry:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.250 445    WINPREP          [-] WINPREP\maildmz:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.250 445    WINPREP          [-] WINPREP\mark:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.250 445    WINPREP          [-] WINPREP\mercedes1:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.250 445    WINPREP          [-] WINPREP\michelle:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.250 445    WINPREP          [-] WINPREP\milana:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.250 445    WINPREP          [-] WINPREP\miranda:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.250 445    WINPREP          [-] WINPREP\mountuser:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.250 445    WINPREP          [-] WINPREP\netadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.250 445    WINPREP          [-] WINPREP\offsec:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.250 445    WINPREP          [-] WINPREP\peter:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.250 445    WINPREP          [-] WINPREP\root:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.250 445    WINPREP          [-] WINPREP\sa:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.250 445    WINPREP          [-] WINPREP\steven:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.250 445    WINPREP          [-] WINPREP\sysadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.250 445    WINPREP          [-] WINPREP\test:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.250 445    WINPREP          [-] WINPREP\web:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.250 445    WINPREP          [-] WINPREP\webadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.250 445    WINPREP          [-] WINPREP\zachary:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.30   445    WEBBY            [-] relia.com\emma:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.30   445    WEBBY            [-] relia.com\Michael321:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.30   445    WEBBY            [-] relia.com\admin:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.30   445    WEBBY            [-] relia.com\administrator:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.30   445    WEBBY            [-] relia.com\adrian:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.30   445    WEBBY            [-] relia.com\andrea:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.30   445    WEBBY            [-] relia.com\anita:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.30   445    WEBBY            [-] relia.com\anna:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.30   445    WEBBY            [-] relia.com\brad:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.30   445    WEBBY            [-] relia.com\damon:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.30   445    WEBBY            [-] relia.com\dan:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.30   445    WEBBY            [-] relia.com\dmzadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.30   445    WEBBY            [-] relia.com\emma:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.30   445    WEBBY            [-] relia.com\guest:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.30   445    WEBBY            [-] relia.com\iis_service:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.30   445    WEBBY            [-] relia.com\internaladmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.30   445    WEBBY            [-] relia.com\jenny:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.30   445    WEBBY            [-] relia.com\jim:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.30   445    WEBBY            [-] relia.com\larry:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.30   445    WEBBY            [-] relia.com\maildmz:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.30   445    WEBBY            [-] relia.com\mark:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.30   445    WEBBY            [-] relia.com\mercedes1:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.30   445    WEBBY            [-] relia.com\michelle:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.30   445    WEBBY            [-] relia.com\milana:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.30   445    WEBBY            [-] relia.com\miranda:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.30   445    WEBBY            [-] relia.com\mountuser:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.30   445    WEBBY            [-] relia.com\netadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.30   445    WEBBY            [-] relia.com\offsec:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.30   445    WEBBY            [-] relia.com\peter:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.30   445    WEBBY            [-] relia.com\root:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.30   445    WEBBY            [-] relia.com\sa:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.30   445    WEBBY            [-] relia.com\steven:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.30   445    WEBBY            [-] relia.com\sysadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.30   445    WEBBY            [-] relia.com\test:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.30   445    WEBBY            [-] relia.com\web:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.30   445    WEBBY            [-] relia.com\webadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.30   445    WEBBY            [-] relia.com\zachary:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.189 445    MAIL             [-] relia.com\emma:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.189 445    MAIL             [-] relia.com\Michael321:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.189 445    MAIL             [-] relia.com\admin:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.189 445    MAIL             [-] relia.com\administrator:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.189 445    MAIL             [-] relia.com\adrian:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.189 445    MAIL             [-] relia.com\andrea:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.189 445    MAIL             [-] relia.com\anita:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.189 445    MAIL             [-] relia.com\anna:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.189 445    MAIL             [-] relia.com\brad:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.189 445    MAIL             [-] relia.com\damon:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.189 445    MAIL             [-] relia.com\dan:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.189 445    MAIL             [-] relia.com\dmzadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.189 445    MAIL             [-] relia.com\emma:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.189 445    MAIL             [-] relia.com\guest:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.189 445    MAIL             [-] relia.com\iis_service:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.189 445    MAIL             [-] relia.com\internaladmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.189 445    MAIL             [-] relia.com\jenny:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.189 445    MAIL             [-] relia.com\jim:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.189 445    MAIL             [-] relia.com\larry:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.189 445    MAIL             [-] relia.com\maildmz:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.189 445    MAIL             [-] relia.com\mark:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.189 445    MAIL             [-] relia.com\mercedes1:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.189 445    MAIL             [-] relia.com\michelle:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.189 445    MAIL             [-] relia.com\milana:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.189 445    MAIL             [-] relia.com\miranda:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.189 445    MAIL             [-] relia.com\mountuser:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.189 445    MAIL             [-] relia.com\netadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.189 445    MAIL             [-] relia.com\offsec:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.189 445    MAIL             [-] relia.com\peter:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.189 445    MAIL             [-] relia.com\root:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.189 445    MAIL             [-] relia.com\sa:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.189 445    MAIL             [-] relia.com\steven:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.189 445    MAIL             [-] relia.com\sysadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.189 445    MAIL             [-] relia.com\test:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.189 445    MAIL             [-] relia.com\web:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.189 445    MAIL             [-] relia.com\webadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.189 445    MAIL             [-] relia.com\zachary:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.14   445    WK01             [-] Connection Error: Error while reading from remote
+SMB                      172.16.189.14   445    WK01             [-] Broken Pipe Error while attempting to login
+SMB                      172.16.189.14   445    WK01             [-] relia.com\admin:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.14   445    WK01             [-] relia.com\administrator:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.14   445    WK01             [-] relia.com\adrian:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.14   445    WK01             [-] relia.com\andrea:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.14   445    WK01             [-] relia.com\anita:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.14   445    WK01             [-] relia.com\anna:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.14   445    WK01             [-] relia.com\brad:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.14   445    WK01             [-] relia.com\damon:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.14   445    WK01             [-] relia.com\dan:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.14   445    WK01             [-] relia.com\dmzadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.14   445    WK01             [-] relia.com\emma:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.14   445    WK01             [-] relia.com\guest:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.14   445    WK01             [-] relia.com\iis_service:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.14   445    WK01             [-] relia.com\internaladmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.14   445    WK01             [-] relia.com\jenny:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.14   445    WK01             [-] relia.com\jim:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.14   445    WK01             [-] relia.com\larry:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.14   445    WK01             [-] relia.com\maildmz:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.14   445    WK01             [-] relia.com\mark:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.14   445    WK01             [-] relia.com\mercedes1:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.14   445    WK01             [-] relia.com\michelle:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.14   445    WK01             [-] relia.com\milana:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.14   445    WK01             [-] relia.com\miranda:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.14   445    WK01             [-] relia.com\mountuser:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.14   445    WK01             [-] relia.com\netadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.14   445    WK01             [-] relia.com\offsec:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.14   445    WK01             [-] relia.com\peter:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.14   445    WK01             [-] relia.com\root:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.14   445    WK01             [-] relia.com\sa:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.14   445    WK01             [-] relia.com\steven:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.14   445    WK01             [-] relia.com\sysadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.14   445    WK01             [-] relia.com\test:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.14   445    WK01             [-] relia.com\web:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.14   445    WK01             [-] relia.com\webadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.14   445    WK01             [-] relia.com\zachary:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.15   445    WK02             [-] relia.com\emma:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.15   445    WK02             [-] relia.com\Michael321:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.15   445    WK02             [-] relia.com\admin:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.15   445    WK02             [-] relia.com\administrator:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.15   445    WK02             [-] relia.com\adrian:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.15   445    WK02             [-] relia.com\andrea:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.15   445    WK02             [-] relia.com\anita:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.15   445    WK02             [-] relia.com\anna:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.15   445    WK02             [-] relia.com\brad:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.15   445    WK02             [-] relia.com\damon:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.15   445    WK02             [-] relia.com\dan:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.15   445    WK02             [-] relia.com\dmzadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.15   445    WK02             [-] relia.com\emma:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.15   445    WK02             [-] relia.com\guest:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.15   445    WK02             [-] relia.com\iis_service:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.15   445    WK02             [-] relia.com\internaladmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.15   445    WK02             [-] relia.com\jenny:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.15   445    WK02             [-] relia.com\jim:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.15   445    WK02             [-] relia.com\larry:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.15   445    WK02             [-] relia.com\maildmz:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.15   445    WK02             [-] relia.com\mark:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.15   445    WK02             [-] relia.com\mercedes1:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.15   445    WK02             [-] relia.com\michelle:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.15   445    WK02             [-] relia.com\milana:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.15   445    WK02             [-] relia.com\miranda:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.15   445    WK02             [-] relia.com\mountuser:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.15   445    WK02             [-] relia.com\netadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.15   445    WK02             [-] relia.com\offsec:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.15   445    WK02             [-] relia.com\peter:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.15   445    WK02             [-] relia.com\root:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.15   445    WK02             [-] relia.com\sa:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.15   445    WK02             [-] relia.com\steven:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.15   445    WK02             [-] relia.com\sysadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.15   445    WK02             [-] relia.com\test:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.15   445    WK02             [-] relia.com\web:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.15   445    WK02             [-] relia.com\webadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.15   445    WK02             [-] relia.com\zachary:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.249 445    LEGACY           [-] LEGACY\emma:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.249 445    LEGACY           [-] LEGACY\Michael321:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.249 445    LEGACY           [-] LEGACY\admin:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.249 445    LEGACY           [-] LEGACY\administrator:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.249 445    LEGACY           [-] LEGACY\adrian:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.249 445    LEGACY           [-] LEGACY\andrea:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.249 445    LEGACY           [-] LEGACY\anita:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.249 445    LEGACY           [-] LEGACY\anna:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.249 445    LEGACY           [-] LEGACY\brad:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.249 445    LEGACY           [-] LEGACY\damon:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.249 445    LEGACY           [-] LEGACY\dan:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.249 445    LEGACY           [-] LEGACY\dmzadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.249 445    LEGACY           [-] LEGACY\emma:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.249 445    LEGACY           [-] LEGACY\guest:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.249 445    LEGACY           [-] LEGACY\iis_service:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.249 445    LEGACY           [-] LEGACY\internaladmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.249 445    LEGACY           [-] LEGACY\jenny:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.249 445    LEGACY           [-] LEGACY\jim:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.249 445    LEGACY           [-] LEGACY\larry:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.249 445    LEGACY           [-] LEGACY\maildmz:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.249 445    LEGACY           [-] LEGACY\mark:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.249 445    LEGACY           [-] LEGACY\mercedes1:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.249 445    LEGACY           [-] LEGACY\michelle:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.249 445    LEGACY           [-] LEGACY\milana:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.249 445    LEGACY           [-] LEGACY\miranda:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.249 445    LEGACY           [-] LEGACY\mountuser:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.249 445    LEGACY           [-] LEGACY\netadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.249 445    LEGACY           [-] LEGACY\offsec:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.249 445    LEGACY           [-] LEGACY\peter:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.249 445    LEGACY           [-] LEGACY\root:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.249 445    LEGACY           [-] LEGACY\sa:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.249 445    LEGACY           [-] LEGACY\steven:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.249 445    LEGACY           [-] LEGACY\sysadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.249 445    LEGACY           [-] LEGACY\test:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.249 445    LEGACY           [-] LEGACY\web:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.249 445    LEGACY           [-] LEGACY\webadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      192.168.229.249 445    LEGACY           [-] LEGACY\zachary:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.7    445    INTRANET         [-] relia.com\emma:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.7    445    INTRANET         [-] relia.com\Michael321:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.7    445    INTRANET         [-] relia.com\admin:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.7    445    INTRANET         [-] relia.com\administrator:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.7    445    INTRANET         [-] relia.com\adrian:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.7    445    INTRANET         [-] relia.com\andrea:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.7    445    INTRANET         [-] relia.com\anita:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.7    445    INTRANET         [-] relia.com\anna:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.7    445    INTRANET         [-] relia.com\brad:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.7    445    INTRANET         [-] relia.com\damon:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.7    445    INTRANET         [-] relia.com\dan:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.7    445    INTRANET         [-] relia.com\dmzadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.7    445    INTRANET         [-] relia.com\emma:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.7    445    INTRANET         [-] relia.com\guest:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.7    445    INTRANET         [-] relia.com\iis_service:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.7    445    INTRANET         [-] relia.com\internaladmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.7    445    INTRANET         [-] relia.com\jenny:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.7    445    INTRANET         [-] relia.com\jim:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.7    445    INTRANET         [-] relia.com\larry:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.7    445    INTRANET         [-] relia.com\maildmz:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.7    445    INTRANET         [-] relia.com\mark:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.7    445    INTRANET         [-] relia.com\mercedes1:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.7    445    INTRANET         [-] relia.com\michelle:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.7    445    INTRANET         [-] relia.com\milana:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.7    445    INTRANET         [-] relia.com\miranda:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.7    445    INTRANET         [-] relia.com\mountuser:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.7    445    INTRANET         [-] relia.com\netadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.7    445    INTRANET         [-] relia.com\offsec:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.7    445    INTRANET         [-] relia.com\peter:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.7    445    INTRANET         [-] relia.com\root:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.7    445    INTRANET         [-] relia.com\sa:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.7    445    INTRANET         [-] relia.com\steven:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.7    445    INTRANET         [-] relia.com\sysadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.7    445    INTRANET         [-] relia.com\test:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.7    445    INTRANET         [-] relia.com\web:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.7    445    INTRANET         [-] relia.com\webadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.7    445    INTRANET         [-] relia.com\zachary:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.21   445    FILES            [-] relia.com\emma:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.21   445    FILES            [-] relia.com\Michael321:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.21   445    FILES            [-] relia.com\admin:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.21   445    FILES            [-] relia.com\administrator:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.21   445    FILES            [-] relia.com\adrian:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.21   445    FILES            [-] relia.com\andrea:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.21   445    FILES            [-] relia.com\anita:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.21   445    FILES            [-] relia.com\anna:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.21   445    FILES            [-] relia.com\brad:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.21   445    FILES            [-] relia.com\damon:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.21   445    FILES            [-] relia.com\dan:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.21   445    FILES            [-] relia.com\dmzadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.21   445    FILES            [-] relia.com\emma:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.21   445    FILES            [-] relia.com\guest:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.21   445    FILES            [-] relia.com\iis_service:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.21   445    FILES            [-] relia.com\internaladmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.21   445    FILES            [-] relia.com\jenny:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.21   445    FILES            [-] relia.com\jim:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.21   445    FILES            [-] relia.com\larry:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.21   445    FILES            [-] relia.com\maildmz:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.21   445    FILES            [-] relia.com\mark:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.21   445    FILES            [-] relia.com\mercedes1:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.21   445    FILES            [-] relia.com\michelle:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.21   445    FILES            [-] relia.com\milana:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.21   445    FILES            [-] relia.com\miranda:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.21   445    FILES            [-] relia.com\mountuser:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.21   445    FILES            [-] relia.com\netadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.21   445    FILES            [-] relia.com\offsec:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.21   445    FILES            [-] relia.com\peter:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.21   445    FILES            [-] relia.com\root:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.21   445    FILES            [-] relia.com\sa:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.21   445    FILES            [-] relia.com\steven:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.21   445    FILES            [-] relia.com\sysadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.21   445    FILES            [-] relia.com\test:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.21   445    FILES            [-] relia.com\web:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.21   445    FILES            [-] relia.com\webadmin:welcome1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.21   445    FILES            [-] relia.com\zachary:welcome1 STATUS_LOGON_FAILURE
+Running nxc against 16 targets ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00

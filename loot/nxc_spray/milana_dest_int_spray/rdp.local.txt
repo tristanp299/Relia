@@ -1,0 +1,11 @@
+RDP                      172.16.189.6    3389   DC02             [*] Windows 10 or Windows Server 2016 Build 20348 (name:DC02) (domain:DC02) (nla:True)
+RDP                      172.16.189.30   3389   WEBBY            [*] Windows 10 or Windows Server 2016 Build 20348 (name:WEBBY) (domain:WEBBY) (nla:True)
+RDP                      172.16.189.15   3389   WK02             [*] Windows 10 or Windows Server 2016 Build 22000 (name:WK02) (domain:WK02) (nla:True)
+RDP                      172.16.189.14   3389   WK01             [*] Windows 10 or Windows Server 2016 Build 22000 (name:WK01) (domain:WK01) (nla:True)
+RDP                      172.16.189.6    3389   DC02             [-] DC02\milana:destiny1 (STATUS_LOGON_FAILURE)
+RDP                      172.16.189.30   3389   WEBBY            [-] WEBBY\milana:destiny1 (STATUS_LOGON_FAILURE)
+RDP                      172.16.189.15   3389   WK02             [-] WK02\milana:destiny1 (STATUS_LOGON_FAILURE)
+RDP                      172.16.189.14   3389   WK01             [-] WK01\milana:destiny1 (STATUS_LOGON_FAILURE)
+RDP                      172.16.189.7    3389   INTRANET         [*] Windows 10 or Windows Server 2016 Build 20348 (name:INTRANET) (domain:INTRANET) (nla:True)
+RDP                      172.16.189.7    3389   INTRANET         [-] INTRANET\milana:destiny1 (STATUS_LOGON_FAILURE)
+Running nxc against 8 targets ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00

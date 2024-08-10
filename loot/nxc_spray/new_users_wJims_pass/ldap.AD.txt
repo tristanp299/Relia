@@ -1,0 +1,495 @@
+SMB                      192.168.229.248 445    EXTERNAL         [*] Windows Server 2022 Build 20348 x64 (name:EXTERNAL) (domain:EXTERNAL) (signing:False) (SMBv1:False)
+SMB                      192.168.229.250 445    WINPREP          [*] Windows 11 Build 22000 x64 (name:WINPREP) (domain:WINPREP) (signing:False) (SMBv1:False)
+SMB                      192.168.229.247 445    WEB02            [*] Windows Server 2022 Build 20348 x64 (name:WEB02) (domain:WEB02) (signing:False) (SMBv1:False)
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\emma:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\Michael321:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\admin:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\administrator:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\adrian:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\andrea:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\anita:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\anna:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\brad:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\damon:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\dan:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\dmzadmin:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\emma:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\guest:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\iis_service:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\internaladmin:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\jenny:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\jim:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\larry:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\maildmz:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\mark:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\mercedes1:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\michelle:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\milana:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\miranda:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\mountuser:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\netadmin:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\offsec:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\peter:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\root:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\sa:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\steven:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\sysadmin:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\test:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\web:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\webadmin:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.248 389    EXTERNAL         [-] EXTERNAL\zachary:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\emma:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\Michael321:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\admin:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\administrator:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\adrian:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\andrea:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\anita:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\anna:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\brad:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\damon:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\dan:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\dmzadmin:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\emma:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\guest:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\iis_service:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\internaladmin:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\jenny:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\jim:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\larry:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\maildmz:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\mark:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\mercedes1:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\michelle:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\milana:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\miranda:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\mountuser:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\netadmin:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\offsec:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\peter:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\root:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\sa:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\steven:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\sysadmin:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\test:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\web:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\webadmin:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.250 389    WINPREP          [-] WINPREP\zachary:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\emma:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\Michael321:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\admin:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\administrator:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\adrian:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\andrea:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\anita:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\anna:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\brad:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\damon:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\dan:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\dmzadmin:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\emma:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\guest:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\iis_service:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\internaladmin:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\jenny:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\jim:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\larry:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\maildmz:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\mark:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\mercedes1:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\michelle:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\milana:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\miranda:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\mountuser:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\netadmin:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\offsec:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\peter:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\root:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\sa:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\steven:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\sysadmin:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\test:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\web:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\webadmin:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.247 389    WEB02            [-] WEB02\zachary:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+SMB                      192.168.229.249 445    LEGACY           [*] Windows Server 2022 Build 20348 x64 (name:LEGACY) (domain:LEGACY) (signing:False) (SMBv1:False)
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\emma:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\Michael321:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\admin:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\administrator:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\adrian:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\andrea:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\anita:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\anna:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\brad:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\damon:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\dan:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\dmzadmin:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\emma:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\guest:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\iis_service:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\internaladmin:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\jenny:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\jim:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\larry:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\maildmz:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\mark:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\mercedes1:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\michelle:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\milana:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\miranda:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\mountuser:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\netadmin:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\offsec:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\peter:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\root:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\sa:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\steven:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\sysadmin:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\test:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\web:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\webadmin:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.249 389    LEGACY           [-] LEGACY\zachary:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+SMB                      192.168.229.189 445    MAIL             [*] Windows Server 2022 Build 20348 x64 (name:MAIL) (domain:relia.com) (signing:False) (SMBv1:False)
+SMB                      172.16.189.6    445    DC02             [*] Windows Server 2022 Build 20348 x64 (name:DC02) (domain:relia.com) (signing:True) (SMBv1:False)
+SMB                      192.168.229.191 445    LOGIN            [*] Windows Server 2022 Build 20348 x64 (name:LOGIN) (domain:relia.com) (signing:False) (SMBv1:False)
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\emma:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\Michael321:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\admin:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\administrator:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\adrian:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\andrea:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\anita:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\anna:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\brad:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\damon:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\dan:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\dmzadmin:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\emma:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\guest:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\iis_service:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\internaladmin:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\jenny:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\jim:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\larry:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\maildmz:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\mark:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\mercedes1:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\michelle:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\milana:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\miranda:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\mountuser:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\netadmin:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\offsec:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\peter:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\root:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\sa:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\steven:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\sysadmin:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\test:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\web:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\webadmin:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.189 389    MAIL             [-] relia.com\zachary:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\emma:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\Michael321:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\admin:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\administrator:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\adrian:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\andrea:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\anita:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\anna:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\brad:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\damon:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\dan:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\dmzadmin:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\emma:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\guest:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\iis_service:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\internaladmin:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\jenny:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\jim:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\larry:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\maildmz:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\mark:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\mercedes1:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\michelle:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\milana:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\miranda:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\mountuser:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\netadmin:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\offsec:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\peter:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\root:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\sa:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\steven:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\sysadmin:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\test:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\web:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\webadmin:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     192.168.229.191 389    LOGIN            [-] relia.com\zachary:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 111] Connection refused
+LDAP                     172.16.189.6    389    DC02             [-] relia.com\emma:NotMyPassword0k? 
+LDAP                     172.16.189.6    389    DC02             [-] relia.com\Michael321:NotMyPassword0k?
+LDAP                     172.16.189.6    389    DC02             [-] relia.com\admin:NotMyPassword0k?
+LDAP                     172.16.189.6    389    DC02             [-] relia.com\administrator:NotMyPassword0k?
+LDAP                     172.16.189.6    389    DC02             [-] relia.com\adrian:NotMyPassword0k?
+LDAP                     172.16.189.6    389    DC02             [-] relia.com\andrea:NotMyPassword0k?
+LDAP                     172.16.189.6    389    DC02             [-] relia.com\anita:NotMyPassword0k?
+LDAP                     172.16.189.6    389    DC02             [-] relia.com\anna:NotMyPassword0k? 
+LDAP                     172.16.189.6    389    DC02             [-] relia.com\brad:NotMyPassword0k? 
+LDAP                     172.16.189.6    389    DC02             [-] relia.com\damon:NotMyPassword0k?
+LDAP                     172.16.189.6    389    DC02             [-] relia.com\dan:NotMyPassword0k? 
+LDAP                     172.16.189.6    389    DC02             [-] relia.com\dmzadmin:NotMyPassword0k?
+LDAP                     172.16.189.6    389    DC02             [-] relia.com\emma:NotMyPassword0k? 
+LDAP                     172.16.189.6    389    DC02             [-] relia.com\guest:NotMyPassword0k?
+LDAP                     172.16.189.6    389    DC02             [-] relia.com\iis_service:NotMyPassword0k?
+LDAP                     172.16.189.6    389    DC02             [-] relia.com\internaladmin:NotMyPassword0k?
+LDAP                     172.16.189.6    389    DC02             [-] relia.com\jenny:NotMyPassword0k?
+LDAP                     172.16.189.6    389    DC02             [-] relia.com\jim:NotMyPassword0k? 
+LDAP                     172.16.189.6    389    DC02             [-] relia.com\larry:NotMyPassword0k?
+LDAP                     172.16.189.6    389    DC02             [-] relia.com\maildmz:NotMyPassword0k?
+LDAP                     172.16.189.6    389    DC02             [-] relia.com\mark:NotMyPassword0k? 
+LDAP                     172.16.189.6    389    DC02             [-] relia.com\mercedes1:NotMyPassword0k?
+LDAP                     172.16.189.6    389    DC02             [+] relia.com\michelle:NotMyPassword0k?
+LDAP                     172.16.189.6    389    DC02             [-] relia.com\milana:NotMyPassword0k?
+LDAP                     172.16.189.6    389    DC02             [-] relia.com\miranda:NotMyPassword0k?
+LDAP                     172.16.189.6    389    DC02             [-] relia.com\mountuser:NotMyPassword0k?
+LDAP                     172.16.189.6    389    DC02             [-] relia.com\netadmin:NotMyPassword0k?
+LDAP                     172.16.189.6    389    DC02             [-] relia.com\offsec:NotMyPassword0k?
+LDAP                     172.16.189.6    389    DC02             [-] relia.com\peter:NotMyPassword0k?
+LDAP                     172.16.189.6    389    DC02             [-] relia.com\root:NotMyPassword0k? 
+LDAP                     172.16.189.6    389    DC02             [-] relia.com\sa:NotMyPassword0k? 
+LDAP                     172.16.189.6    389    DC02             [-] relia.com\steven:NotMyPassword0k?
+LDAP                     172.16.189.6    389    DC02             [-] relia.com\sysadmin:NotMyPassword0k?
+LDAP                     172.16.189.6    389    DC02             [-] relia.com\test:NotMyPassword0k? 
+LDAP                     172.16.189.6    389    DC02             [-] relia.com\web:NotMyPassword0k? 
+LDAP                     172.16.189.6    389    DC02             [-] relia.com\webadmin:NotMyPassword0k?
+LDAP                     172.16.189.6    389    DC02             [-] relia.com\zachary:NotMyPassword0k?
+SMB                      172.16.189.21   445    NONE             [*]  x64 (name:) (domain:) (signing:False) (SMBv1:False)
+SMB                      172.16.189.14   445    NONE             [*]  x64 (name:) (domain:) (signing:False) (SMBv1:False)
+SMB                      172.16.189.15   445    NONE             [*]  x64 (name:) (domain:) (signing:False) (SMBv1:False)
+SMB                      172.16.189.7    445    NONE             [*]  x64 (name:) (domain:) (signing:False) (SMBv1:False)
+SMB                      172.16.189.30   445    NONE             [*]  x64 (name:) (domain:) (signing:False) (SMBv1:False)
+LDAP                     172.16.189.21   389    NONE             [-] \emma:NotMyPassword0k? Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 110] Connection timed out

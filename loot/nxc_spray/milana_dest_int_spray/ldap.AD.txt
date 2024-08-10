@@ -1,0 +1,18 @@
+SMB                      172.16.189.6    445    DC02             [*] Windows Server 2022 Build 20348 x64 (name:DC02) (domain:relia.com) (signing:True) (SMBv1:False)
+LDAP                     172.16.189.6    389    DC02             [-] relia.com\milana:destiny1 
+SMB                      172.16.189.14   445    NONE             [*]  x64 (name:) (domain:) (signing:False) (SMBv1:False)
+SMB                      172.16.189.21   445    NONE             [*]  x64 (name:) (domain:) (signing:False) (SMBv1:False)
+SMB                      172.16.189.7    445    NONE             [*]  x64 (name:) (domain:) (signing:False) (SMBv1:False)
+SMB                      172.16.189.30   445    NONE             [*]  x64 (name:) (domain:) (signing:False) (SMBv1:False)
+SMB                      172.16.189.15   445    NONE             [*]  x64 (name:) (domain:) (signing:False) (SMBv1:False)
+LDAP                     172.16.189.14   389    NONE             [-] \milana:destiny1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 110] Connection timed out
+LDAP                     172.16.189.21   389    NONE             [-] \milana:destiny1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 110] Connection timed out
+LDAP                     172.16.189.7    389    NONE             [-] \milana:destiny1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 110] Connection timed out
+LDAP                     172.16.189.30   389    NONE             [-] \milana:destiny1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 110] Connection timed out
+LDAP                     172.16.189.15   389    NONE             [-] \milana:destiny1 Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 110] Connection timed out
+Running nxc against 8 targets ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00

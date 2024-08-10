@@ -1,0 +1,15 @@
+10/20/2022 10:37:25 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddHostPage:HTML Editor Manager
+10/20/2022 10:37:25 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddPage:HTML Editor Manager
+10/20/2022 10:37:27 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start RemoveModule:RadEditor Manager
+10/20/2022 10:37:27 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddModuleToPage:115
+10/20/2022 10:37:27 [INFO] DotNetNuke.Services.Upgrade.Upgrade End AddModuleToPage:115
+10/20/2022 10:37:27 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddHostPage:Global Assets
+10/20/2022 10:37:27 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddPage:Global Assets
+10/20/2022 10:37:27 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddModuleToPage:119
+10/20/2022 10:37:27 [INFO] DotNetNuke.Services.Upgrade.Upgrade End AddModuleToPage:119
+10/20/2022 10:37:27 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start RemoveHostPage:File Manager
+10/20/2022 10:37:27 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start RemoveHostPage:File Management
+10/20/2022 10:37:28 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddHostPage:Telerik Removal
+10/20/2022 10:37:28 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddPage:Telerik Removal
+10/20/2022 10:37:28 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddModuleToPage:121
+10/20/2022 10:37:28 [INFO] DotNetNuke.Services.Upgrade.Upgrade End AddModuleToPage:121

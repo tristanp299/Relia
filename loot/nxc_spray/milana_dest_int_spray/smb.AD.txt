@@ -1,0 +1,15 @@
+Running nxc against 8 targets ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
+Running nxc against 8 targets ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
+SMB                      172.16.189.21   445    FILES            [*] Windows Server 2022 Build 20348 x64 (name:FILES) (domain:relia.com) (signing:False) (SMBv1:False)
+SMB                      172.16.189.7    445    INTRANET         [*] Windows Server 2022 Build 20348 x64 (name:INTRANET) (domain:relia.com) (signing:False) (SMBv1:False)
+SMB                      172.16.189.6    445    DC02             [*] Windows Server 2022 Build 20348 x64 (name:DC02) (domain:relia.com) (signing:True) (SMBv1:False)
+SMB                      172.16.189.14   445    WK01             [*] Windows 11 Build 22000 x64 (name:WK01) (domain:relia.com) (signing:False) (SMBv1:False)
+SMB                      172.16.189.15   445    WK02             [*] Windows 11 Build 22000 x64 (name:WK02) (domain:relia.com) (signing:False) (SMBv1:False)
+SMB                      172.16.189.30   445    WEBBY            [*] Windows Server 2022 Build 20348 x64 (name:WEBBY) (domain:relia.com) (signing:False) (SMBv1:False)
+SMB                      172.16.189.21   445    FILES            [-] relia.com\milana:destiny1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.7    445    INTRANET         [-] relia.com\milana:destiny1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.6    445    DC02             [-] relia.com\milana:destiny1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.14   445    WK01             [-] relia.com\milana:destiny1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.15   445    WK02             [-] relia.com\milana:destiny1 STATUS_LOGON_FAILURE
+SMB                      172.16.189.30   445    WEBBY            [-] relia.com\milana:destiny1 STATUS_LOGON_FAILURE
+Running nxc against 8 targets ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
