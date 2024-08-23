@@ -1,2 +1,2 @@
 # Lab Environment Penetration Test
-` All credentials are temporary and rolled `
+` All target information and credentials are arbitary `
